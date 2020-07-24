@@ -88,14 +88,7 @@ ul li:hover a {
 	padding-right: 20px;
 	color: #A3A3A3;
 }
-.about {
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top: 35px;
-	display: inline-block;
-	background-color: #FFFFFF;
-	margin-top: 0px;
-}
+
 
 
 footer {
@@ -174,10 +167,22 @@ footer .footer_column p {
 
 footer {
 	display: inline-block;
+	margin-left: 400px;
+	
 }
+
 .hidden {
 	display: none;
 }
+
+.tree{
+	text-align: center;
+}
+
+.tree_description{
+	text-align: center;
+}
+
 
 /* Mobile */
 @media (max-width: 320px) {
@@ -267,6 +272,29 @@ nav ul li {
 	text-align: center;
 }
 }
+
+.footer_banner {
+	background-color: #B3B3B3;
+	padding-top: 60px;
+	padding-bottom: 60PX;
+	margin-bottom: 0px;
+	background-image: url(../images/pattern.png);
+	background-repeat: repeat;
+}
+
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+
+
+
+
+
+
+
 
 /* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {

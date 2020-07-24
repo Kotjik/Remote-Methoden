@@ -319,6 +319,17 @@ nav ul li {
 }
 }
 
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+
+
+
+
+
 /* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {
 .logo {

@@ -227,6 +227,18 @@ footer {
 	display: none;
 }
 
+
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+
+
+
+
+
 /* Mobile */
 @media (max-width: 320px) {
 .logo {
