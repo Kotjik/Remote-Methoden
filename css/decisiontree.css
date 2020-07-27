@@ -30,8 +30,34 @@ header {
 }
 
 
+/*tree picture responsive*/
+.picture_tree{
+	height: auto;
+	width: 100%;
+	line-height: 0px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: auto;
+}
+/* title picture responsive*/
+.picture_column {
+	width: 100%;
+	line-height: 0px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: auto;
+	color: #A3A3A3;
+}
+
+.picture{
+	max-width: 100%;
+	height: auto;
+}
+
+
+
 .logo {
-	width: 10%;
+	max-width: 10%;
 	float: left;
 	margin-top: 20px;
 	margin-left: 45px;
@@ -186,6 +212,13 @@ footer {
 
 /* Mobile */
 @media (max-width: 320px) {
+
+.picture{
+	max-width: 100%;
+	height: auto;
+	margin-top: 150px;
+}
+	
 .logo {
 	width: 100%;
 	text-align: center;
@@ -298,6 +331,13 @@ nav ul li {
 
 /* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {
+	
+.picture{
+	max-width: 100%;
+	height: auto;
+	margin-top: 130px;
+}	
+
 .logo {
 	width: 100%;
 	text-align: center;
@@ -316,7 +356,7 @@ nav ul li {
 	float: none;
 	overflow: auto;
 	display: inline-block;
-	background: #52bad5;
+	background: #090c5c;
 }
 header nav ul {
 	padding: 0px;
@@ -403,6 +443,13 @@ nav ul li {
 
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
+	
+.picture{
+	max-width: 100%;
+	height: auto;
+	margin-top: -20px;
+}	
+
 .text_column {
 	width: 100%;
 }

@@ -33,7 +33,7 @@ header {
 
 
 .logo {
-	width: 10%;
+	max-width: 10%;
 	float: left;
 	margin-top: 20px;
 	margin-left: 45px;
@@ -175,6 +175,29 @@ footer {
 	cursor: pointer;
 }
 
+
+
+/*responsive assistant*/
+.picture_column {
+	width: 29%;
+	text-align: justify;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #A3A3A3;
+}
+.question{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	max-margin-left: 500px;
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+}
+
+
 .button1 {
 	width: 200px;
 	margin-top: 40px;
@@ -226,12 +249,6 @@ footer {
 	color: #C4C4C4;
 	cursor: pointer;
 }
-.question{
-	padding-top: 70px;
-	padding-bottom: 70px;
-	margin-left: 500px;
-	text-align: center;
-}
 
 
 .copyright {
@@ -273,6 +290,17 @@ footer {
 
 /* Mobile */
 @media (max-width: 320px) {
+	
+.question{
+	padding-top: 70px;
+	margin-top: 100px;
+	padding-bottom: 70px;
+	max-margin-left: 500px;
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+}		
+
 .logo {
 	width: 100%;
 	text-align: center;
@@ -360,6 +388,17 @@ nav ul li {
 
 /* Small Tablets */
 @media (min-width: 321px)and (max-width: 767px) {
+
+.question{
+	padding-top: 70px;
+	margin-top: 100px;
+	padding-bottom: 70px;
+	max-margin-left: 500px;
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+}	
+	
 .logo {
 	width: 100%;
 	text-align: center;
@@ -378,7 +417,7 @@ nav ul li {
 	float: none;
 	overflow: auto;
 	display: inline-block;
-	background: #52bad5;
+	background: #090c5c;
 }
 header nav ul {
 	padding: 0px;
@@ -462,6 +501,16 @@ nav ul li {
 
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
+	
+.question{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	max-margin-left: 500px;
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+}	
+	
 .text_column {
 	width: 100%;
 }

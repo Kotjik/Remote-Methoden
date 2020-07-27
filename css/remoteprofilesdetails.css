@@ -35,7 +35,7 @@ header {
 
 
 .logo {
-	width: 10%;
+	max-width: 10%;
 	float: left;
 	margin-top: 20px;
 	margin-left: 45px;
@@ -349,7 +349,7 @@ nav ul li {
 	float: none;
 	overflow: auto;
 	display: inline-block;
-	background: #52bad5;
+	background: #090c5c;
 }
 header nav ul {
 	padding: 0px;
