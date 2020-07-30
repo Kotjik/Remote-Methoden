@@ -220,6 +220,7 @@ footer .footer_column p {
 }
 footer {
 	display: inline-block;
+	
 }
 .hidden {
 	display: none;
@@ -240,6 +241,7 @@ footer {
 /* Mobile */
 @media (max-width: 320px) {
 	
+
 
 .logo {
 	width: 100%;
@@ -365,6 +367,11 @@ footer .footer_column p {
 	line-height: 22px;
 	text-align: center;
 }
+	footer {
+	margin-top:200px;
+	display: inline-block;
+	
+}
 }
 
 /* Small Tablets */
@@ -429,6 +436,7 @@ footer {
 	width: 50%;
 	text-align: center;
 	padding-top: 30px;
+	padding-bottom:90px;
 	float: left;
 	height: 400px;
 	background-attachment: fixed;
@@ -516,6 +524,11 @@ footer .footer_column p {
 .footer_column {
 	width: 100%;
 }
+	footer {
+	margin-top:150px;
+	display: inline-block;
+	
+}
 }
 
 /* Small Desktops */
@@ -583,4 +596,5 @@ footer .footer_column p {
 	margin-top: 0px;
 	padding-top: 0px;
 }
+
 }
