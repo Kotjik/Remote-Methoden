@@ -243,7 +243,7 @@ footer {
 }
 
 
-.hero_header {
+.news_header {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 22px;
@@ -343,7 +343,7 @@ nav ul li {
 	margin-top: 20px;
 	line-height: 22px;
 }
-.hero_header {
+.news_header {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 22px;
@@ -438,24 +438,7 @@ nav ul li {
 .thumbnail {
 	width: 50%;
 }
-.tree {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	padding-top: 20%;
-}
-.tree_description {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	width: 100%;
-	padding-top: 30px;
-}
+
 .banner {
 	padding-left: 20px;
 	padding-right: 20px;

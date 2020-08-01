@@ -298,13 +298,15 @@ nav ul li {
 	margin-top: 20px;
 	line-height: 22px;
 }
-.hero_header {
+.news_header {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 22px;
 	text-align: center;
 }
 }
+
+
 
 .footer_banner {
 	background-color: #B3B3B3;
@@ -315,7 +317,7 @@ nav ul li {
 	background-repeat: repeat;
 }
 
-.hero_header {
+.news_header {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 22px;
@@ -335,7 +337,7 @@ nav ul li {
 .picture{
 	max-width: 100%;
 	height: auto;
-	margin-top: 130px;
+	margin-top: 120px;
 }	
 
 .logo {
