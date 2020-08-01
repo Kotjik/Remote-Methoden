@@ -156,6 +156,7 @@ ul li:hover a {
 footer {
 	background-color: #FFFFFF;
 	padding-bottom: 35px;
+	width:100%;
 }
 .footer_column {
 	width: 50%;
@@ -316,7 +317,7 @@ nav ul li {
 	margin-top: 20px;
 	line-height: 22px;
 }
-.hero_header {
+.news_header {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 22px;
@@ -324,7 +325,7 @@ nav ul li {
 }
 }
 
-.hero_header {
+.news_header {
 	padding-left: 10px;
 	padding-right: 10px;
 	line-height: 22px;
