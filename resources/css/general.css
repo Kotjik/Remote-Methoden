@@ -25,3 +25,7 @@ body, html {
 #mySidebar{
   width: auto;
 }
+
+.hidden{
+  display: none;
+}

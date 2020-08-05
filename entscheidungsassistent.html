@@ -7,8 +7,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
-
 <link rel="stylesheet" href="resources/css/general.css">
+
 <style>
 
 </style>
@@ -17,7 +17,7 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="resources/img/ur-logo-bildmarke-grau.png"></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" style="max-width: 100%; height: auto;" src="resources/img/ur-logo-bildmarke-grau.png"></a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
         <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
@@ -44,24 +44,159 @@
     <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
   </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div>
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
+  <!-- Card Section -->
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">Entscheidungsassistent</h3>
+    <p class="w3-center w3-large">Suchen Sie nach etwas bestimmtem? Benutzen Sie die Filtermöglichkeiten!</p>
 
+    <label for="entwicklungsphase">Entwicklungsphase</label>
+    <select name="entwicklungsphase" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Analyse</option>
+      <option value="">Konzept / Entwicklung</option>
+      <option value="">Umsetzung</option>
+      <option value="">Nach der Umsetzung</option>
+    </select>
+    <br>
+
+    <label for="ergebnisse">Art der Ergebnisse</label>
+    <select name="ergebnisse" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Quantitativ</option>
+      <option value="">Qualitativ</option>
+      <option value="">Beides</option>
+    </select>
+    <br>
+
+    <label for="time">Zeit für die Studie</label>
+    <select name="time" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Kürzer als 2 Wochen</option>
+      <option value="">Ungefähr 1 Monat</option>
+      <option value="">Mehr als 3 Monate</option>
+    </select>
+    <br>
+
+    <label for="teilnehmeranzahl">Teilnehmeranzahl</label>
+    <select name="teilnehmeranzahl" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Weniger als 10</option>
+      <option value="">10 bis 50</option>
+      <option value="">Über 50</option>
+    </select>
+    <br>
+
+    <label for="teilnehmerart">Teilnehmerart</label>
+    <select name="teilnehmerart" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">User / Testpersonen / Zielgruppe</option>
+      <option value="">Externe Experten</option>
+      <option value="">Stakeholder</option>
+    </select>
+    <br>
+
+    <label for="tools">Verfügbare Tools</label>
+    <select name="tools" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Option 1</option>
+      <option value="">Option 2</option>
+      <option value="">Option 3</option>
+    </select>
+    <br>
+
+    <label for="software">Zusätzlich für den Proband nötige Software</label>
+    <select name="software" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Ja</option>
+      <option value="">Nein</option>
+    </select>
+    <br>
+
+    <label for="hardware">Zusätzlich für den Proband nötige Hardware</label>
+    <select name="hardware" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Ja</option>
+      <option value="">Nein</option>
+    </select>
+    <br>
+
+    <label for="hardware">Ist es möglich die Hardware per Post zu verschicken?</label>
+    <select name="hardware" class="minimal">
+      <option value="" selected>-Keine Auswahl-</option>
+      <option value="">Ja</option>
+      <option value="">Nein</option>
+    </select>
+    <br>
+
+    <button onClick="showAllMethods();">Passende Remote-Methoden anzeigen</button>
+
+    <div id="methods" class="w3-row-padding w3-grayscale hidden" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://picsum.photos/300/200?random=1" alt="Sarah Feix" style="width:100%">
+          <div class="w3-container">
+            <h3>Performance Measurement</h3>
+            <p class="w3-opacity">Blabalbalba</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://picsum.photos/300/200?random=2" alt="Sarah Graf" style="width:100%">
+          <div class="w3-container">
+            <h3>Think aloud</h3>
+            <p class="w3-opacity">Balbalblabal</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://picsum.photos/300/200?random=3" alt="Konstantin Kulik" style="width:100%">
+          <div class="w3-container">
+            <h3>Heuristic Evaluation</h3>
+            <p class="w3-opacity">Blablalblba</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://picsum.photos/300/200?random=4" alt="Nadine Schweiger" style="width:100%">
+          <div class="w3-container">
+            <h3>Question Asking</h3>
+            <p class="w3-opacity">Blablabla</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://picsum.photos/300/200?random=5" alt="Nadine Schweiger" style="width:100%">
+          <div class="w3-container">
+            <h3>Focus Groups</h3>
+            <p class="w3-opacity">Blabalbalba</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
@@ -101,6 +236,10 @@ function w3_open() {
 // Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.display = "none";
+}
+
+function showAllMethods(){
+  document.getElementById("methods").classList.remove("hidden");
 }
 </script>
 
