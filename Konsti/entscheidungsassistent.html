@@ -1,247 +1,299 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="resources/css/general.css">
-
-<style>
-
-</style>
-<body>
-
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" style="max-width: 100%; height: auto;" src="resources/img/ur-logo-bildmarke-grau.png"></a>
-      <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small">
-        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-        <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
-        <a href="remoteprofile.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
-        <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
-        <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+   <title>W3.CSS Template</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="resources/css/general.css">
+   <link rel="stylesheet" href="resources/css/entscheidungsassistent.css">
+   <style>
+   </style>
+   <body>
+      <!-- Navbar (sit on top) -->
+      <div class="w3-top">
+         <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" style="max-width: 100%; height: auto;" src="resources/img/ur-logo-bildmarke-grau.png"></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+               <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+               <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
+               <a href="remoteprofile.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
+               <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
+               <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
       </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+         <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
+         <a href="remoteprofile.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
+         <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
+         <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+      </nav>
+      <!-- Card Section -->
+      <div class="w3-container" style="padding:128px 16px">
+         <h3 class="w3-center">Entscheidungsassistent</h3>
+         <p class="w3-center w3-large">Sie wissen nicht welche Methode Sie benutzen müssen? Beantworten Sie ein paar Fragen und wir zeigen Ihnen, welche für Sie in Frage kommen.</p>
+         <div class="container w3-large" id="form">
+            <form action="/action_page.php">
+              <div class="row">
+                <div class="col-25">
+               <label for="entwicklungsphase">In welche Phase der Entwicklung befinden Sie sich?</label>
+             </div>
+             <div class="col-75">
+               <select name="entwicklungsphase" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Analyse</option>
+                  <option value="">Konzept / Entwicklung</option>
+                  <option value="">Umsetzung</option>
+                  <option value="">Nach der Umsetzung</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="ergebnisse">Benötigen Sie qualitative oder quantitative Ergebnisse? </label>
+             </div>
+             <div class="col-75">
+               <select name="ergebnisse" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Quantitativ</option>
+                  <option value="">Qualitativ</option>
+                  <option value="">Beides</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="study">Welche Art von Studie wollen Sie durchführen?</label>
+             </div>
+                <div class="col-75">
+               <select name="study" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Nutzerstudie</option>
+                  <option value="">Usability Studie</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="ressources">Wie viele Ressourcen (Personal, Hardware) haben Sie zur Verfügung?</label>
+             </div>
+                <div class="col-75">
+               <select name="ressources" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Option1</option>
+                  <option value="">Option2</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="time">Wie viel Zeit haben Sie für die Studie?</label>
+             </div>
+                <div class="col-75">
+               <select name="time" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Kürzer als 2 Wochen</option>
+                  <option value="">Ungefähr 1 Monat</option>
+                  <option value="">Mehr als 3 Monate</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="teilnehmeranzahl">Wie viele Teilnehmer peilen Sie für die Durchführung der Studie an?</label>
+             </div>
+                <div class="col-75">
+                   <select name="teilnehmeranzahl" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Weniger als 10</option>
+                  <option value="">10 bis 50</option>
+                  <option value="">Über 50</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="teilnehmerart">Welche Art von Teilnehmern stehen zur Verfügung?</label>
+             </div>
+                <div class="col-75">
+               <select name="teilnehmerart" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">User / Testpersonen / Zielgruppe</option>
+                  <option value="">Externe Experten</option>
+                  <option value="">Stakeholder</option>
+               </select>
+             </div>
+           </div>
 
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="tools">Welche Toolts stehen Ihnen zur Verfügung?</label>
+             </div>
+                <div class="col-75">
+               <select name="tools" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Option 1</option>
+                  <option value="">Option 2</option>
+                  <option value="">Option 3</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+                <label for="software">Benötigt der Proband zur Durchfphrung der Studie zusätzliche Software?</label>
+             </div>
+                <div class="col-75">
+               <select name="software" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Ja</option>
+                  <option value="">Nein</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="hardware">Benötigt der Proband zur Durchfphrung der Studie zusätzliche (nicht gängige) Hardware?</label>
+             </div>
+                <div class="col-75">
+               <select name="hardware" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Ja</option>
+                  <option value="">Nein</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-25">
+               <label for="hardware">Ist es möglich diese Hardware per Post zu verschicken?</label>
+             </div>
+                <div class="col-75">
+               <select name="hardware" class="minimal">
+                  <option value="" selected>-Keine Auswahl-</option>
+                  <option value="">Ja</option>
+                  <option value="">Nein</option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+               <!--<button onClick="showAllMethods();">Passende Remote-Methoden anzeigen</button> -->
 
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
-    <a href="remoteprofile.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
-    <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
-    <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
-  </nav>
-
-  <!-- Card Section -->
-  <div class="w3-container" style="padding:128px 16px" id="team">
-    <h3 class="w3-center">Entscheidungsassistent</h3>
-    <p class="w3-center w3-large">Suchen Sie nach etwas bestimmtem? Benutzen Sie die Filtermöglichkeiten!</p>
-
-    <label for="entwicklungsphase">Entwicklungsphase</label>
-    <select name="entwicklungsphase" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Analyse</option>
-      <option value="">Konzept / Entwicklung</option>
-      <option value="">Umsetzung</option>
-      <option value="">Nach der Umsetzung</option>
-    </select>
-    <br>
-
-    <label for="ergebnisse">Art der Ergebnisse</label>
-    <select name="ergebnisse" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Quantitativ</option>
-      <option value="">Qualitativ</option>
-      <option value="">Beides</option>
-    </select>
-    <br>
-
-    <label for="time">Zeit für die Studie</label>
-    <select name="time" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Kürzer als 2 Wochen</option>
-      <option value="">Ungefähr 1 Monat</option>
-      <option value="">Mehr als 3 Monate</option>
-    </select>
-    <br>
-
-    <label for="teilnehmeranzahl">Teilnehmeranzahl</label>
-    <select name="teilnehmeranzahl" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Weniger als 10</option>
-      <option value="">10 bis 50</option>
-      <option value="">Über 50</option>
-    </select>
-    <br>
-
-    <label for="teilnehmerart">Teilnehmerart</label>
-    <select name="teilnehmerart" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">User / Testpersonen / Zielgruppe</option>
-      <option value="">Externe Experten</option>
-      <option value="">Stakeholder</option>
-    </select>
-    <br>
-
-    <label for="tools">Verfügbare Tools</label>
-    <select name="tools" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Option 1</option>
-      <option value="">Option 2</option>
-      <option value="">Option 3</option>
-    </select>
-    <br>
-
-    <label for="software">Zusätzlich für den Proband nötige Software</label>
-    <select name="software" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Ja</option>
-      <option value="">Nein</option>
-    </select>
-    <br>
-
-    <label for="hardware">Zusätzlich für den Proband nötige Hardware</label>
-    <select name="hardware" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Ja</option>
-      <option value="">Nein</option>
-    </select>
-    <br>
-
-    <label for="hardware">Ist es möglich die Hardware per Post zu verschicken?</label>
-    <select name="hardware" class="minimal">
-      <option value="" selected>-Keine Auswahl-</option>
-      <option value="">Ja</option>
-      <option value="">Nein</option>
-    </select>
-    <br>
-
-    <button onClick="showAllMethods();">Passende Remote-Methoden anzeigen</button>
-
-    <div id="methods" class="w3-row-padding w3-grayscale hidden" style="margin-top:64px">
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=1" alt="Sarah Feix" style="width:100%">
-          <div class="w3-container">
-            <h3>Performance Measurement</h3>
-            <p class="w3-opacity">Blabalbalba</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
+                <br/>
+                 <input id="button" onClick="showAllMethods();" type="submit" value="Passende Remote-Methoden anzeigen">
+            </div>
+          </form>
+         </div>
+         <div id="methods" class="w3-row-padding w3-grayscale hidden" style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+               <div class="w3-card">
+                  <img src="https://picsum.photos/300/200?random=1" alt="Sarah Feix" style="width:100%">
+                  <div class="w3-container">
+                     <h3>Performance Measurement</h3>
+                     <p class="w3-opacity">Blabalbalba</p>
+                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                     <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+               <div class="w3-card">
+                  <img src="https://picsum.photos/300/200?random=2" alt="Sarah Graf" style="width:100%">
+                  <div class="w3-container">
+                     <h3>Think aloud</h3>
+                     <p class="w3-opacity">Balbalblabal</p>
+                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                     <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+               <div class="w3-card">
+                  <img src="https://picsum.photos/300/200?random=3" alt="Konstantin Kulik" style="width:100%">
+                  <div class="w3-container">
+                     <h3>Heuristic Evaluation</h3>
+                     <p class="w3-opacity">Blablalblba</p>
+                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                     <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+               <div class="w3-card">
+                  <img src="https://picsum.photos/300/200?random=4" alt="Nadine Schweiger" style="width:100%">
+                  <div class="w3-container">
+                     <h3>Question Asking</h3>
+                     <p class="w3-opacity">Blablabla</p>
+                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                     <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+               <div class="w3-card">
+                  <img src="https://picsum.photos/300/200?random=5" alt="Nadine Schweiger" style="width:100%">
+                  <div class="w3-container">
+                     <h3>Focus Groups</h3>
+                     <p class="w3-opacity">Blabalbalba</p>
+                     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                     <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=2" alt="Sarah Graf" style="width:100%">
-          <div class="w3-container">
-            <h3>Think aloud</h3>
-            <p class="w3-opacity">Balbalblabal</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+         <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+         </div>
       </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=3" alt="Konstantin Kulik" style="width:100%">
-          <div class="w3-container">
-            <h3>Heuristic Evaluation</h3>
-            <p class="w3-opacity">Blablalblba</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=4" alt="Nadine Schweiger" style="width:100%">
-          <div class="w3-container">
-            <h3>Question Asking</h3>
-            <p class="w3-opacity">Blablabla</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=5" alt="Nadine Schweiger" style="width:100%">
-          <div class="w3-container">
-            <h3>Focus Groups</h3>
-            <p class="w3-opacity">Blabalbalba</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+      <!-- Footer -->
+      <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+        <p>2020 - UNIVERSITÄT REGENSBURG</p>
+        <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
+      </footer>
+      <script>
+         // Modal Image Gallery
+         function onClick(element) {
+           document.getElementById("img01").src = element.src;
+           document.getElementById("modal01").style.display = "block";
+           var captionText = document.getElementById("caption");
+           captionText.innerHTML = element.alt;
+         }
 
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+         var mySidebar = document.getElementById("mySidebar");
 
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
+         function w3_open() {
+           if (mySidebar.style.display === 'block') {
+             mySidebar.style.display = 'none';
+           } else {
+             mySidebar.style.display = 'block';
+           }
+         }
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
+         // Close the sidebar with the close button
+         function w3_close() {
+             mySidebar.style.display = "none";
+         }
 
-function showAllMethods(){
-  document.getElementById("methods").classList.remove("hidden");
-}
-</script>
-
-</body>
+         function showAllMethods(){
+           document.getElementById("methods").classList.remove("hidden");
+         }
+      </script>
+   </body>
 </html>
