@@ -1,141 +1,154 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
+  <title>Remote Studien - Remote Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="resources/css/general.css">
-<link rel="stylesheet" href="resources/css/remoteprofile.css">
+  <link rel="stylesheet" href="resources/css/general.css" />
+  <link rel="stylesheet" href="resources/css/remoteprofile.css" />
 
-
-<style>
-
-</style>
-<body>
-
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" style="max-width: 100%; height: auto;" src="resources/img/ur-logo-bildmarke-grau.png"> REMOTE STUDIEN</a>
-      <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small">
-        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-        <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
-        <a href="remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
-        <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
-        <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
-      </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
-
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
-    <a href="remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
-    <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
-    <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
-  </nav>
-
-  <!-- Card Section -->
-  <div class="w3-container" style="padding:128px 16px" id="team">
-    <h3 class="w3-center">Kurzprofile aller Remote-Profile</h3>
-    <p class="w3-center w3-large">Hier finden Sie alle Remote-Profile</p>
-
-    <form onsubmit="return false;">
-      <input type="text" name="search" id="search" onkeyup="searchRemoteProfiles();" placeholder="Suche nach Remote-Profilen">
-    </form>
-
-    <div class="w3-row-padding" style="margin-top:24px">
-      <div class="w3-col l3 m6 w3-margin-bottom profile">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=1" alt="Sarah Feix" style="width:100%">
-          <div class="w3-container">
-            <h3 class="profile-title">Performance Measurement</h3>
-            <p class="w3-opacity">Blabalbalba</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
+  <style></style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" style="max-width: 100%; height: auto;" src="resources/img/ur-logo-bildmarke-grau.png" /> REMOTE STUDIEN</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+          <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
+          <a href="remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
+          <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
+          <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
         </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom profile">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=2" alt="Sarah Graf" style="width:100%">
-          <div class="w3-container">
-            <h3  class="profile-title">Think aloud</h3>
-            <p class="w3-opacity">Balbalblabal</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="detailsites/thinkaloud.html" style="text-decoration: none;"><button id=thinkaloud class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom profile">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=3" alt="Konstantin Kulik" style="width:100%">
-          <div class="w3-container">
-            <h3 class="profile-title">Heuristic Evaluation</h3>
-            <p class="w3-opacity">Blablalblba</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom profile">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=4" alt="Nadine Schweiger" style="width:100%">
-          <div class="w3-container">
-            <h3 class="profile-title">Question Asking</h3>
-            <p class="w3-opacity">Blablabla</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom profile">
-        <div class="w3-card">
-          <img src="https://picsum.photos/300/200?random=5" alt="Nadine Schweiger" style="width:100%">
-          <div class="w3-container">
-            <h3 class="profile-title">Focus Groups</h3>
-            <p class="w3-opacity">Blabalbalba</p>
-            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
-          </div>
-        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
-  </div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display: none;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+      <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
+      <a href="remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
+      <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
+      <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
 
+    <!-- Card Section -->
+    <div class="w3-container" style="padding: 128px 16px;" id="team">
+      <h3 class="w3-center">Kurzprofile aller Remote-Profile</h3>
+      <p class="w3-center w3-large">Hier finden Sie alle Remote-Profile</p>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
-  <p>2020 - UNIVERSITÄT REGENSBURG</p>
-  <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
-</footer>
+      <form onsubmit="return false;">
+        <input type="text" name="search" id="search" onkeyup="searchRemoteProfiles();" placeholder="Suche nach Remote-Profilen" />
+      </form>
 
-<script src="resources/js/general.js"></script>
-<script src="resources/js/remoteprofiles.js"></script>
-<script>
-</script>
+      <div class="w3-row-padding" style="margin-top: 24px;">
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
+          <div class="w3-card">
+            <img src="https://picsum.photos/300/200?random=1" alt="Sarah Feix" style="width: 100%;" />
+            <div class="w3-container">
+              <h3 class="profile-title">Performance Measurement</h3>
+              <p class="w3-opacity">Blabalbalba</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p>
+                <a href="#" style="text-decoration: none;">
+                  <button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
+          <div class="w3-card">
+            <img src="https://picsum.photos/300/200?random=2" alt="Sarah Graf" style="width: 100%;" />
+            <div class="w3-container">
+              <h3 class="profile-title">Think aloud</h3>
+              <p class="w3-opacity">Balbalblabal</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p>
+                <a href="detailsites/thinkaloud.html" style="text-decoration: none;">
+                  <button id="thinkaloud" class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
+          <div class="w3-card">
+            <img src="https://picsum.photos/300/200?random=3" alt="Konstantin Kulik" style="width: 100%;" />
+            <div class="w3-container">
+              <h3 class="profile-title">Heuristic Evaluation</h3>
+              <p class="w3-opacity">Blablalblba</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p>
+                <a href="#" style="text-decoration: none;">
+                  <button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
+          <div class="w3-card">
+            <img src="https://picsum.photos/300/200?random=4" alt="Nadine Schweiger" style="width: 100%;" />
+            <div class="w3-container">
+              <h3 class="profile-title">Question Asking</h3>
+              <p class="w3-opacity">Blablabla</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p>
+                <a href="#" style="text-decoration: none;">
+                  <button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
+          <div class="w3-card">
+            <img src="https://picsum.photos/300/200?random=5" alt="Nadine Schweiger" style="width: 100%;" />
+            <div class="w3-container">
+              <h3 class="profile-title">Focus Groups</h3>
+              <p class="w3-opacity">Blabalbalba</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p>
+                <a href="#" style="text-decoration: none;">
+                  <button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</body>
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+      <p>2020 - UNIVERSITÄT REGENSBURG</p>
+      <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
+    </footer>
+
+    <script src="resources/js/general.js"></script>
+    <script src="resources/js/remoteprofiles.js"></script>
+    <script></script>
+  </body>
 </html>

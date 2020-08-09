@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -15,8 +17,8 @@ label {
   display: inline-block;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
+input[type="submit"] {
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -25,7 +27,7 @@ input[type=submit] {
   float: right;
 }
 
-#button{
+#button {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -33,7 +35,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -64,7 +66,9 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }

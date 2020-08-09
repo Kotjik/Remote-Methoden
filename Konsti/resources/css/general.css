@@ -1,6 +1,15 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
 
-body, html {
+body,
+html {
   height: 100%;
   line-height: 1.8;
 }
@@ -18,28 +27,28 @@ body, html {
   padding: 16px;
 }
 
-.logo{
+.logo {
   width: 30px;
 }
 
-#mySidebar{
+#mySidebar {
   width: auto;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
 .picture_column {
-	width: 100%;
-	line-height: 0px;	
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-top: auto;
-	color: #A3A3A3;
+  width: 100%;
+  line-height: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: auto;
+  color: #a3a3a3;
 }
 
-.picture{
-	max-width: 100%;
-	height: auto;
+.picture {
+  max-width: 100%;
+  height: auto;
 }

@@ -1,4 +1,4 @@
-input[type=text] {
+input[type="text"] {
   width: 100%;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -12,6 +12,6 @@ input[type=text] {
   padding: 12px 20px 12px 40px;
 }
 
-form{
+form {
   padding: 0px 16px;
 }

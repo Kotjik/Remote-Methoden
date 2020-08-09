@@ -1,81 +1,74 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
+  <title>Remote Studien - Think Aloud</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="resources/css/general.css">
-<link rel="stylesheet" href="../resources/css/thinkaloud.css">
+  <link rel="stylesheet" href="resources/css/general.css" />
+  <link rel="stylesheet" href="../resources/css/thinkaloud.css" />
 
-<style>
+  <style></style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE STUDIEN</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+          <a href="../entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
+          <a href="../remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
+          <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
+          <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-</style>
-<body>
-
-  <!-- Navbar (sit on top) -->
-  <div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png"> REMOTE STUDIEN</a>
-      <!-- Right-sided navbar links -->
-      <div class="w3-right w3-hide-small">
-        <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-        <a href="../entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
-        <a href="../remoteprofile.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
-        <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
-        <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
-  </div>
 
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
-    <a href="../remoteprofile.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
-    <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
-    <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
-  </nav>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display: none;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+      <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
+      <a href="../remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
+      <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
+      <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div>
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-white" style="padding: 48px;">
+        <span class="w3-jumbo w3-hide-small">Start something that matters</span><br />
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br />
+        <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+        <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+      </div>
+      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding: 24px 48px;">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+    </header>
 
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+      <p>2020 - UNIVERSITÄT REGENSBURG</p>
+      <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
+    </footer>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
-  <p>2020 - UNIVERSITÄT REGENSBURG</p>
-  <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
-</footer>
-
-<script src="../resources/js/general.js"></script>
-<script>
-</script>
-
-
-</body>
+    <script src="../resources/js/general.js"></script>
+    <script></script>
+  </body>
 </html>

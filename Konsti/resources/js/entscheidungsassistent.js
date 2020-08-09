@@ -1,3 +1,3 @@
-function showAllMethods(){
- document.getElementById("methods").classList.remove("hidden");
+function showAllMethods() {
+  document.getElementById("methods").classList.remove("hidden");
 }

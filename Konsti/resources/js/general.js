@@ -12,5 +12,5 @@ function w3_open() {
 
 // Close the sidebar with the close button
 function w3_close() {
-    mySidebar.style.display = "none";
+  mySidebar.style.display = "none";
 }

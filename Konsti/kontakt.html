@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
+  <title>Remote Studien - Kontakt</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="resources/css/general.css">
-<link rel="stylesheet" href="resources/css/about.css">
+  <link rel="stylesheet" href="resources/css/general.css" />
+  <link rel="stylesheet" href="resources/css/about.css" />
 
-<style>
-</style>
-<body>
+  <style></style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="resources/img/ur-logo-bildmarke-grau.png" /> REMOTE STUDIEN</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+          <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
+          <a href="remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
+          <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
+          <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="resources/img/ur-logo-bildmarke-grau.png"> REMOTE STUDIEN</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-      <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
-      <a href="remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
-      <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
-      <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display: none;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+      <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
+      <a href="remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
+      <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
+      <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-  <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
-  <a href="remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
-  <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
-  <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
-</nav>
-
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">Kontakt</h3>
-  <p class="w3-center w3-large">Das Team hinter diesem Projekt</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <img src="resources/img/sarah.jpg" alt="Sarah Feix">
-      <p class="w3-large">Sarah Feix</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      <p><a href="mailto:Sarah.Feix@stud.uni-regensburg.de" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button></a></p>
-
+    <!-- About Section -->
+    <div class="w3-container" style="padding: 128px 16px;" id="about">
+      <h3 class="w3-center">Kontakt</h3>
+      <p class="w3-center w3-large">Das Team hinter diesem Projekt</p>
+      <div class="w3-row-padding w3-center" style="margin-top: 64px;">
+        <div class="w3-quarter">
+          <img src="resources/img/sarah.jpg" alt="Sarah Feix" />
+          <p class="w3-large">Sarah Feix</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>
+            <a href="mailto:Sarah.Feix@stud.uni-regensburg.de" style="text-decoration: none;">
+              <button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button>
+            </a>
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img src="resources/img/sahara.jpg" alt="Sarah Graf" />
+          <p class="w3-large">Sarah Graf</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>
+            <a href="mailto:Sarah.Graf@stud.uni-regensburg.de" style="text-decoration: none;">
+              <button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button>
+            </a>
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img src="resources/img/konsti.jpg" alt="Konstantin Kulik" />
+          <p class="w3-large">Konstantin Kulik</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>
+            <a href="mailto:Konstantin.Kulik@stud.uni-regensburg.de" style="text-decoration: none;">
+              <button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button>
+            </a>
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img src="resources/img/nadine.jpg" alt="Nadine Schweiger" />
+          <p class="w3-large">Nadine Schweiger</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <p>
+            <a href="mailto:Nadine.Schweiger@stud.uni-regensburg.de" style="text-decoration: none;">
+              <button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button>
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="w3-quarter">
-      <img src="resources/img/sahara.jpg" alt="Sarah Graf">
-      <p class="w3-large">Sarah Graf</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      <p><a href="mailto:Sarah.Graf@stud.uni-regensburg.de" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button></a></p>
 
-    </div>
-    <div class="w3-quarter">
-      <img src="resources/img/konsti.jpg" alt="Konstantin Kulik">
-      <p class="w3-large">Konstantin Kulik</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      <p><a href="mailto:Konstantin.Kulik@stud.uni-regensburg.de" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button></a></p>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+      <p>2020 - UNIVERSITÄT REGENSBURG</p>
+      <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
+    </footer>
 
-    </div>
-    <div class="w3-quarter">
-      <img src="resources/img/nadine.jpg" alt="Nadine Schweiger">
-      <p class="w3-large">Nadine Schweiger</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      <p><a href="mailto:Nadine.Schweiger@stud.uni-regensburg.de" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Kontaktieren</button></a></p>
-
-    </div>
-  </div>
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
-  <p>2020 - UNIVERSITÄT REGENSBURG</p>
-  <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
-</footer>
-
-<script src="resources/js/general.js"></script>
-<script>
-</script>
-
-</body>
+    <script src="resources/js/general.js"></script>
+    <script></script>
+  </body>
 </html>
