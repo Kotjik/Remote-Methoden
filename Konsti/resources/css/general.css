@@ -29,3 +29,17 @@ body, html {
 .hidden{
   display: none;
 }
+
+.picture_column {
+	width: 100%;
+	line-height: 0px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: auto;
+	color: #A3A3A3;
+}
+
+.picture{
+	max-width: 100%;
+	height: auto;
+}

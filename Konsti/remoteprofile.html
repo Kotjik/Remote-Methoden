@@ -75,7 +75,7 @@
             <h3  class="profile-title">Think aloud</h3>
             <p class="w3-opacity">Balbalblabal</p>
             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+            <p><a href="#" style="text-decoration: none;"><button id=thinkaloud onClick="details1()" class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
           </div>
         </div>
       </div>
@@ -173,6 +173,13 @@ function searchRemoteProfiles(){
 
   }
 }
+	
+  function details1() {
+  document.getElementById("thinkaloud");
+   window.location = "thinkaloud.html"; 
+}
+	
+	
 </script>
 
 </body>
