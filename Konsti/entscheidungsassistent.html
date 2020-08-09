@@ -15,7 +15,7 @@
       <!-- Navbar (sit on top) -->
       <div class="w3-top">
          <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" style="max-width: 100%; height: auto;" src="resources/img/ur-logo-bildmarke-grau.png"></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" style="max-width: 100%; height: auto;" src="resources/img/ur-logo-bildmarke-grau.png"> REMOTE STUDIEN</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
                <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
@@ -186,14 +186,18 @@
              </div>
            </div>
            <div class="row">
-               <!--<button onClick="showAllMethods();">Passende Remote-Methoden anzeigen</button> -->
-
+               <!--
+               <button onClick="showAllMethods();">Passende Remote-Methoden anzeigen</button>
+               <input id="button" onClick="showAllMethods();" type="submit" value="Passende Remote-Methoden anzeigen">
+              -->
                 <br/>
-                 <input id="button" onClick="showAllMethods();" type="submit" value="Passende Remote-Methoden anzeigen">
+                <button id="button" onClick="showAllMethods();" class="w3-button w3-black" type="submit">
+                  <i class="fas fa-search"></i> Passende Remote-Methoden finden
+                </button>
             </div>
           </form>
          </div>
-         <div id="methods" class="w3-row-padding w3-grayscale hidden" style="margin-top:64px">
+         <div id="methods" class="w3-row-padding hidden" style="margin-top:64px">
             <div class="w3-col l3 m6 w3-margin-bottom">
                <div class="w3-card">
                   <img src="https://picsum.photos/300/200?random=1" alt="Sarah Feix" style="width:100%">
