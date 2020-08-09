@@ -9,6 +9,7 @@
 <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="resources/css/general.css">
+<link rel="stylesheet" href="../resources/css/thinkaloud.css">
 
 <style>
 
@@ -18,14 +19,14 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="resources/img/ur-logo-bildmarke-grau.png"> REMOTE STUDIEN</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png"> REMOTE STUDIEN</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-        <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
-        <a href="remoteprofile.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
-        <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
-        <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
+        <a href="../entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
+        <a href="../remoteprofile.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
+        <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
+        <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -38,11 +39,11 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-    <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
-    <a href="remoteprofile.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
-    <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
-    <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
+    <a href="../remoteprofile.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
+    <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
+    <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
   </nav>
 
 <!-- Header with full-height image -->
@@ -71,32 +72,10 @@
   <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
 </footer>
 
+<script src="../resources/js/general.js"></script>
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
 </script>
+
 
 </body>
 </html>

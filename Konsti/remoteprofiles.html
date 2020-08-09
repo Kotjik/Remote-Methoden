@@ -25,7 +25,7 @@
       <div class="w3-right w3-hide-small">
         <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
         <a href="entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a>
-        <a href="remoteprofile.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
+        <a href="remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
         <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
         <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
       </div>
@@ -42,7 +42,7 @@
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
     <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a>
-    <a href="remoteprofile.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
+    <a href="remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
     <a href="entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
     <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
   </nav>
@@ -75,7 +75,7 @@
             <h3  class="profile-title">Think aloud</h3>
             <p class="w3-opacity">Balbalblabal</p>
             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <p><a href="#" style="text-decoration: none;"><button id=thinkaloud onClick="details1()" class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
+            <p><a href="detailsites/thinkaloud.html" style="text-decoration: none;"><button id=thinkaloud class="w3-button w3-light-grey w3-block"><i class="fas fa-external-link-alt"></i> Zum Remote-Profil</button></a></p>
           </div>
         </div>
       </div>
@@ -132,54 +132,9 @@
   <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
 </footer>
 
+<script src="resources/js/general.js"></script>
+<script src="resources/js/remoteprofiles.js"></script>
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-
-let allProfileContainers = document.getElementsByClassName("profile");
-function searchRemoteProfiles(){
-  let query = document.getElementById("search").value.toLowerCase();
-  for(i = 0; i < allProfileContainers.length; i++){
-
-
-    if(allProfileContainers[i].querySelector(".profile-title").textContent.toLowerCase().includes(query)){
-      allProfileContainers[i].classList.remove("hidden");
-
-    }else{
-      allProfileContainers[i].classList.add("hidden");
-    }
-
-  }
-}
-	
-  function details1() {
-  document.getElementById("thinkaloud");
-   window.location = "thinkaloud.html"; 
-}
-	
-	
 </script>
 
 </body>
