@@ -51,7 +51,7 @@
             </div>
             <div class="col-75">
               <select name="entwicklungsphase" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Analyse</option>
                 <option value="">Konzept / Entwicklung</option>
                 <option value="">Umsetzung</option>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-75">
               <select name="ergebnisse" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Quantitativ</option>
                 <option value="">Qualitativ</option>
                 <option value="">Beides</option>
@@ -78,7 +78,7 @@
             </div>
             <div class="col-75">
               <select name="study" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Nutzerstudie</option>
                 <option value="">Usability Studie</option>
               </select>
@@ -90,7 +90,7 @@
             </div>
             <div class="col-75">
               <select name="ressources" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Option1</option>
                 <option value="">Option2</option>
               </select>
@@ -102,7 +102,7 @@
             </div>
             <div class="col-75">
               <select name="time" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Kürzer als 2 Wochen</option>
                 <option value="">Ungefähr 1 Monat</option>
                 <option value="">Mehr als 3 Monate</option>
@@ -115,7 +115,7 @@
             </div>
             <div class="col-75">
               <select name="teilnehmeranzahl" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Weniger als 10</option>
                 <option value="">10 bis 50</option>
                 <option value="">Über 50</option>
@@ -128,7 +128,7 @@
             </div>
             <div class="col-75">
               <select name="teilnehmerart" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">User / Testpersonen / Zielgruppe</option>
                 <option value="">Externe Experten</option>
                 <option value="">Stakeholder</option>
@@ -142,7 +142,7 @@
             </div>
             <div class="col-75">
               <select name="tools" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Option 1</option>
                 <option value="">Option 2</option>
                 <option value="">Option 3</option>
@@ -155,7 +155,7 @@
             </div>
             <div class="col-75">
               <select name="software" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Ja</option>
                 <option value="">Nein</option>
               </select>
@@ -167,7 +167,7 @@
             </div>
             <div class="col-75">
               <select name="hardware" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Ja</option>
                 <option value="">Nein</option>
               </select>
@@ -179,19 +179,22 @@
             </div>
             <div class="col-75">
               <select name="hardware" class="minimal">
-                <option value="" selected>-Keine Auswahl-</option>
+                <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Ja</option>
                 <option value="">Nein</option>
               </select>
             </div>
           </div>
+          <br/>
           <div class="row">
             <!--
                <button onClick="showAllMethods();">Passende Remote-Methoden anzeigen</button>
                <input id="button" onClick="showAllMethods();" type="submit" value="Passende Remote-Methoden anzeigen">
               -->
-            <br />
-            <button id="button" onClick="showAllMethods();" class="w3-button w3-black" type="submit"><i class="fas fa-search"></i> Passende Remote-Methoden finden</button>
+
+            <button id="button_findMethods" onClick="showAllMethods();" class="w3-button w3-black form-button" type="submit"><i class="fas fa-search"></i> Passende Remote-Methoden finden</button>
+            <button id="button_reset" onClick="resetAllSelections();" class="w3-button w3-orange form-button"><i class="fas fa-undo"></i> Auswahl zurücksetzen</button>
+
           </div>
         </form>
       </div>
@@ -283,7 +286,7 @@
     </div>
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</a>
+      <button class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
       <p>2020 - UNIVERSITÄT REGENSBURG</p>
       <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
     </footer>

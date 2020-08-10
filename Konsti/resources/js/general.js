@@ -14,3 +14,8 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
 }
+
+// Scroll to top of page smoothly
+function scrollToTopSmooth(){
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
