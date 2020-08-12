@@ -15,3 +15,17 @@ input[type="text"] {
 form {
   padding: 0px 16px;
 }
+
+#search-bar{
+  position: -webkit-sticky; /*safari*/
+  position: sticky;
+  top: 65px;
+}
+
+#search-bar-icon-clear {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+}
