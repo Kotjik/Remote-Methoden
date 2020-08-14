@@ -18,7 +18,7 @@ html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-color: #666;
+  background-color: #FFFFFF;
   background-image: url("/w3images/mac.jpg");
   min-height: 100%;
 }
@@ -51,6 +51,13 @@ html {
 .picture{
 	max-width: 100%;
 	height: auto;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
 }
 
 
