@@ -38,7 +38,7 @@ html {
 .hidden {
   display: none;
 }
-/*picture responsive*/
+
 .picture_column {
 	width: 100%;
 	line-height: 0px;	
@@ -60,4 +60,101 @@ th, td {
   padding: 15px;
 }
 
+#home {
+	margin-top: 300px;
+	margin-bottom: 300px;
+}
+@media screen and (max-width: 600px) {
+	
+	#home { 
+    width: 100%;
+    margin-top: 600px;
+	margin-bottom: 600px;
+	
+	}
+		
+	.picture_column {
+	width: 100%;
+	line-height: 0px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 60px;
+	color: #A3A3A3;
+}
+
+.picture{
+	max-width: 100%;
+	height: auto;
+}
+  }
+
+@media (min-width: 768px) and (max-width: 1096px) {
+	
+	#home { 
+    width: 100%;
+    margin-top: 300px;
+	margin-bottom: 600px;
+	
+	}
+		
+	.picture_column {
+	width: 100%;
+	line-height: 0px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 100px;
+	color: #A3A3A3;
+}
+
+.picture{
+	max-width: 100%;
+	height: auto;
+}
+}
+
+@media (min-width: 321px)and (max-width: 600px) {
+		#home { 
+    width: 100%;
+    margin-top: 600px;
+	margin-bottom: 600px;
+	
+	}
+		
+	.picture_column {
+	width: 100%;
+	line-height: 0px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 70px;
+	color: #A3A3A3;
+}
+
+.picture{
+	max-width: 100%;
+	height: auto;
+}
+}
+
+@media (min-width: 600px)and (max-width: 767px) {
+		#home { 
+    width: 100%;
+    margin-top: 400px;
+	margin-bottom: 600px;
+	
+	}
+		
+	.picture_column {
+	width: 100%;
+	line-height: 0px;	
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 170px;
+	color: #A3A3A3;
+}
+
+.picture{
+	max-width: 100%;
+	height: auto;
+}
+}
 
