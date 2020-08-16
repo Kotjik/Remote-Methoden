@@ -8,11 +8,14 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-body,
+/* Auskommentiert, da "position:sticky" bei der Navigationbar
+   ansonsten nicht wirklich funktioniert */
+/* body,
 html {
   height: 100%;
   line-height: 1.8;
-}
+} */
+
 
 /* Full height image header */
 .bgimg-1 {
@@ -20,7 +23,7 @@ html {
   background-size: cover;
   background-color: #666;
   background-image: url("/w3images/mac.jpg");
-  min-height: 100%;
+  height: 100vh;
 }
 
 .w3-bar .w3-button {
@@ -31,8 +34,17 @@ html {
   width: 30px;
 }
 
+#navigation-bar{
+  /* width: 100%; */
+  position: -webkit-sticky; /*safari*/
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
 #mySidebar {
   width: auto;
+  z-index:999;
 }
 
 .hidden {
