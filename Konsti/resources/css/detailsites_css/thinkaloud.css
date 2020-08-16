@@ -61,15 +61,15 @@ th, td {
 }
 
 #home {
-	margin-top: 300px;
+	margin-top: 20px;
 	margin-bottom: 300px;
 }
 @media screen and (max-width: 600px) {
 	
 	#home { 
     width: 100%;
-    margin-top: 600px;
-	margin-bottom: 600px;
+    margin-top: 40px;
+	margin-bottom: 40px;
 	
 	}
 		
@@ -92,8 +92,8 @@ th, td {
 	
 	#home { 
     width: 100%;
-    margin-top: 300px;
-	margin-bottom: 600px;
+    margin-top: 20px;
+	margin-bottom: 40px;
 	
 	}
 		
@@ -115,8 +115,8 @@ th, td {
 @media (min-width: 321px)and (max-width: 600px) {
 		#home { 
     width: 100%;
-    margin-top: 600px;
-	margin-bottom: 600px;
+    margin-top: 20px;
+	margin-bottom: 40px;
 	
 	}
 		
@@ -125,7 +125,7 @@ th, td {
 	line-height: 0px;	
 	padding-left: 0px;
 	padding-right: 0px;
-	margin-top: 70px;
+	margin-top: 58px;
 	color: #A3A3A3;
 }
 
@@ -138,8 +138,8 @@ th, td {
 @media (min-width: 600px)and (max-width: 767px) {
 		#home { 
     width: 100%;
-    margin-top: 400px;
-	margin-bottom: 600px;
+    margin-top: 20px;
+	margin-bottom: 40px;
 	
 	}
 		
