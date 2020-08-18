@@ -43,11 +43,136 @@
     <div class="w3-container" style="padding: 128px 16px;">
       <h3 class="w3-center">Entscheidungsassistent</h3>
       <p class="w3-center w3-large">Sie wissen nicht welche Methode Sie benutzen müssen? Beantworten Sie ein paar Fragen und wir zeigen Ihnen, welche für Sie in Frage kommen.</p>
+
+
+      <!-- Filtermöglichkeiten -->
       <div class="container w3-large" id="form">
         <form action="/action_page.php">
+
+          <!--Filteroption-->
           <div class="row">
             <div class="col-25">
-              <label for="entwicklungsphase">Entwicklungsphase</label>
+              <label for="synchronität">Synchronität</label>
+            </div>
+            <div class="col-75">
+              <select name="synchronität" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">Synchron</option>
+                <option value="">Asynchron</option>
+                <option value="">Beides</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="moderation">Moderation</label>
+            </div>
+            <div class="col-75">
+              <select name="moderation" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">Moderiert</option>
+                <option value="">Automatisiert</option>
+                <option value="">Beides</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="kommunikation">Art der Kommunikation</label>
+            </div>
+            <div class="col-75">
+              <select name="kommunikation" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">???</option>
+                <option value="">???</option>
+                <option value="">???</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="time">Zeitaufwand</label>
+            </div>
+            <div class="col-75">
+              <select name="time" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">Kürzer als 2 Wochen</option>
+                <option value="">Ungefähr 1 Monat</option>
+                <option value="">Mehr als 3 Monate</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="ressourcen">Ressourcen</label>
+            </div>
+            <div class="col-75">
+              <select name="ressourcen" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">Gering</option>
+                <option value="">Mittel</option>
+                <option value="">Hoch</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="teilnehmeranzahl">Anzahl der Teilnehmer</label>
+            </div>
+            <div class="col-75">
+              <select name="teilnehmeranzahl" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">Weniger als 10</option>
+                <option value="">10 bis 50</option>
+                <option value="">Über 50</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="teilnehmerart">Art der Teilnehmer</label>
+            </div>
+            <div class="col-75">
+              <select name="teilnehmerart" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">User / Testpersonen / Zielgruppe</option>
+                <option value="">Externe Experten</option>
+                <option value="">Stakeholder</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="tools">Tools</label>
+            </div>
+            <div class="col-75">
+              <select name="tools" class="minimal">
+                <option value="no_selection" selected>-Keine Auswahl-</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Filteroption-->
+          <div class="row">
+            <div class="col-25">
+              <label for="entwicklungsphase">Phase der Entwicklung</label>
             </div>
             <div class="col-75">
               <select name="entwicklungsphase" class="minimal">
@@ -59,6 +184,8 @@
               </select>
             </div>
           </div>
+
+          <!--Filteroption-->
           <div class="row">
             <div class="col-25">
               <label for="ergebnisse">Art der Ergebnisse</label>
@@ -72,107 +199,11 @@
               </select>
             </div>
           </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="ressourcen">Ressourcen</label>
-            </div>
-            <div class="col-75">
-              <select name="ressourcen" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Wenig</option>
-                <option value="">Option2</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="time">Wie viel Zeit haben Sie für die Studie?</label>
-            </div>
-            <div class="col-75">
-              <select name="time" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Kürzer als 2 Wochen</option>
-                <option value="">Ungefähr 1 Monat</option>
-                <option value="">Mehr als 3 Monate</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="teilnehmeranzahl">Wie viele Teilnehmer peilen Sie für die Durchführung der Studie an?</label>
-            </div>
-            <div class="col-75">
-              <select name="teilnehmeranzahl" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Weniger als 10</option>
-                <option value="">10 bis 50</option>
-                <option value="">Über 50</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="teilnehmerart">Welche Art von Teilnehmern stehen zur Verfügung?</label>
-            </div>
-            <div class="col-75">
-              <select name="teilnehmerart" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">User / Testpersonen / Zielgruppe</option>
-                <option value="">Externe Experten</option>
-                <option value="">Stakeholder</option>
-              </select>
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="col-25">
-              <label for="tools">Welche Toolts stehen Ihnen zur Verfügung?</label>
-            </div>
-            <div class="col-75">
-              <select name="tools" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Option 1</option>
-                <option value="">Option 2</option>
-                <option value="">Option 3</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="software">Benötigt der Proband zur Durchfphrung der Studie zusätzliche Software?</label>
-            </div>
-            <div class="col-75">
-              <select name="software" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Ja</option>
-                <option value="">Nein</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="hardware">Benötigt der Proband zur Durchfphrung der Studie zusätzliche (nicht gängige) Hardware?</label>
-            </div>
-            <div class="col-75">
-              <select name="hardware" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Ja</option>
-                <option value="">Nein</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="hardware">Ist es möglich diese Hardware per Post zu verschicken?</label>
-            </div>
-            <div class="col-75">
-              <select name="hardware" class="minimal">
-                <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Ja</option>
-                <option value="">Nein</option>
-              </select>
-            </div>
-          </div>
+
+
+
+
           <br/>
           <div class="row">
             <!--
