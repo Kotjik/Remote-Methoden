@@ -2,8 +2,9 @@ let allProfileContainers = document.getElementsByClassName("profile");
 let searchInput = document.getElementById("search-input");
 let clearButton = document.getElementById("search-bar-icon-clear");
 searchRemoteProfiles();
-reduceKurzbeschreibung();
+reduceAllKurzbeschreibung();
 
+//functions for Searchbar
 function searchRemoteProfiles() {
   let query = searchInput.value.toLowerCase();
   for (i = 0; i < allProfileContainers.length; i++) {
@@ -32,7 +33,7 @@ function clearInput(){
 }
 
 //Kurzbeschreibungen per JS anpassen?
-function reduceKurzbeschreibung(){
+function reduceAllKurzbeschreibung(){
   for (i = 0; i < allProfileContainers.length; i++) {
     let currentKurzbeschreibungElement = allProfileContainers[i].querySelector(".kurzbeschreibung");
     let currentKurzbeschreibungString = currentKurzbeschreibungElement.textContent;
