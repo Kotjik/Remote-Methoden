@@ -47,19 +47,18 @@
 
       <!-- Filtermöglichkeiten -->
       <div class="container w3-large" id="form">
-        <form action="/action_page.php">
 
           <!--Filteroption-->
           <div class="row">
             <div class="col-25">
-              <label for="synchronität">Synchronität</label>
+              <label for="synchronitaet">Synchronität</label>
             </div>
             <div class="col-75">
-              <select name="synchronität" class="minimal">
+              <select name="synchronitaet" id="synchronitaet" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Synchron</option>
-                <option value="">Asynchron</option>
-                <option value="">Beides</option>
+                <option value="synchron">Synchron</option>
+                <option value="asynchron">Asynchron</option>
+                <option value="beides">Beides</option>
               </select>
             </div>
           </div>
@@ -70,11 +69,11 @@
               <label for="moderation">Moderation</label>
             </div>
             <div class="col-75">
-              <select name="moderation" class="minimal">
+              <select name="moderation" id="moderation" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Moderiert</option>
-                <option value="">Automatisiert</option>
-                <option value="">Beides</option>
+                <option value="moderiert">Moderiert</option>
+                <option value="automatisiert">Automatisiert</option>
+                <option value="beides">Beides</option>
               </select>
             </div>
           </div>
@@ -85,7 +84,7 @@
               <label for="kommunikation">Art der Kommunikation</label>
             </div>
             <div class="col-75">
-              <select name="kommunikation" class="minimal">
+              <select name="kommunikation"  id="synchronitaet" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">???</option>
                 <option value="">???</option>
@@ -97,14 +96,14 @@
           <!--Filteroption-->
           <div class="row">
             <div class="col-25">
-              <label for="time">Zeitaufwand</label>
+              <label for="zeit">Zeitaufwand</label>
             </div>
             <div class="col-75">
-              <select name="time" class="minimal">
+              <select name="zeit" id="zeit" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Kürzer als 2 Wochen</option>
-                <option value="">Ungefähr 1 Monat</option>
-                <option value="">Mehr als 3 Monate</option>
+                <option value="gering">Gering</option>
+                <option value="mittel">Mittel</option>
+                <option value="hoch">Hoch</option>
               </select>
             </div>
           </div>
@@ -115,11 +114,11 @@
               <label for="ressourcen">Ressourcen</label>
             </div>
             <div class="col-75">
-              <select name="ressourcen" class="minimal">
+              <select name="ressourcen" id="ressourcen" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Gering</option>
-                <option value="">Mittel</option>
-                <option value="">Hoch</option>
+                <option value="gering">Gering</option>
+                <option value="mittel">Mittel</option>
+                <option value="hoch">Hoch</option>
               </select>
             </div>
           </div>
@@ -130,11 +129,11 @@
               <label for="teilnehmeranzahl">Anzahl der Teilnehmer</label>
             </div>
             <div class="col-75">
-              <select name="teilnehmeranzahl" class="minimal">
+              <select name="teilnehmeranzahl" id="teilnehmeranzahl" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Weniger als 10</option>
-                <option value="">10 bis 50</option>
-                <option value="">Über 50</option>
+                <option value="0-19">Weniger als 20</option>
+                <option value="20-100">20 bis 1000</option>
+                <option value="100+">über 100</option>
               </select>
             </div>
           </div>
@@ -145,11 +144,11 @@
               <label for="teilnehmerart">Art der Teilnehmer</label>
             </div>
             <div class="col-75">
-              <select name="teilnehmerart" class="minimal">
+              <select name="teilnehmerart" id="teilnehmerart" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">User / Testpersonen / Zielgruppe</option>
-                <option value="">Externe Experten</option>
-                <option value="">Stakeholder</option>
+                <option value="anfänger">Anfänger</option>
+                <option value="experte">Experte</option>
+                <option value="stakeholder">Stakeholder</option>
               </select>
             </div>
           </div>
@@ -160,7 +159,7 @@
               <label for="tools">Tools</label>
             </div>
             <div class="col-75">
-              <select name="tools" class="minimal">
+              <select name="tools" id="tools" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">Option 1</option>
                 <option value="">Option 2</option>
@@ -175,12 +174,12 @@
               <label for="entwicklungsphase">Phase der Entwicklung</label>
             </div>
             <div class="col-75">
-              <select name="entwicklungsphase" class="minimal">
+              <select name="entwicklungsphase" id="entwicklungsphase" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Analyse</option>
-                <option value="">Konzept / Entwicklung</option>
-                <option value="">Umsetzung</option>
-                <option value="">Nach der Umsetzung</option>
+                <option value="analyse">Analyse</option>
+                <option value="konzept">Konzept / Entwicklung</option>
+                <option value="umsetzung">Umsetzung</option>
+                <option value="nach-der-umsetzung">Nach der Umsetzung</option>
               </select>
             </div>
           </div>
@@ -191,11 +190,11 @@
               <label for="ergebnisse">Art der Ergebnisse</label>
             </div>
             <div class="col-75">
-              <select name="ergebnisse" class="minimal">
+              <select name="ergebnisse"  id="ergebnisse" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Quantitativ</option>
-                <option value="">Qualitativ</option>
-                <option value="">Beides</option>
+                <option value="quantitativ">Quantitativ</option>
+                <option value="qualitativ">Qualitativ</option>
+                <option value="beides">Beides</option>
               </select>
             </div>
           </div>
@@ -211,18 +210,17 @@
                <input id="button" onClick="showAllMethods();" type="submit" value="Passende Remote-Methoden anzeigen">
               -->
 
-            <button id="button_findMethods" onClick="showAllMethods();" class="w3-button w3-black form-button" type="submit"><i class="fas fa-search"></i> Passende Remote-Methoden finden</button>
+            <button id="button_findMethods" onclick="showWantedProfiles();" class="w3-button w3-black form-button" type="submit"><i class="fas fa-search"></i> Passende Remote-Methoden finden</button>
             <button id="button_reset" onClick="resetAllSelections();" class="w3-button w3-orange form-button"><i class="fas fa-undo"></i> Auswahl zurücksetzen</button>
 
           </div>
-        </form>
       </div>
-      <div id="methods" class="w3-row-padding hidden" style="margin-top: 64px;">
-
+      <div id="profiles-container" class="w3-row-padding hidden">
+        <p id="numberOfProfilesFoundElement" class="w3-center w3-large">Es gibt X Methoden, die deinen Filtereinstellungen entsprechen:</p>
 
 
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/Fokusgruppe.jpg" alt="Sarah Feix" style="width: 100%;" />
             <div class="w3-container">
@@ -237,21 +235,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">moderiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">hoch</p>
-              <p class="hidden ressourcen">hoch</p>
-              <p class="hidden anzahlTeilnehmer">4</p>
-              <p class="hidden artTeilnehmer">Experten, Nutzer</p>
-              <p class="hidden Tools">Zoom, Skype</p>
-              <p class="hidden entwicklungsphase">Analyse</p>
-              <p class="hidden ergebnisse">qualitativ</p>
+              <p class="hidden eigenschaft synchronitaet">synchron</p>
+              <p class="hidden eigenschaft moderation">moderiert</p>
+              <p class="hidden eigenschaft kommunikation">????</p>
+              <p class="hidden eigenschaft zeitaufwand">hoch</p>
+              <p class="hidden eigenschaft ressourcen">hoch</p>
+              <p class="hidden eigenschaft anzahlTeilnehmer">4</p>
+              <p class="hidden eigenschaft artTeilnehmer">Experten, Nutzer</p>
+              <p class="hidden eigenschaft tools">Zoom, Skype</p>
+              <p class="hidden eigenschaft entwicklungsphase">Analyse</p>
+              <p class="hidden eigenschaft ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/Interview.jpg" alt="Sarah Feix" style="width: 100%;" />
             <div class="w3-container">
@@ -273,14 +271,14 @@
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">11</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">Zoom, Skype</p>
+              <p class="hidden tools">Zoom, Skype</p>
               <p class="hidden entwicklungsphase">Analyse</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/Fragebogen.jpg" alt="Sarah Feix" style="width: 100%;" />
             <div class="w3-container">
@@ -302,14 +300,14 @@
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">200</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">Google Docs, LimeSurvey</p>
+              <p class="hidden tools">Google Docs, LimeSurvey</p>
               <p class="hidden entwicklungsphase">Analyse</p>
               <p class="hidden ergebnisse">quantitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/TaskAnalysis.jpg" alt="Task Analysis" style="width: 100%;" />
             <div class="w3-container">
@@ -331,14 +329,14 @@
               <p class="hidden ressourcen"></p>
               <p class="hidden anzahlTeilnehmer"></p>
               <p class="hidden artTeilnehmer">r</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse"></p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <!-- <img src="https://picsum.photos/400/150?random=5" alt="Sarah Graf" style="width: 100%;" /> -->
             <img src="resources/img/Vorschaubilder/thinkingaloudDetail.jpg" alt="Thinking Aloud" style="width: 100%;" />
@@ -361,14 +359,14 @@
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">11</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse"></p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/PerformanceMeasurement.jpg" alt="Sarah Graf" style="width: 100%;" />
             <div class="w3-container">
@@ -390,14 +388,14 @@
               <p class="hidden ressourcen"></p>
               <p class="hidden anzahlTeilnehmer"></p>
               <p class="hidden artTeilnehmer"></p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse">quantitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/HeuristicEvaluation.jpg" alt="Konstantin Kulik" style="width: 100%;" />
             <div class="w3-container">
@@ -419,14 +417,14 @@
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">4</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools">Zoom, UserZoom, Drive</p>
+              <p class="hidden tools">Zoom, UserZoom, Drive</p>
               <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
               <p class="hidden ergebnisse">Qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=9" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -448,14 +446,14 @@
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">1</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
               <p class="hidden ergebnisse">Qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=11" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -477,14 +475,14 @@
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">25</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">Notizbuch, Whatsapp, SMS, Facebook, Tools zum Dokumentieren</p>
+              <p class="hidden tools">Notizbuch, Whatsapp, SMS, Facebook, tools zum Dokumentieren</p>
               <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=12" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -506,14 +504,14 @@
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">22</p>
               <p class="hidden artTeilnehmer">Experten</p>
-              <p class="hidden Tools">OptimalSort, SimpleCardSort, UsabilityTest Card Sorting, xSort, CardSort tool von UXtweak, userzoom</p>
+              <p class="hidden tools">OptimalSort, SimpleCardSort, UsabilityTest Card Sorting, xSort, CardSort tool von UXtweak, userzoom</p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse">beides</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=13" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -535,14 +533,14 @@
               <p class="hidden ressourcen">sehr hoch</p>
               <p class="hidden anzahlTeilnehmer">12</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools">Remote Eyetracking Sensoren, Online Tools für Eyetracking, Eyetracking Brillen</p>
+              <p class="hidden tools">Remote Eyetracking Sensoren, Online tools für Eyetracking, Eyetracking Brillen</p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse">Qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=14" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -564,20 +562,20 @@
               <p class="hidden ressourcen">hoch</p>
               <p class="hidden anzahlTeilnehmer">5</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse"></p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=15" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
               <h3 class="profile-title">Web Analytics</h3>
               <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Die Web Analytics helfen Fragen über Besucher einer Website zu beantworten und wie sie mit der Website interagieren. Dafür werden Tools verwendet wie zum Beispiel Google Analytics, die aufzeichnen wenn ein Nutzer auf die Website kommt. Hierbei wird registriert wie sich der Nutzer verhält, wie er auf die Website gekommen ist, in welcher Reihenfolge er die Screens besucht und mehr. Diese Verhaltensweisen werden kombiniert und in einen Datensatz umgewandelt der nur noch ausgewertet werden muss.</p>
+              <p class="kurzbeschreibung">Die Web Analytics helfen Fragen über Besucher einer Website zu beantworten und wie sie mit der Website interagieren. Dafür werden tools verwendet wie zum Beispiel Google Analytics, die aufzeichnen wenn ein Nutzer auf die Website kommt. Hierbei wird registriert wie sich der Nutzer verhält, wie er auf die Website gekommen ist, in welcher Reihenfolge er die Screens besucht und mehr. Diese Verhaltensweisen werden kombiniert und in einen Datensatz umgewandelt der nur noch ausgewertet werden muss.</p>
               <p>
                 <a href="detailsites/webanalytics.html" style="text-decoration: none;">
                   <button class="w3-button w3-light-grey w3-block">
@@ -586,21 +584,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">syncrhon</p>
+              <p class="hidden synchronitaet">synchron</p>
               <p class="hidden moderation">automatisiert</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">100</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">Google Analytics</p>
+              <p class="hidden tools">Google Analytics</p>
               <p class="hidden entwicklungsphase">Analyse</p>
               <p class="hidden ergebnisse">quantitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=16" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -622,14 +620,14 @@
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">5</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=17" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -644,21 +642,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">syncrhon</p>
+              <p class="hidden synchronitaet">synchron</p>
               <p class="hidden moderation">moderiert</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">1</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools">Textprogramm/Grafikprogramm</p>
+              <p class="hidden tools">Textprogramm/Grafikprogramm</p>
               <p class="hidden entwicklungsphase">Analyse</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=19" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -680,14 +678,14 @@
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">1</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse"></p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=20" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -709,14 +707,14 @@
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">1</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse"></p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=21" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -731,21 +729,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">syncrhon</p>
+              <p class="hidden synchronitaet">synchron</p>
               <p class="hidden moderation">moderiert</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">1</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools">Stopuhr</p>
+              <p class="hidden tools">Stopuhr</p>
               <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
               <p class="hidden ergebnisse">quantitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=22" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -762,21 +760,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asyncrhon</p>
+              <p class="hidden synchronitaet">asynchron</p>
               <p class="hidden moderation">automatisiert</p>
               <p class="hidden kommunikation"></p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">hoch</p>
               <p class="hidden anzahlTeilnehmer">12</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
               <p class="hidden ergebnisse">Quantitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=23" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -791,21 +789,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">syncrhon</p>
+              <p class="hidden synchronitaet">synchron</p>
               <p class="hidden moderation">moderiert</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">4</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools">Userzoom</p>
+              <p class="hidden tools">Userzoom</p>
               <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=24" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -820,21 +818,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">neides</p>
+              <p class="hidden synchronitaet">beides</p>
               <p class="hidden moderation">beides</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">7</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools">ProtoPie, Balsamiq</p>
+              <p class="hidden tools">ProtoPie, Balsamiq</p>
               <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
               <p class="hidden ergebnisse">Qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=25" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -856,14 +854,14 @@
               <p class="hidden ressourcen">hoch</p>
               <p class="hidden anzahlTeilnehmer">1000</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">Video-/Tonaufnahmegerät</p>
+              <p class="hidden tools">Video-/Tonaufnahmegerät</p>
               <p class="hidden entwicklungsphase">Umsetzung</p>
               <p class="hidden ergebnisse">beides</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=26" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -885,14 +883,14 @@
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">1000</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">E-Quest</p>
+              <p class="hidden tools">E-Quest</p>
               <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
               <p class="hidden ergebnisse">quantitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=27" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -907,21 +905,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asyncrhon</p>
+              <p class="hidden synchronitaet">asynchron</p>
               <p class="hidden moderation">automatisiert</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">1</p>
               <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden Tools">stilistische Prinzipien und Empfehlungen</p>
+              <p class="hidden tools">stilistische Prinzipien und Empfehlungen</p>
               <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=28" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -938,21 +936,21 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asyncrhon</p>
+              <p class="hidden synchronitaet">asynchron</p>
               <p class="hidden moderation">automatisiert</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">gering</p>
               <p class="hidden anzahlTeilnehmer">49</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">Usability Hub</p>
+              <p class="hidden tools">Usability Hub</p>
               <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=29" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -976,14 +974,14 @@
               <p class="hidden ressourcen">mittel</p>
               <p class="hidden anzahlTeilnehmer">15</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden Tools">Kamera</p>
+              <p class="hidden tools">Kamera</p>
               <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=30" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -998,14 +996,14 @@
                 </a>
               </p>
               <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">syncrhon</p>
+              <p class="hidden synchronitaet">synchron</p>
               <p class="hidden moderation">moderiert</p>
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen"></p>
               <p class="hidden anzahlTeilnehmer"></p>
               <p class="hidden artTeilnehmer">Anfänger, Experte, Oberse</p>
-              <p class="hidden Tools"></p>
+              <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse"></p>
             </div>
