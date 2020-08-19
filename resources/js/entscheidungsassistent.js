@@ -55,7 +55,7 @@ let synchronitaet_selector = document.querySelector("#synchronitaet"),
     kommunikation_selector = document.querySelector("#kommunikation"),
     zeit_selector = document.querySelector("#zeit"),
     ressourcen_selector = document.querySelector("#ressourcen"),
-    teilnehmeranzahl_selector = document.querySelector("#teilnehmerzahl"),
+    teilnehmeranzahl_selector = document.querySelector("#teilnehmeranzahl"),
     teilnehmerart_selector = document.querySelector("#teilnehmerart"),
     tools_selector = document.querySelector("#tools"),
     entwicklungsphase_selector = document.querySelector("#entwicklungsphase"),
@@ -84,72 +84,107 @@ function showWantedProfiles(){
 
     for(j = 0; j < allSelections.length; j++){
       switch(allSelections[j]){
+        // Auswahl: syncrhon | asynchron | beides
         case synchronitaet_selector:
           if(synchronitaet_selector.value != "no_selection"){
-            if(synchronitaet_selector.value != synchronitaet_eigenschaft){
+            if(synchronitaet_selector.value != synchronitaet_eigenschaft
+               || synchronitaet_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: moderiert | automatisiert | beides
         case moderation_selector:
           if(moderation_selector.value != "no_selection"){
-            if(moderation_selector.value != moderation_eigenschaft){
+            if(moderation_selector.value != moderation_eigenschaft
+               || moderation_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: TODO
         case kommunikation_selector:
           if(kommunikation_selector.value != "no_selection"){
-            if(kommunikation_selector.value != kommunikation_eigenschaft){
+            if(kommunikation_selector.value != kommunikation_eigenschaft
+               || kommunikation_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: gering | mittel | hoch
         case zeit_selector:
           if(zeit_selector.value != "no_selection"){
-            if(zeit_selector.value != zeit_eigenschaft){
+            if(zeit_selector.value != zeit_eigenschaft
+               || zeit_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: gering | mittel | hoch
         case ressourcen_selector:
           if(ressourcen_selector.value != "no_selection"){
-            if(ressourcen_selector.value != ressourcen_eigenschaft){
+            if(ressourcen_selector.value != ressourcen_eigenschaft
+               || ressourcen_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: Weniger als 20 = gering | 20 bis 99 = mittel | über 90 = hoch
         case teilnehmeranzahl_selector:
           if(teilnehmeranzahl_selector.value != "no_selection"){
-            if(teilnehmeranzahl_selector.value != teilnehmeranzahl_eigenschaft){
+            // if(teilnehmeranzahl_selector.value.includes(teilnehmeranzahl_eigenschaft)){
+            if(!teilnehmeranzahl_eigenschaft.includes(teilnehmeranzahl_selector.value)
+               || teilnehmeranzahl_selector == ""){
+
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: anfänger | experte | stakeholder
         case teilnehmerart_selector:
           if(teilnehmerart_selector.value != "no_selection"){
-            if(teilnehmerart_selector.value != teilnehmerart_eigenschaft){
+            // if(teilnehmerart_selector.value != teilnehmerart_eigenschaft){
+            if(!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)
+               || teilnehmerart_eigenschaft == ""){
+
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: TODO
         case tools_selector:
           if(tools_selector.value != "no_selection"){
-            if(tools_selector.value != tools_eigenschaft){
+            if(tools_selector.value != tools_eigenschaft
+               || tools_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: analyse | konzept | nachUmsetzung
         case entwicklungsphase_selector:
           if(entwicklungsphase_selector.value != "no_selection"){
-            if(entwicklungsphase_selector.value != entwicklungsphase_eigenschaft){
+            if(!entwicklungsphase_selector.value != entwicklungsphase_eigenschaft
+               || entwicklungsphase_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
           break;
+
+          // Auswahl: quantitativ | qualitativ | beides
         case ergebnisse_selector:
           if(ergebnisse_selector.value != "no_selection"){
-            if(ergebnisse_selector.value != ergebnisse_eigenschaft){
+            // if(ergebnisse_selector.value != ergebnisse_eigenschaft
+            // if(!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)
+            if(!ergebnisse_eigenschaft.includes(ergebnisse_selector.value)
+               || ergebnisse_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
@@ -165,7 +200,6 @@ function showWantedProfiles(){
   }
   srollToMethods();
 
-    //// TODO: Anzahl gefundener Methoden anzeigen lassen!
   updateNumberOfProfilesFoundHTML(numberOfFoundProfiles);
 
 }

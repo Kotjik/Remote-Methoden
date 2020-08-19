@@ -84,7 +84,7 @@
               <label for="kommunikation">Art der Kommunikation</label>
             </div>
             <div class="col-75">
-              <select name="kommunikation"  id="synchronitaet" class="minimal">
+              <select name="kommunikation"  id="kommunikation" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
                 <option value="">???</option>
                 <option value="">???</option>
@@ -131,9 +131,9 @@
             <div class="col-75">
               <select name="teilnehmeranzahl" id="teilnehmeranzahl" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="0-19">Weniger als 20</option>
-                <option value="20-100">20 bis 1000</option>
-                <option value="100+">über 100</option>
+                <option value="gering">Weniger als 20</option>
+                <option value="mittel">20 bis 99</option>
+                <option value="hoch">über 99</option>
               </select>
             </div>
           </div>
@@ -161,7 +161,7 @@
             <div class="col-75">
               <select name="tools" id="tools" class="minimal">
                 <option value="no_selection" selected>-Keine Auswahl-</option>
-                <option value="">Option 1</option>
+                <option value="">Option1</option>
                 <option value="">Option 2</option>
                 <option value="">Option 3</option>
               </select>
@@ -179,7 +179,7 @@
                 <option value="analyse">Analyse</option>
                 <option value="konzept">Konzept / Entwicklung</option>
                 <option value="umsetzung">Umsetzung</option>
-                <option value="nach-der-umsetzung">Nach der Umsetzung</option>
+                <option value="nachumsetzung">Nach der Umsetzung</option>
               </select>
             </div>
           </div>
@@ -240,7 +240,7 @@
               <p class="hidden eigenschaft kommunikation">????</p>
               <p class="hidden eigenschaft zeitaufwand">hoch</p>
               <p class="hidden eigenschaft ressourcen">hoch</p>
-              <p class="hidden eigenschaft anzahlTeilnehmer">4</p>
+              <p class="hidden eigenschaft anzahlTeilnehmer">4 gering</p>
               <p class="hidden eigenschaft artTeilnehmer">Experten, Nutzer</p>
               <p class="hidden eigenschaft tools">Zoom, Skype</p>
               <p class="hidden eigenschaft entwicklungsphase">Analyse</p>
@@ -269,7 +269,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">11</p>
+              <p class="hidden anzahlTeilnehmer">gering 11</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">Zoom, Skype</p>
               <p class="hidden entwicklungsphase">Analyse</p>
@@ -298,7 +298,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">200</p>
+              <p class="hidden anzahlTeilnehmer">mittel 200</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">Google Docs, LimeSurvey</p>
               <p class="hidden entwicklungsphase">Analyse</p>
@@ -328,7 +328,7 @@
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen"></p>
               <p class="hidden anzahlTeilnehmer"></p>
-              <p class="hidden artTeilnehmer">r</p>
+              <p class="hidden artTeilnehmer"></p>
               <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
               <p class="hidden ergebnisse"></p>
@@ -357,7 +357,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">11</p>
+              <p class="hidden anzahlTeilnehmer">gering 11</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
@@ -415,10 +415,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">4</p>
+              <p class="hidden anzahlTeilnehmer">gering 4</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools">Zoom, UserZoom, Drive</p>
-              <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
+              <p class="hidden entwicklungsphase">Konzept</p>
               <p class="hidden ergebnisse">Qualitativ</p>
             </div>
           </div>
@@ -444,10 +444,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">1</p>
+              <p class="hidden anzahlTeilnehmer">gering 1</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
+              <p class="hidden entwicklungsphase">Konzept</p>
               <p class="hidden ergebnisse">Qualitativ</p>
             </div>
           </div>
@@ -473,10 +473,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">25</p>
+              <p class="hidden anzahlTeilnehmer">mittel 25</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">Notizbuch, Whatsapp, SMS, Facebook, tools zum Dokumentieren</p>
-              <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
+              <p class="hidden entwicklungsphase">nachUmsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
@@ -502,7 +502,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">22</p>
+              <p class="hidden anzahlTeilnehmer">mittel 22</p>
               <p class="hidden artTeilnehmer">Experten</p>
               <p class="hidden tools">OptimalSort, SimpleCardSort, UsabilityTest Card Sorting, xSort, CardSort tool von UXtweak, userzoom</p>
               <p class="hidden entwicklungsphase"></p>
@@ -531,7 +531,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">sehr hoch</p>
-              <p class="hidden anzahlTeilnehmer">12</p>
+              <p class="hidden anzahlTeilnehmer">gering 12</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools">Remote Eyetracking Sensoren, Online tools für Eyetracking, Eyetracking Brillen</p>
               <p class="hidden entwicklungsphase"></p>
@@ -560,7 +560,7 @@
               <p class="hidden kommunikation"></p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">hoch</p>
-              <p class="hidden anzahlTeilnehmer">5</p>
+              <p class="hidden anzahlTeilnehmer">gering 5</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
@@ -589,7 +589,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">100</p>
+              <p class="hidden anzahlTeilnehmer">hoch 100</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">Google Analytics</p>
               <p class="hidden entwicklungsphase">Analyse</p>
@@ -618,7 +618,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">5</p>
+              <p class="hidden anzahlTeilnehmer">gering 5</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
@@ -647,7 +647,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">1</p>
+              <p class="hidden anzahlTeilnehmer">gering 1</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools">Textprogramm/Grafikprogramm</p>
               <p class="hidden entwicklungsphase">Analyse</p>
@@ -676,7 +676,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">1</p>
+              <p class="hidden anzahlTeilnehmer">gering 1</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
@@ -705,7 +705,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand"></p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">1</p>
+              <p class="hidden anzahlTeilnehmer">gering 1</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
@@ -734,10 +734,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">1</p>
+              <p class="hidden anzahlTeilnehmer">gering 1</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools">Stopuhr</p>
-              <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
+              <p class="hidden entwicklungsphase">Konzept</p>
               <p class="hidden ergebnisse">quantitativ</p>
             </div>
           </div>
@@ -765,10 +765,10 @@
               <p class="hidden kommunikation"></p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">hoch</p>
-              <p class="hidden anzahlTeilnehmer">12</p>
+              <p class="hidden anzahlTeilnehmer">gering 12</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
+              <p class="hidden entwicklungsphase">Konzept</p>
               <p class="hidden ergebnisse">Quantitativ</p>
             </div>
           </div>
@@ -794,10 +794,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">4</p>
-              <p class="hidden artTeilnehmer">Experte</p>
+              <p class="hidden anzahlTeilnehmer">gering 4</p>
+              <p class="hidden artTeilnehmer">Experte, Stakeholder</p>
               <p class="hidden tools">Userzoom</p>
-              <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
+              <p class="hidden entwicklungsphase">Konzept</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
@@ -823,10 +823,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">7</p>
+              <p class="hidden anzahlTeilnehmer">gering 7</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools">ProtoPie, Balsamiq</p>
-              <p class="hidden entwicklungsphase">Konzept/Entwicklung</p>
+              <p class="hidden entwicklungsphase">Konzept</p>
               <p class="hidden ergebnisse">Qualitativ</p>
             </div>
           </div>
@@ -852,7 +852,7 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen">hoch</p>
-              <p class="hidden anzahlTeilnehmer">1000</p>
+              <p class="hidden anzahlTeilnehmer">hoch 1000</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">Video-/Tonaufnahmegerät</p>
               <p class="hidden entwicklungsphase">Umsetzung</p>
@@ -881,10 +881,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">1000</p>
+              <p class="hidden anzahlTeilnehmer">hoch 1000</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">E-Quest</p>
-              <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
+              <p class="hidden entwicklungsphase">nachUmsetzung</p>
               <p class="hidden ergebnisse">quantitativ</p>
             </div>
           </div>
@@ -910,10 +910,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">1</p>
+              <p class="hidden anzahlTeilnehmer">gering 1</p>
               <p class="hidden artTeilnehmer">Experte</p>
               <p class="hidden tools">stilistische Prinzipien und Empfehlungen</p>
-              <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
+              <p class="hidden entwicklungsphase">nachUmsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
@@ -941,10 +941,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">gering</p>
               <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">49</p>
+              <p class="hidden anzahlTeilnehmer">mittel 49</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">Usability Hub</p>
-              <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
+              <p class="hidden entwicklungsphase">nachUmsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
@@ -972,10 +972,10 @@
               <p class="hidden kommunikation">????</p>
               <p class="hidden zeitaufwand">mittel</p>
               <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">15</p>
+              <p class="hidden anzahlTeilnehmer">gering 15</p>
               <p class="hidden artTeilnehmer">Anfänger</p>
               <p class="hidden tools">Kamera</p>
-              <p class="hidden entwicklungsphase">Nach der Umsetzung</p>
+              <p class="hidden entwicklungsphase">nachUmsetzung</p>
               <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
@@ -1002,10 +1002,10 @@
               <p class="hidden zeitaufwand">hoch</p>
               <p class="hidden ressourcen"></p>
               <p class="hidden anzahlTeilnehmer"></p>
-              <p class="hidden artTeilnehmer">Anfänger, Experte, Oberse</p>
+              <p class="hidden artTeilnehmer">Anfänger, Experte, Oberserver</p>
               <p class="hidden tools"></p>
               <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse"></p>
+              <p class="hidden ergebnisse">qualitativ</p>
             </div>
           </div>
         </div>
