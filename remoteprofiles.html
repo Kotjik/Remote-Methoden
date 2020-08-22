@@ -51,18 +51,18 @@
       <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
     </nav>
     <!-- Card Section -->
-    <div class="w3-container" style="padding: 128px 16px;" id="team">
+    <div class="w3-container" style="padding: 128px 16px;" >
       <h3 class="w3-center">Kurzprofile aller Remote-Profile</h3>
       <p class="w3-center w3-large">Hier finden Sie alle Remote-Profile</p>
       <form id="search-bar" onsubmit="return false;">
         <input type="text" name="search" id="search-input" class="w3-card" onkeyup="searchRemoteProfiles();" placeholder="Suche nach Remote-Profilen" />
         <span class="far fa-times-circle fa-lg hidden" onclick="clearInput();" id="search-bar-icon-clear"></span>
       </form>
-      <div class="w3-row-padding" style="margin-top: 24px;">
+      <div class="w3-row-padding" id="remoteprofiles-container">
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Fokusgruppe.jpg" alt="Sarah Feix" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Fokusgruppe.jpg" alt="Fokusgruppe"  />
             <div class="w3-container">
               <h3 class="profile-title">Fokusgruppe</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -90,8 +90,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Interview.jpg" alt="Sarah Feix" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Interview.jpg" alt="Interview"  />
             <div class="w3-container">
               <h3 class="profile-title">Interview</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -119,8 +119,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Fragebogen.jpg" alt="Sarah Feix" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Fragebogen.jpg" alt="Fragebogen"  />
             <div class="w3-container">
               <h3 class="profile-title">Fragebogen</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -148,8 +148,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/TaskAnalysis.jpg" alt="Task Analysis" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/TaskAnalysis.jpg" alt="Task Analysis"  />
             <div class="w3-container">
               <h3 class="profile-title">Task Analysis</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -175,11 +175,14 @@
             </div>
           </div>
         </div>
+      </div>
+        <div class="w3-row-padding" >
+
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <!-- <img src="https://picsum.photos/400/150?random=5" alt="Sarah Graf" style="width: 100%;" /> -->
-            <img src="resources/img/kurzprofile/thinkingaloud.jpg" alt="Thinking Aloud" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <!-- <img src="https://picsum.photos/400/150?random=5" alt="Sarah Graf"  /> -->
+            <img src="resources/img/kurzprofile/thinkingaloud.jpg" alt="Thinking Aloud"  />
             <div class="w3-container">
               <h3 class="profile-title">Thinking aloud / Question Asking Protocol</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -207,8 +210,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/PerformanceMeasurement.jpg" alt="Sarah Graf" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/PerformanceMeasurement.jpg" alt="Sarah Graf"  />
             <div class="w3-container">
               <h3 class="profile-title">Performance Measurement</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -236,8 +239,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/HeuristicEvaluation.jpg" alt="Konstantin Kulik" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/HeuristicEvaluation.jpg" alt="Konstantin Kulik"  />
             <div class="w3-container">
               <h3 class="profile-title">Heuristic Evaluation</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -265,8 +268,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/CognitiveWalkthrough.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/CognitiveWalkthrough.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Cognitive Walkthrough</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -292,10 +295,13 @@
             </div>
           </div>
         </div>
+</div>
+
+<div class="w3-row-padding" >
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Tagebuchstudie.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Tagebuchstudie.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Tagebuchstudie</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -323,8 +329,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/CardSorting.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/CardSorting.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Card Sorting</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -352,8 +358,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/EyeTracking.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/EyeTracking.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Eye Tracking</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -381,8 +387,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Storyboard.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Storyboard.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Storyboard</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -408,10 +414,14 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="w3-row-padding" >
+
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/WebAnalytics.jpeg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/WebAnalytics.jpeg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Web Analytics</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -439,8 +449,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Persona.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Persona.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Persona</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -468,8 +478,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/UseCases.jpeg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/UseCases.jpeg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Use Cases</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -497,8 +507,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Szenarien.jpeg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Szenarien.jpeg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Szenarien</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -524,10 +534,13 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="w3-row-padding" >
+
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/UserStory.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/UserStory.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">User Story</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -555,8 +568,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/GOMS.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/GOMS.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">GOMS</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -584,8 +597,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/ABTest.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/ABTest.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">A/B Test
                 <p class="hidden">AB Test</p>
@@ -615,8 +628,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/AffinityDiagram.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/AffinityDiagram.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Affinity Diagram</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -642,10 +655,13 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="w3-row-padding" >
+
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Prototyping.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Prototyping.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Prototyping</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -673,8 +689,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Feldbeobachtung.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Feldbeobachtung.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Feldbeobachtung / Feldtest</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -702,8 +718,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/OnsiteBefragung.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/OnsiteBefragung.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Onsite Befragung</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -731,8 +747,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/Styleguide.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/Styleguide.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Styleguide</h3>
               <p class="gray">Kurzbeschreibung</p>
@@ -758,10 +774,14 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="w3-row-padding" >
+
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/5SekundenTest.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/5SekundenTest.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">5-Sekunden-Test
                 <p class="hidden">5 Sekunden Test</p>
@@ -791,8 +811,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/OutoftheBoxTest.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/OutoftheBoxTest.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Out-of-the-Box-Test
                 <p class="hidden">Out of the Box test</p>
@@ -822,8 +842,8 @@
         </div>
         <!-- Remoteprofil -->
         <div class="w3-col l3 m6 w3-margin-bottom profile">
-          <div class="w3-card">
-            <img src="resources/img/kurzprofile/WizardofOz.jpg" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-card profile-container">
+            <img src="resources/img/kurzprofile/WizardofOz.jpg" alt="Nadine Schweiger"  />
             <div class="w3-container">
               <h3 class="profile-title">Wizard of Oz</h3>
               <p class="gray">Kurzbeschreibung</p>

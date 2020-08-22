@@ -42,7 +42,7 @@ function reduceAllKurzbeschreibung(){
 }
 
 
-// Passende Methoden finde, ausgehen von den gesetzten Filtern
+// Passende Methoden finden, ausgehen von den gesetzten Filtern
 function showAllMethods() {
   profilesContainer.classList.remove("hidden");
   for(i = 0; i<allProfiles.length; i++){
@@ -50,16 +50,17 @@ function showAllMethods() {
   }
 }
 
-let synchronitaet_selector = document.querySelector("#synchronitaet"),
-    moderation_selector = document.querySelector("#moderation"),
-    kommunikation_selector = document.querySelector("#kommunikation"),
-    zeit_selector = document.querySelector("#zeit"),
-    ressourcen_selector = document.querySelector("#ressourcen"),
-    teilnehmeranzahl_selector = document.querySelector("#teilnehmeranzahl"),
-    teilnehmerart_selector = document.querySelector("#teilnehmerart"),
-    tools_selector = document.querySelector("#tools"),
-    entwicklungsphase_selector = document.querySelector("#entwicklungsphase"),
-    ergebnisse_selector = document.querySelector("#ergebnisse");
+//Selectoren
+let synchronitaet_selector = document.querySelector("#synchronitaet_selector"),
+    moderation_selector = document.querySelector("#moderation_selector"),
+    kommunikation_selector = document.querySelector("#kommunikation_selector"),
+    zeit_selector = document.querySelector("#zeit_selector"),
+    ressourcen_selector = document.querySelector("#ressourcen_selector"),
+    teilnehmeranzahl_selector = document.querySelector("#teilnehmeranzahl_selector"),
+    teilnehmerart_selector = document.querySelector("#teilnehmerart_selector"),
+    tools_selector = document.querySelector("#tools_selector"),
+    entwicklungsphase_selector = document.querySelector("#entwicklungsphase_selector"),
+    ergebnisse_selector = document.querySelector("#ergebnisse_selector");
 
 
 
@@ -68,6 +69,8 @@ function showWantedProfiles(){
   let numberOfFoundProfiles = 0;
 
   for (i = 0; i < allProfiles.length; i++) {
+
+    //Eigenschaften
     let synchronitaet_eigenschaft = allProfiles[i].querySelector(".synchronitaet").textContent.toLowerCase(),
         moderation_eigenschaft = allProfiles[i].querySelector(".moderation").textContent.toLowerCase(),
         kommunikation_eigenschaft = allProfiles[i].querySelector(".kommunikation").textContent.toLowerCase(),
@@ -168,10 +171,10 @@ function showWantedProfiles(){
           }
           break;
 
-          // Auswahl: analyse | konzept | nachUmsetzung
+          // Auswahl: analyse | konzept | umsetzung | nachumsetzung
         case entwicklungsphase_selector:
           if(entwicklungsphase_selector.value != "no_selection"){
-            if(!entwicklungsphase_selector.value != entwicklungsphase_eigenschaft
+            if(entwicklungsphase_selector.value != entwicklungsphase_eigenschaft
                || entwicklungsphase_eigenschaft == ""){
               falscheEigenschaften++;
             }
