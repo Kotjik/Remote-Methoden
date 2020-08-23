@@ -1,0 +1,21 @@
+/* Full height image header */
+.background-image {
+  background-position: center;
+  background-size: cover;
+  background-color: #666;
+  background-image: url("../../resources/img/home.png");
+  height: 100vh;
+  background-position: left;
+  background-blend-mode: screen;
+}
+
+.button{
+  width: 100%;
+}
+
+#welcome-message{
+}
+
+#welcome-message span{
+  /* text-shadow: 2px 2px 20px #ffffff; */
+}

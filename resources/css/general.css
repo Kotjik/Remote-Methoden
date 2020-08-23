@@ -16,16 +16,6 @@ html {
   line-height: 1.8;
 } */
 
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-color: #666;
-  background-image: url("/w3images/mac.jpg");
-  height: 100vh;
-}
-
 .w3-bar .w3-button {
   padding: 16px;
 }
