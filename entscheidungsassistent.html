@@ -205,138 +205,162 @@
 
           <br/>
           <div class="row">
-            <!--
-               <button onClick="showAllMethods();">Passende Remote-Methoden anzeigen</button>
-               <input id="button" onClick="showAllMethods();" type="submit" value="Passende Remote-Methoden anzeigen">
-              -->
 
             <button id="button_findMethods" onclick="showWantedProfiles();" class="w3-button w3-black form-button" type="submit"><i class="fas fa-search"></i> Passende Remote-Methoden finden</button>
             <button id="button_reset" onClick="resetAllSelections();" class="w3-button w3-orange form-button"><i class="fas fa-undo"></i> Auswahl zurücksetzen</button>
 
           </div>
       </div>
-      <div id="profiles-container" class="w3-row-padding hidden">
+      <div id="profiles-container" class="hidden">
         <p id="numberOfProfilesFoundElement" class="w3-center w3-large">Es gibt X Methoden, die deinen Filtereinstellungen entsprechen:</p>
 
 
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="resources/img/Vorschaubilder/Fokusgruppe.jpg" alt="Sarah Feix" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Fokusgruppe</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Nutzer- oder Expertengruppen diskutieren gemeinsam über ein interaktives System um Ideen zu sammeln oder bestimmte Problem zu lösen. Währenddessen ist mindestens ein Researcher anwesend der die Diskussion moderiert und die Teilnehmer und deren Diskussion beobachtet.</p>
-              <p>
-                <a href="detailsites/fokusgruppe.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden eigenschaft synchronitaet">synchron</p>
-              <p class="hidden eigenschaft moderation">moderiert</p>
-              <p class="hidden eigenschaft kommunikation">????</p>
-              <p class="hidden eigenschaft zeitaufwand">hoch</p>
-              <p class="hidden eigenschaft ressourcen">hoch</p>
-              <p class="hidden eigenschaft anzahlTeilnehmer">4 gering</p>
-              <p class="hidden eigenschaft artTeilnehmer">Experten, Nutzer</p>
-              <p class="hidden eigenschaft tools">Zoom, Skype</p>
-              <p class="hidden eigenschaft entwicklungsphase">Analyse</p>
-              <p class="hidden eigenschaft ergebnisse">qualitativ</p>
-            </div>
+        <div id="row-1" class="w3-row-padding">
+
+
+      </div>
+      <div id="row-2" class="w3-row-padding">
+
+      </div>
+      <div id="row-3" class="w3-row-padding">
+
+      </div>
+      <div id="row-4" class="w3-row-padding">
+
+      </div>
+      <div id="row-5" class="w3-row-padding">
+
+      </div>
+      <div id="row-6" class="w3-row-padding">
+
+      </div>
+      <div id="row-7" class="w3-row-padding">
+
+
+
+
+      </div>
+    </div>
+
+    <div id="all-profiles-section" class="hidden">
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="resources/img/Vorschaubilder/Fokusgruppe.jpg" alt="Sarah Feix" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Fokusgruppe</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Nutzer- oder Expertengruppen diskutieren gemeinsam über ein interaktives System um Ideen zu sammeln oder bestimmte Problem zu lösen. Währenddessen ist mindestens ein Researcher anwesend der die Diskussion moderiert und die Teilnehmer und deren Diskussion beobachtet.</p>
+            <p>
+              <a href="detailsites/fokusgruppe.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden eigenschaft synchronitaet">synchron</p>
+            <p class="hidden eigenschaft moderation">moderiert</p>
+            <p class="hidden eigenschaft kommunikation">????</p>
+            <p class="hidden eigenschaft zeitaufwand">hoch</p>
+            <p class="hidden eigenschaft ressourcen">hoch</p>
+            <p class="hidden eigenschaft anzahlTeilnehmer">4 gering</p>
+            <p class="hidden eigenschaft artTeilnehmer">Experten, Nutzer</p>
+            <p class="hidden eigenschaft tools">Zoom, Skype</p>
+            <p class="hidden eigenschaft entwicklungsphase">Analyse</p>
+            <p class="hidden eigenschaft ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="resources/img/Vorschaubilder/Interview.jpg" alt="Sarah Feix" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Interview</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Bei remote Interviews werden Nutzer von einem Moderator nach ihren Meinungen, Bedürfnissen, oder Einstellungen befragt. Für die beiden Interviewpartner  ist dabei nicht nötig sich an der selben Location aufzuhalten, es genügt bereits das Interview entweder vollständig auf schriftlicher Basis durchzuführen während beide sich an unterschiedlichen Orten aufhalten oder sich in derselben virtuellen Location auszutauschen wie zum Beispiel auf Zoom oder auf Skype. Die Strukture eines Interviews kann entweder durchstrukturiert sein, bei dem der Moderator bereits vorgeschriebene Fragen ausspricht und diese beantwortet bekommt oder explorativ sein, bei dem auf gegebene Antworten des Nutzers eingegangen werden kann und der Moderator von seinen vorgeschriebenen Fragen abweicht um noch zusätzlich Details zu erfahren.</p>
+            <p>
+              <a href="detailsites/interview.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">synchron</p>
+            <p class="hidden moderation">moderiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">mittel</p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">gering 11</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">Zoom, Skype</p>
+            <p class="hidden entwicklungsphase">Analyse</p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="resources/img/Vorschaubilder/Fragebogen.jpg" alt="Sarah Feix" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Fragebogen</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Online Fragebögen sind Hilfsmittel zur schriftlichen Befragung einer sehr große Anzahl an Nutzern über ein interaktives System, oder bestimmtes Thema. Hierbei ist das Erhalten eines umfangreichen Datensatzes im Vordergrund, dabei können sowohl Freitextfragen oder auch standardisierte Fragen verwendet werden. Dabei ist es möglich einen Fragebogen per Post zu verschicken oder ihn online zu erstellen und ausfüllen zu lassen mit LimeSurvey oder Google Docs zum Beispiel. Fragebögen sind vielseitig einsatzbereit, so kann man sie zum Beispiel zur Ermittlung von Usability Problemen verwenden oder auch zur Anforderungserhebung an ein System. Es wird empfohlen auf standardisierte, empirisch erstellte Fragebögen zurückzugreifen.</p>
+            <p>
+              <a href="detailsites/fragebogen.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">gering</p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">mittel 200</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">Google Docs, LimeSurvey</p>
+            <p class="hidden entwicklungsphase">Analyse</p>
+            <p class="hidden ergebnisse">quantitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="resources/img/Vorschaubilder/TaskAnalysis.jpg" alt="Task Analysis" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Task Analysis</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Um Aufgaben zu identifizieren, die eine Anwendung oder Website erfüllen muss, muss zunächst mehr über das Nutzerverhalten erfahren werden indem man betrachtet, wie bestimmte Aufgaben von ihnen aktuell erfüllt werden um ein Ziel zu erreichen. </p>
+            <p>
+              <a href="detailsites/taskanalysis.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet"></p>
+            <p class="hidden moderation">beides</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen"></p>
+            <p class="hidden anzahlTeilnehmer"></p>
+            <p class="hidden artTeilnehmer"></p>
+            <p class="hidden tools"></p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse"></p>
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="resources/img/Vorschaubilder/Interview.jpg" alt="Sarah Feix" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Interview</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Bei remote Interviews werden Nutzer von einem Moderator nach ihren Meinungen, Bedürfnissen, oder Einstellungen befragt. Für die beiden Interviewpartner  ist dabei nicht nötig sich an der selben Location aufzuhalten, es genügt bereits das Interview entweder vollständig auf schriftlicher Basis durchzuführen während beide sich an unterschiedlichen Orten aufhalten oder sich in derselben virtuellen Location auszutauschen wie zum Beispiel auf Zoom oder auf Skype. Die Strukture eines Interviews kann entweder durchstrukturiert sein, bei dem der Moderator bereits vorgeschriebene Fragen ausspricht und diese beantwortet bekommt oder explorativ sein, bei dem auf gegebene Antworten des Nutzers eingegangen werden kann und der Moderator von seinen vorgeschriebenen Fragen abweicht um noch zusätzlich Details zu erfahren.</p>
-              <p>
-                <a href="detailsites/interview.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">moderiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">mittel</p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">gering 11</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">Zoom, Skype</p>
-              <p class="hidden entwicklungsphase">Analyse</p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="resources/img/Vorschaubilder/Fragebogen.jpg" alt="Sarah Feix" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Fragebogen</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Online Fragebögen sind Hilfsmittel zur schriftlichen Befragung einer sehr große Anzahl an Nutzern über ein interaktives System, oder bestimmtes Thema. Hierbei ist das Erhalten eines umfangreichen Datensatzes im Vordergrund, dabei können sowohl Freitextfragen oder auch standardisierte Fragen verwendet werden. Dabei ist es möglich einen Fragebogen per Post zu verschicken oder ihn online zu erstellen und ausfüllen zu lassen mit LimeSurvey oder Google Docs zum Beispiel. Fragebögen sind vielseitig einsatzbereit, so kann man sie zum Beispiel zur Ermittlung von Usability Problemen verwenden oder auch zur Anforderungserhebung an ein System. Es wird empfohlen auf standardisierte, empirisch erstellte Fragebögen zurückzugreifen.</p>
-              <p>
-                <a href="detailsites/fragebogen.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">gering</p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">mittel 200</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">Google Docs, LimeSurvey</p>
-              <p class="hidden entwicklungsphase">Analyse</p>
-              <p class="hidden ergebnisse">quantitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="resources/img/Vorschaubilder/TaskAnalysis.jpg" alt="Task Analysis" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Task Analysis</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Um Aufgaben zu identifizieren, die eine Anwendung oder Website erfüllen muss, muss zunächst mehr über das Nutzerverhalten erfahren werden indem man betrachtet, wie bestimmte Aufgaben von ihnen aktuell erfüllt werden um ein Ziel zu erreichen. </p>
-              <p>
-                <a href="detailsites/taskanalysis.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet"></p>
-              <p class="hidden moderation">beides</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen"></p>
-              <p class="hidden anzahlTeilnehmer"></p>
-              <p class="hidden artTeilnehmer"></p>
-              <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse"></p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
           <div class="w3-card">
             <!-- <img src="https://picsum.photos/400/150?random=5" alt="Sarah Graf" style="width: 100%;" /> -->
             <img src="resources/img/Vorschaubilder/thinkingaloudDetail.jpg" alt="Thinking Aloud" style="width: 100%;" />
@@ -366,7 +390,7 @@
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/PerformanceMeasurement.jpg" alt="Sarah Graf" style="width: 100%;" />
             <div class="w3-container">
@@ -395,7 +419,7 @@
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
           <div class="w3-card">
             <img src="resources/img/Vorschaubilder/HeuristicEvaluation.jpg" alt="Konstantin Kulik" style="width: 100%;" />
             <div class="w3-container">
@@ -424,7 +448,7 @@
           </div>
         </div>
         <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
+        <div class="w3-col l3 m6 w3-margin-bottom profile">
           <div class="w3-card">
             <img src="https://picsum.photos/400/150?random=9" alt="Nadine Schweiger" style="width: 100%;" />
             <div class="w3-container">
@@ -452,576 +476,570 @@
             </div>
           </div>
         </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=11" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Tagebuchstudie</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Durch Tagebuchstudien werden qualitative Informationen von Studienteilnehmern über einen längeren Zeitraum gesammelt. Sie melden dabei selbstständig Verhalten und Handlungen im Alltag in Form eines Tagebucheintrags. So können kontextuelle Informationen und Probleme auf die Nutzer bei der alltäglichen Nutzung mit dem interaktiven System gestoßen sind gesammelt werden. </p>
-              <p>
-                <a href="detailsites/tagebuchstudie.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">mittel 25</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">Notizbuch, Whatsapp, SMS, Facebook, tools zum Dokumentieren</p>
-              <p class="hidden entwicklungsphase">nachumsetzung</p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=12" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Card Sorting</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Beim Card Sorting werden (online) Karten mit Begriffen in Gruppen oder Strukturen sortiert um allgemein gültige Navigationen zu entwickeln.</p>
-              <p>
-                <a href="detailsites/cardsorting.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">beides</p>
-              <p class="hidden moderation">beides</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">mittel 22</p>
-              <p class="hidden artTeilnehmer">Experten</p>
-              <p class="hidden tools">OptimalSort, SimpleCardSort, UsabilityTest Card Sorting, xSort, CardSort tool von UXtweak, userzoom</p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse">beides</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=13" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Eye Tracking</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Beim Eye Tracking werden die Blickverläufe und die Zeit, die der Teilnehmer auf bestimmten Elementen des interaktiven Systems verweilt gemessen.</p>
-              <p>
-                <a href="detailsites/eyetracking.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">moderiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen">sehr hoch</p>
-              <p class="hidden anzahlTeilnehmer">gering 12</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools">Remote Eyetracking Sensoren, Online tools für Eyetracking, Eyetracking Brillen</p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse">Qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=14" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Storyboard</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Die Interaktionsprozesse des Nutzers mit dem System werden in einer Serie von Illustrationen dargestellt</p>
-              <p>
-                <a href="detailsites/storyboard.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet"></p>
-              <p class="hidden moderation"></p>
-              <p class="hidden kommunikation"></p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen">hoch</p>
-              <p class="hidden anzahlTeilnehmer">gering 5</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse"></p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=15" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Web Analytics</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Die Web Analytics helfen Fragen über Besucher einer Website zu beantworten und wie sie mit der Website interagieren. Dafür werden tools verwendet wie zum Beispiel Google Analytics, die aufzeichnen wenn ein Nutzer auf die Website kommt. Hierbei wird registriert wie sich der Nutzer verhält, wie er auf die Website gekommen ist, in welcher Reihenfolge er die Screens besucht und mehr. Diese Verhaltensweisen werden kombiniert und in einen Datensatz umgewandelt der nur noch ausgewertet werden muss.</p>
-              <p>
-                <a href="detailsites/webanalytics.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">gering</p>
-              <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">hoch 100</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">Google Analytics</p>
-              <p class="hidden entwicklungsphase">Analyse</p>
-              <p class="hidden ergebnisse">quantitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=16" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Persona</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Personas sind da um einen Überblick über die Nutzergruppe zu erhalten und beschreiben die wichtigsten Nutzer und deren Charaktereigenschaften mit ihren Verhaltensweisen mit dem interaktiven System.</p>
-              <p>
-                <a href="detailsites/persona.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet"></p>
-              <p class="hidden moderation"></p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">gering 5</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=17" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Use Cases</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Use Cases beschreiben konkrete Anwendungsfälle des interaktiven Systems, im Vordergrund stehen die Abläufe der Anwendungsfälle mit allen Funktionalitäten des Systems. Use Cases können in purer Textform oder auch in grafischer Form ausgearbeitet werden. Wichtig ist, dass sie die Grundlage für die spätere Nutzerführung darstellen und alle Wege der Interaktion beschreiben soll.</p>
-              <p>
-                <a href="detailsites/usecases.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">moderiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">mittel</p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">gering 1</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools">Textprogramm/Grafikprogramm</p>
-              <p class="hidden entwicklungsphase">Analyse</p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=19" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Szenarien</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Mindestens ein Experte verfasst einen realistischen Anwendungskontext, wie ein Nutzer mit dem geplanten System interagieren wird.</p>
-              <p>
-                <a href="detailsites/szenarien.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet"></p>
-              <p class="hidden moderation"></p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">gering 1</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse"></p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=20" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">User Story</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">User Storys stellen Anforderungen an ein interaktives System aus Sicht der Nutzer dar.</p>
-              <p>
-                <a href="detailsites/wireframe.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet"></p>
-              <p class="hidden moderation"></p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand"></p>
-              <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">gering 1</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse"></p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=21" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">GOMS</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Mit GOMS Modellen (kurz für Goals, Operators, Methods, und Selection) werden zielführenden Interaktionen die der Nutzer mit dem interaktiven System hat, in Einzelschritte beziehungsweise elementare Aktionen dekomponiert. Diese Aktionen sind zum Beispiel Zeigerbewegungen, Zeigerklicks, Tastenklicks oder auch kognitive Prozesse sein. Jede dieser Aktionen hat eine vorgegebene Ausführungsdauer welche zum Ende addiert werden und schließlich eine zuverlässige Vorhersagen über die benötigte Gesamtdauer der Tasks liefert. Das Ziel dieser Methode ist es die Effektivität des Systems zu erhöhen, indem unnötige Interaktionen ausfindig gemacht und verbessert werden.</p>
-              <p>
-                <a href="detailsites/goms.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">moderiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">hoch</p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">gering 1</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools">Stopuhr</p>
-              <p class="hidden entwicklungsphase">Konzept</p>
-              <p class="hidden ergebnisse">quantitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=22" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">A/B Test
-                <p class="hidden">AB Test</p>
-              </h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Der A/B Test (auch bekannt als Split Testing) wird verwendet um zwei oder mehr Versionen eines interaktiven Systems gegeneinander zu testen. Dabei wird zunächst eine konkrete Fragestellung formuliert mit dessen Hilfe  System A gegen System B eindeutig abgewogen und eine entscheidung über die Performance getroffen werden kann.</p>
-              <p>
-                <a href="detailsites/abtest.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation"></p>
-              <p class="hidden zeitaufwand">gering</p>
-              <p class="hidden ressourcen">hoch</p>
-              <p class="hidden anzahlTeilnehmer">gering 12</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase">Konzept</p>
-              <p class="hidden ergebnisse">Quantitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=23" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Affinity Diagram</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">In einem Affinity Diagram werden schnell viele Informationen zu Aktivitäten, Funktionen, Einstellungen, und Bedürfnissen für das interaktive System geclustert und in logische Gruppen sortiert. Dabei werden nicht nur die Experten mit eingebunden sondern in der Regel haben auch die Stakeholder eines Projekts mitspracherecht.</p>
-              <p>
-                <a href="detailsites/affinitydiagram.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">moderiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">mittel</p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">gering 4</p>
-              <p class="hidden artTeilnehmer">Experte, Stakeholder</p>
-              <p class="hidden tools">Userzoom</p>
-              <p class="hidden entwicklungsphase">Konzept</p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=24" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Prototyping</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Prototyping ist eine Methode die verwendet wird um Usability Probleme eines interaktiven Systems bereits frühzeitig zu erkennen und zu beseitigen. Hierfür wird bereits zu Beginn der Entwicklung ein vorzeitiger Prototyp erstellt, von möglichen Nutzern evaluiert und entsprechend angepasst. Im besten Fall wiederholt sich dies in der nächsten Entwicklungsphase mit einem detaillierten Prototypen bis zu dem finalen Prototypen. Die gängigsten Arten der remote Prototypen sind die Low Fidelity Prototypen: (1) interaktive Click-dummies bei welchen das Design noch keine Rolle spielt, und (2) funktionale Wireframes bei denen bereits Elemente der Seite existieren und die Grundfunktionen beinhalten. Gegen Ende der Entwicklungsphasen entstehen dann High Fidelity Prototypen die dem Endprodukt grafisch bereits entsprechen und funktionsfähig sind.</p>
-              <p>
-                <a href="detailsites/prototyping.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">beides</p>
-              <p class="hidden moderation">beides</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">mittel</p>
-              <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">gering 7</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools">ProtoPie, Balsamiq</p>
-              <p class="hidden entwicklungsphase">Konzept</p>
-              <p class="hidden ergebnisse">Qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=25" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Feldbeobachtung / Feldtest</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Bei einer Feldbeobachtung/Feldtest werden Nutzer in ihrer natürlichen Umgebung aufgezeichnet oder beobachtet wie sie mit dem interaktiven System interagieren. Dies zieht sich für gewöhnlich über einen längeren Zeitraum als herkömmliche Labortests. Feldbeobachtungen haben auch den Vorteil, dass Nutzer ohne vordefinierte Aufgaben mit dem System in realitätsnahen Szenarien interagieren. Bei beiden spiegeln die auftretenden Usability Probleme, die Probleme wieder, die zukünftige Nutzer auch nach längerfristiger Nutzung des Systems haben werden.</p>
-              <p>
-                <a href="detailsites/feldtest.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">hoch</p>
-              <p class="hidden ressourcen">hoch</p>
-              <p class="hidden anzahlTeilnehmer">hoch 1000</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">Video-/Tonaufnahmegerät</p>
-              <p class="hidden entwicklungsphase">Umsetzung</p>
-              <p class="hidden ergebnisse">beides</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=26" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Onsite Befragung</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Onsite Befragungen sind ähnlich wie Surveys nur werden sie direkt auf dem interaktiven System durchgeführt. Hierbei ist der Vorteil, dass nur tatsächliche Nutzer  an der Umfrage teilnehmen, was sehr präzise Ergebnisse über diese Nutzergruppe liefert. Onsite Befragungen erscheinen als ein Popup oder Layer auf dem Bildschirm des Nutzers und Fragen in der Regel nach Informationen wie demographische Daten, Intentionen, Interessen, auch Anregungen für das interaktive System dabei können sich die Nutzer entscheiden ob sie an der Befragung sofort, später oder überhaupt teilnehmen.</p>
-              <p>
-                <a href="detailsites/onsitebefragung.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">gering</p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">hoch 1000</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">E-Quest</p>
-              <p class="hidden entwicklungsphase">nachUmsetzung</p>
-              <p class="hidden ergebnisse">quantitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=27" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Styleguide</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Ein Styleguide ist ein von einem Experten verfasster ausführlicher Bericht der beschreibt wie das interaktive System zu einem bestimmten Zeitpunkt gestaltet ist. Er enthält Prinzipien des Designs, Layouts, Größen, räumlichen Anordnungen der Elemente sowie Grafiken des Systemzustandes. Neben diesen enthält er auch guideline orientierte Empfehlungen die zu dem SOLL-Zustand des Systems führen.</p>
-              <p>
-                <a href="detailsites/styleguide.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">hoch</p>
-              <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">gering 1</p>
-              <p class="hidden artTeilnehmer">Experte</p>
-              <p class="hidden tools">stilistische Prinzipien und Empfehlungen</p>
-              <p class="hidden entwicklungsphase">nachUmsetzung</p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=28" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">5-Sekunden-Test
-                <p class="hidden">5 Sekunden Test</p>
-              </h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Bei einem 5-Sekunden-Test wird der Nutzer für 5 Sekunden mit dem interaktiven System konfrontiert und muss im nachhinein Informationen über den gewonnenen Eindruck wiedergeben. Dieser beinhaltet Informationen bezüglich des ersten Eindrucks, des Designs oder auch der Wahrnehmung der Marke. Es ist zu beachten, dass der 5-Sekunden-Test nur ein Zusatzwerkzeug für das UX-Design ist und nicht ohne zusätzliche UX-Methoden verwendet werden sollte.</p>
-              <p>
-                <a href="detailsites/5sekundentest.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">gering</p>
-              <p class="hidden ressourcen">gering</p>
-              <p class="hidden anzahlTeilnehmer">mittel 49</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">Usability Hub</p>
-              <p class="hidden entwicklungsphase">nachUmsetzung</p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=29" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Out-of-the-Box-Test
-                <p class="hidden">Out of the Box test</p>
-              </h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Nutzer werden in ihrem natürlichen Umfeld gefilmt wie sie sich mit dem interaktiven System vertraut machen, dies beinhaltet das Auspacken, den Aufbauen, das Anfassen, den initialen Start und das Installieren möglicher Software. Dadurch erhält man Einblick in typische Nutzungsszenarien und Probleme mögliche Nutzer mit dem System haben könnten.</p>
-              <p>
-                <a href="detailsites/outoftheboxtest.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">asynchron</p>
-              <p class="hidden moderation">automatisiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">mittel</p>
-              <p class="hidden ressourcen">mittel</p>
-              <p class="hidden anzahlTeilnehmer">gering 15</p>
-              <p class="hidden artTeilnehmer">Anfänger</p>
-              <p class="hidden tools">Kamera</p>
-              <p class="hidden entwicklungsphase">nachUmsetzung</p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
-        <!-- Remoteprofil -->
-        <div class="w3-col l3 m6 w3-margin-bottom profile hidden">
-          <div class="w3-card">
-            <img src="https://picsum.photos/400/150?random=30" alt="Nadine Schweiger" style="width: 100%;" />
-            <div class="w3-container">
-              <h3 class="profile-title">Wizard of Oz</h3>
-              <p class="gray">Kurzbeschreibung</p>
-              <p class="kurzbeschreibung">Bei Wizard of Oz handelt es sich um um eine Variante des Prototypings. Der Nutzer interagiert mit einem vermeintlich voll funktionsfähigen Anwendung (z.B. am Computer), bei der eigentlich aber alle Interaktionen  durch einen anderen Menschen, den wizard,  simuliert werden.</p>
-              <p>
-                <a href="detailsites/wizardofoz.html" style="text-decoration: none;">
-                  <button class="w3-button w3-light-grey w3-block">
-                    <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
-                  </button>
-                </a>
-              </p>
-              <!--Methodeneigenschaft (aber: hidden)-->
-              <p class="hidden synchronitaet">synchron</p>
-              <p class="hidden moderation">moderiert</p>
-              <p class="hidden kommunikation">????</p>
-              <p class="hidden zeitaufwand">hoch</p>
-              <p class="hidden ressourcen"></p>
-              <p class="hidden anzahlTeilnehmer"></p>
-              <p class="hidden artTeilnehmer">Anfänger, Experte, Oberserver</p>
-              <p class="hidden tools"></p>
-              <p class="hidden entwicklungsphase"></p>
-              <p class="hidden ergebnisse">qualitativ</p>
-            </div>
-          </div>
-        </div>
+      </div>
 
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=11" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Tagebuchstudie</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Durch Tagebuchstudien werden qualitative Informationen von Studienteilnehmern über einen längeren Zeitraum gesammelt. Sie melden dabei selbstständig Verhalten und Handlungen im Alltag in Form eines Tagebucheintrags. So können kontextuelle Informationen und Probleme auf die Nutzer bei der alltäglichen Nutzung mit dem interaktiven System gestoßen sind gesammelt werden. </p>
+            <p>
+              <a href="detailsites/tagebuchstudie.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen">gering</p>
+            <p class="hidden anzahlTeilnehmer">mittel 25</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">Notizbuch, Whatsapp, SMS, Facebook, tools zum Dokumentieren</p>
+            <p class="hidden entwicklungsphase">nachumsetzung</p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=12" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Card Sorting</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Beim Card Sorting werden (online) Karten mit Begriffen in Gruppen oder Strukturen sortiert um allgemein gültige Navigationen zu entwickeln.</p>
+            <p>
+              <a href="detailsites/cardsorting.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">beides</p>
+            <p class="hidden moderation">beides</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">mittel 22</p>
+            <p class="hidden artTeilnehmer">Experten</p>
+            <p class="hidden tools">OptimalSort, SimpleCardSort, UsabilityTest Card Sorting, xSort, CardSort tool von UXtweak, userzoom</p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse">beides</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=13" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Eye Tracking</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Beim Eye Tracking werden die Blickverläufe und die Zeit, die der Teilnehmer auf bestimmten Elementen des interaktiven Systems verweilt gemessen.</p>
+            <p>
+              <a href="detailsites/eyetracking.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">synchron</p>
+            <p class="hidden moderation">moderiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen">sehr hoch</p>
+            <p class="hidden anzahlTeilnehmer">gering 12</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools">Remote Eyetracking Sensoren, Online tools für Eyetracking, Eyetracking Brillen</p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse">Qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=14" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Storyboard</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Die Interaktionsprozesse des Nutzers mit dem System werden in einer Serie von Illustrationen dargestellt</p>
+            <p>
+              <a href="detailsites/storyboard.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet"></p>
+            <p class="hidden moderation"></p>
+            <p class="hidden kommunikation"></p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen">hoch</p>
+            <p class="hidden anzahlTeilnehmer">gering 5</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools"></p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse"></p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=15" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Web Analytics</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Die Web Analytics helfen Fragen über Besucher einer Website zu beantworten und wie sie mit der Website interagieren. Dafür werden tools verwendet wie zum Beispiel Google Analytics, die aufzeichnen wenn ein Nutzer auf die Website kommt. Hierbei wird registriert wie sich der Nutzer verhält, wie er auf die Website gekommen ist, in welcher Reihenfolge er die Screens besucht und mehr. Diese Verhaltensweisen werden kombiniert und in einen Datensatz umgewandelt der nur noch ausgewertet werden muss.</p>
+            <p>
+              <a href="detailsites/webanalytics.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">synchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">gering</p>
+            <p class="hidden ressourcen">gering</p>
+            <p class="hidden anzahlTeilnehmer">hoch 100</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">Google Analytics</p>
+            <p class="hidden entwicklungsphase">Analyse</p>
+            <p class="hidden ergebnisse">quantitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=16" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Persona</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Personas sind da um einen Überblick über die Nutzergruppe zu erhalten und beschreiben die wichtigsten Nutzer und deren Charaktereigenschaften mit ihren Verhaltensweisen mit dem interaktiven System.</p>
+            <p>
+              <a href="detailsites/persona.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet"></p>
+            <p class="hidden moderation"></p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">gering 5</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools"></p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=17" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Use Cases</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Use Cases beschreiben konkrete Anwendungsfälle des interaktiven Systems, im Vordergrund stehen die Abläufe der Anwendungsfälle mit allen Funktionalitäten des Systems. Use Cases können in purer Textform oder auch in grafischer Form ausgearbeitet werden. Wichtig ist, dass sie die Grundlage für die spätere Nutzerführung darstellen und alle Wege der Interaktion beschreiben soll.</p>
+            <p>
+              <a href="detailsites/usecases.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">synchron</p>
+            <p class="hidden moderation">moderiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">mittel</p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">gering 1</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools">Textprogramm/Grafikprogramm</p>
+            <p class="hidden entwicklungsphase">Analyse</p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=19" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Szenarien</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Mindestens ein Experte verfasst einen realistischen Anwendungskontext, wie ein Nutzer mit dem geplanten System interagieren wird.</p>
+            <p>
+              <a href="detailsites/szenarien.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet"></p>
+            <p class="hidden moderation"></p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen">gering</p>
+            <p class="hidden anzahlTeilnehmer">gering 1</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools"></p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse"></p>
+          </div>
+        </div>
+      </div>
 
-
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=20" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">User Story</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">User Storys stellen Anforderungen an ein interaktives System aus Sicht der Nutzer dar.</p>
+            <p>
+              <a href="detailsites/wireframe.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet"></p>
+            <p class="hidden moderation"></p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand"></p>
+            <p class="hidden ressourcen">gering</p>
+            <p class="hidden anzahlTeilnehmer">gering 1</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools"></p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse"></p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=21" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">GOMS</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Mit GOMS Modellen (kurz für Goals, Operators, Methods, und Selection) werden zielführenden Interaktionen die der Nutzer mit dem interaktiven System hat, in Einzelschritte beziehungsweise elementare Aktionen dekomponiert. Diese Aktionen sind zum Beispiel Zeigerbewegungen, Zeigerklicks, Tastenklicks oder auch kognitive Prozesse sein. Jede dieser Aktionen hat eine vorgegebene Ausführungsdauer welche zum Ende addiert werden und schließlich eine zuverlässige Vorhersagen über die benötigte Gesamtdauer der Tasks liefert. Das Ziel dieser Methode ist es die Effektivität des Systems zu erhöhen, indem unnötige Interaktionen ausfindig gemacht und verbessert werden.</p>
+            <p>
+              <a href="detailsites/goms.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">synchron</p>
+            <p class="hidden moderation">moderiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">hoch</p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">gering 1</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools">Stopuhr</p>
+            <p class="hidden entwicklungsphase">Konzept</p>
+            <p class="hidden ergebnisse">quantitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=22" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">A/B Test
+              <p class="hidden">AB Test</p>
+            </h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Der A/B Test (auch bekannt als Split Testing) wird verwendet um zwei oder mehr Versionen eines interaktiven Systems gegeneinander zu testen. Dabei wird zunächst eine konkrete Fragestellung formuliert mit dessen Hilfe  System A gegen System B eindeutig abgewogen und eine entscheidung über die Performance getroffen werden kann.</p>
+            <p>
+              <a href="detailsites/abtest.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation"></p>
+            <p class="hidden zeitaufwand">gering</p>
+            <p class="hidden ressourcen">hoch</p>
+            <p class="hidden anzahlTeilnehmer">gering 12</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools"></p>
+            <p class="hidden entwicklungsphase">Konzept</p>
+            <p class="hidden ergebnisse">Quantitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=23" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Affinity Diagram</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">In einem Affinity Diagram werden schnell viele Informationen zu Aktivitäten, Funktionen, Einstellungen, und Bedürfnissen für das interaktive System geclustert und in logische Gruppen sortiert. Dabei werden nicht nur die Experten mit eingebunden sondern in der Regel haben auch die Stakeholder eines Projekts mitspracherecht.</p>
+            <p>
+              <a href="detailsites/affinitydiagram.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">synchron</p>
+            <p class="hidden moderation">moderiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">mittel</p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">gering 4</p>
+            <p class="hidden artTeilnehmer">Experte, Stakeholder</p>
+            <p class="hidden tools">Userzoom</p>
+            <p class="hidden entwicklungsphase">Konzept</p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=24" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Prototyping</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Prototyping ist eine Methode die verwendet wird um Usability Probleme eines interaktiven Systems bereits frühzeitig zu erkennen und zu beseitigen. Hierfür wird bereits zu Beginn der Entwicklung ein vorzeitiger Prototyp erstellt, von möglichen Nutzern evaluiert und entsprechend angepasst. Im besten Fall wiederholt sich dies in der nächsten Entwicklungsphase mit einem detaillierten Prototypen bis zu dem finalen Prototypen. Die gängigsten Arten der remote Prototypen sind die Low Fidelity Prototypen: (1) interaktive Click-dummies bei welchen das Design noch keine Rolle spielt, und (2) funktionale Wireframes bei denen bereits Elemente der Seite existieren und die Grundfunktionen beinhalten. Gegen Ende der Entwicklungsphasen entstehen dann High Fidelity Prototypen die dem Endprodukt grafisch bereits entsprechen und funktionsfähig sind.</p>
+            <p>
+              <a href="detailsites/prototyping.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">beides</p>
+            <p class="hidden moderation">beides</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">mittel</p>
+            <p class="hidden ressourcen">gering</p>
+            <p class="hidden anzahlTeilnehmer">gering 7</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools">ProtoPie, Balsamiq</p>
+            <p class="hidden entwicklungsphase">Konzept</p>
+            <p class="hidden ergebnisse">Qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=25" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Feldbeobachtung / Feldtest</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Bei einer Feldbeobachtung/Feldtest werden Nutzer in ihrer natürlichen Umgebung aufgezeichnet oder beobachtet wie sie mit dem interaktiven System interagieren. Dies zieht sich für gewöhnlich über einen längeren Zeitraum als herkömmliche Labortests. Feldbeobachtungen haben auch den Vorteil, dass Nutzer ohne vordefinierte Aufgaben mit dem System in realitätsnahen Szenarien interagieren. Bei beiden spiegeln die auftretenden Usability Probleme, die Probleme wieder, die zukünftige Nutzer auch nach längerfristiger Nutzung des Systems haben werden.</p>
+            <p>
+              <a href="detailsites/feldtest.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">hoch</p>
+            <p class="hidden ressourcen">hoch</p>
+            <p class="hidden anzahlTeilnehmer">hoch 1000</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">Video-/Tonaufnahmegerät</p>
+            <p class="hidden entwicklungsphase">Umsetzung</p>
+            <p class="hidden ergebnisse">beides</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=26" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Onsite Befragung</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Onsite Befragungen sind ähnlich wie Surveys nur werden sie direkt auf dem interaktiven System durchgeführt. Hierbei ist der Vorteil, dass nur tatsächliche Nutzer  an der Umfrage teilnehmen, was sehr präzise Ergebnisse über diese Nutzergruppe liefert. Onsite Befragungen erscheinen als ein Popup oder Layer auf dem Bildschirm des Nutzers und Fragen in der Regel nach Informationen wie demographische Daten, Intentionen, Interessen, auch Anregungen für das interaktive System dabei können sich die Nutzer entscheiden ob sie an der Befragung sofort, später oder überhaupt teilnehmen.</p>
+            <p>
+              <a href="detailsites/onsitebefragung.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">gering</p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">hoch 1000</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">E-Quest</p>
+            <p class="hidden entwicklungsphase">nachUmsetzung</p>
+            <p class="hidden ergebnisse">quantitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=27" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Styleguide</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Ein Styleguide ist ein von einem Experten verfasster ausführlicher Bericht der beschreibt wie das interaktive System zu einem bestimmten Zeitpunkt gestaltet ist. Er enthält Prinzipien des Designs, Layouts, Größen, räumlichen Anordnungen der Elemente sowie Grafiken des Systemzustandes. Neben diesen enthält er auch guideline orientierte Empfehlungen die zu dem SOLL-Zustand des Systems führen.</p>
+            <p>
+              <a href="detailsites/styleguide.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">hoch</p>
+            <p class="hidden ressourcen">gering</p>
+            <p class="hidden anzahlTeilnehmer">gering 1</p>
+            <p class="hidden artTeilnehmer">Experte</p>
+            <p class="hidden tools">stilistische Prinzipien und Empfehlungen</p>
+            <p class="hidden entwicklungsphase">nachUmsetzung</p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=28" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">5-Sekunden-Test
+              <p class="hidden">5 Sekunden Test</p>
+            </h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Bei einem 5-Sekunden-Test wird der Nutzer für 5 Sekunden mit dem interaktiven System konfrontiert und muss im nachhinein Informationen über den gewonnenen Eindruck wiedergeben. Dieser beinhaltet Informationen bezüglich des ersten Eindrucks, des Designs oder auch der Wahrnehmung der Marke. Es ist zu beachten, dass der 5-Sekunden-Test nur ein Zusatzwerkzeug für das UX-Design ist und nicht ohne zusätzliche UX-Methoden verwendet werden sollte.</p>
+            <p>
+              <a href="detailsites/5sekundentest.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">gering</p>
+            <p class="hidden ressourcen">gering</p>
+            <p class="hidden anzahlTeilnehmer">mittel 49</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">Usability Hub</p>
+            <p class="hidden entwicklungsphase">nachUmsetzung</p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=29" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Out-of-the-Box-Test
+              <p class="hidden">Out of the Box test</p>
+            </h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Nutzer werden in ihrem natürlichen Umfeld gefilmt wie sie sich mit dem interaktiven System vertraut machen, dies beinhaltet das Auspacken, den Aufbauen, das Anfassen, den initialen Start und das Installieren möglicher Software. Dadurch erhält man Einblick in typische Nutzungsszenarien und Probleme mögliche Nutzer mit dem System haben könnten.</p>
+            <p>
+              <a href="detailsites/outoftheboxtest.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">asynchron</p>
+            <p class="hidden moderation">automatisiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">mittel</p>
+            <p class="hidden ressourcen">mittel</p>
+            <p class="hidden anzahlTeilnehmer">gering 15</p>
+            <p class="hidden artTeilnehmer">Anfänger</p>
+            <p class="hidden tools">Kamera</p>
+            <p class="hidden entwicklungsphase">nachUmsetzung</p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Remoteprofil -->
+      <div class="w3-col l3 m6 w3-margin-bottom profile">
+        <div class="w3-card">
+          <img src="https://picsum.photos/400/150?random=30" alt="Nadine Schweiger" style="width: 100%;" />
+          <div class="w3-container">
+            <h3 class="profile-title">Wizard of Oz</h3>
+            <p class="gray">Kurzbeschreibung</p>
+            <p class="kurzbeschreibung">Bei Wizard of Oz handelt es sich um um eine Variante des Prototypings. Der Nutzer interagiert mit einem vermeintlich voll funktionsfähigen Anwendung (z.B. am Computer), bei der eigentlich aber alle Interaktionen  durch einen anderen Menschen, den wizard,  simuliert werden.</p>
+            <p>
+              <a href="detailsites/wizardofoz.html" style="text-decoration: none;">
+                <button class="w3-button w3-light-grey w3-block">
+                  <i class="fas fa-external-link-alt"></i> Zum Remote-Profil
+                </button>
+              </a>
+            </p>
+            <!--Methodeneigenschaft (aber: hidden)-->
+            <p class="hidden synchronitaet">synchron</p>
+            <p class="hidden moderation">moderiert</p>
+            <p class="hidden kommunikation">????</p>
+            <p class="hidden zeitaufwand">hoch</p>
+            <p class="hidden ressourcen"></p>
+            <p class="hidden anzahlTeilnehmer"></p>
+            <p class="hidden artTeilnehmer">Anfänger, Experte, Oberserver</p>
+            <p class="hidden tools"></p>
+            <p class="hidden entwicklungsphase"></p>
+            <p class="hidden ergebnisse">qualitativ</p>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image" />
-        <p id="caption" class="w3-opacity w3-large"></p>
-      </div>
+
     </div>
+
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
       <button class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>

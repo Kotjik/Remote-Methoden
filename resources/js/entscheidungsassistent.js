@@ -1,5 +1,5 @@
 let profilesContainer = document.querySelector("#profiles-container");
-let allProfiles = document.getElementsByClassName("profile");
+let allProfiles = document.querySelectorAll(".profile");
 let allSelections = document.getElementsByTagName("select");
 reduceAllKurzbeschreibung();
 
@@ -21,6 +21,7 @@ function srollToMethods(){
 //Filterauswahl zurücksetzen
 function resetAllSelections(){
   profilesContainer.classList.add("hidden");
+  resetAllProfilesHTMLPosition();
   for(i = 0; i< allSelections.length; i++){
     allSelections[i].value = "no_selection";
   }
@@ -41,15 +42,6 @@ function reduceAllKurzbeschreibung(){
   }
 }
 
-
-// Passende Methoden finden, ausgehen von den gesetzten Filtern
-function showAllMethods() {
-  profilesContainer.classList.remove("hidden");
-  for(i = 0; i<allProfiles.length; i++){
-    allProfiles[i].classList.remove("hidden");
-  }
-}
-
 //Selectoren
 let synchronitaet_selector = document.querySelector("#synchronitaet_selector"),
     moderation_selector = document.querySelector("#moderation_selector"),
@@ -67,6 +59,7 @@ let synchronitaet_selector = document.querySelector("#synchronitaet_selector"),
 function showWantedProfiles(){
   profilesContainer.classList.remove("hidden");
   let numberOfFoundProfiles = 0;
+  let foundProfiles = [];
 
   for (i = 0; i < allProfiles.length; i++) {
 
@@ -195,19 +188,40 @@ function showWantedProfiles(){
       }
     }
     if(falscheEigenschaften == 0){
-      allProfiles[i].classList.remove("hidden");
       numberOfFoundProfiles++;
+      foundProfiles.push(allProfiles[i]);
     }else{
-      allProfiles[i].classList.add("hidden");
     }
   }
-  srollToMethods();
 
+  srollToMethods();
   updateNumberOfProfilesFoundHTML(numberOfFoundProfiles);
+  resetAllProfilesHTMLPosition();
+  assignProfilesToRows(foundProfiles);
 
 }
 
 function updateNumberOfProfilesFoundHTML(number){
   let numberOfProfilesFoundElement = document.getElementById("numberOfProfilesFoundElement");
   numberOfProfilesFoundElement.innerHTML = "Es gibt " + number + " Methoden, die deinen Filtereinstellungen entsprechen:";
+}
+
+function assignProfilesToRows(profiles){
+  let colCounter = 0;
+  let rowCounter = 0;
+
+  for(i=0; i<profiles.length; i++){
+      document.getElementsByClassName("w3-row-padding")[rowCounter].appendChild(profiles[i]);
+      colCounter++;
+      if(colCounter > 3){
+        colCounter = 0;
+        rowCounter++;
+      }
+  }
+}
+
+function resetAllProfilesHTMLPosition(){
+  for(i=0; i<allProfiles.length; i++){
+    document.getElementById("all-profiles-section").appendChild(allProfiles[i]);
+  }
 }
