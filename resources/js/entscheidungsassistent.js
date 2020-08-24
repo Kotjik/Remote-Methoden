@@ -194,10 +194,10 @@ function showWantedProfiles(){
     }
   }
 
-  srollToMethods();
   updateNumberOfProfilesFoundHTML(numberOfFoundProfiles);
   resetAllProfilesHTMLPosition();
   assignProfilesToRows(foundProfiles);
+  srollToMethods();
 
 }
 
