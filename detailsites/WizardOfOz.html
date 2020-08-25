@@ -12,6 +12,7 @@
 <style></style>
 
 <body>
+
 <!-- Navbar (sit on top) -->
 <div class="" id="navigation-bar">
   <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE STUDIEN</a> 
@@ -28,21 +29,22 @@
 <div class="w3-container" id="about" >
   <h3 align="center">WIZARD OF OZ</h3>
 	
-  <div class="w3-container" style="padding: 8px 16px;"  >
-    <div  class="w3-image w3-card w3-middle" style="padding: 30px 30px;" id="box">
-      <details>
-        <summary>
+  <div class="w3-container" id="sum" >
+    <div  class="w3-card w3-middle" style="padding: 30px 30px;">
+      <details open>
+        <summary style=display: none>
           <h4 align="center">Methodenbeschreibung:</h4>
         </summary>
         <p>Bei Wizard of Oz handelt es sich um um eine Variante des Prototypings. Der Nutzer interagiert mit einem vermeintlich voll funktionsfähigen Anwendung (z.B. am Computer), bei der eigentlich aber alle Interaktionen  durch einen anderen Menschen, den wizard,  simuliert werden. </p>
       </details>
     </div>
   </div>
+
 	
-  <div class="w3-container" style="padding: 8px 16px;"  >
+  <div class="w3-container">
     <div  class="w3-card w3-middle" style="padding: 30px 30px;">
       <details>
-        <summary>
+        <summary id="sum">
           <h4 class="w3-center">Ablauf/Anleitung:</h4>
         </summary>
         <p>Ist die Anwendung und deren Funktionen noch nicht weit genug ausgereift, ist es möglich mit einer Wizard of Oz Studie trotzdem schon das Nutzerverhalten mit dem System zu analysieren. Der Nutzer darf dabei nicht wissen, dass er nicht wirklich mit dem System interagiert sondern, dass ein Mensch auf alle Eingaben reagiert und das System passend manipuliert. Dieser kann dadurch auch Eingaben machen und Funktionen simulieren, die noch nicht implementiert sind. </p>
@@ -52,7 +54,7 @@
       </details>
     </div>
   </div>
-  <div class="w3-container" style="padding: 8px 16px;" >
+  <div class="w3-container">
     <div  class=" w3-card w3-middle" style="padding: 30px 30px;">
       <details>
         <summary>
@@ -62,7 +64,7 @@
       </details>
     </div>
   </div>
-  <div class="w3-container" style="padding: 8px 16px;" >
+  <div class="w3-container">
     <div  class="w3-card w3-middle" style="padding: 30px 30px;">
       <details>
         <summary>
@@ -113,7 +115,7 @@
       </details>
     </div>
   </div>
-  <div class="w3-container" style="padding: 8px 16px;">
+  <div class="w3-container">
   <div  class="w3-card w3-middle" style="padding: 30px 30px;">
     <details>
     <summary>
@@ -125,9 +127,10 @@
 </div>
 </div>
 </div>
+	
 
 <div class="w3-display-container w3-text-white"> <img src="img_london.jpg" alt="Lights" style="width:100%">
-  <div class="w3-xlarge w3-display-bottomleft w3-padding">LONDON 60&deg; F</div>
+  <div class="w3-xlarge w3-display-bottomleft w3-padding"></div>
 </div>
 <footer class="w3-center w3-black w3-padding-64">
   <button class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
