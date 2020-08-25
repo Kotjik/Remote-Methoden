@@ -45,12 +45,10 @@ function reduceAllKurzbeschreibung(){
 //Selectoren
 let synchronitaet_selector = document.querySelector("#synchronitaet_selector"),
     moderation_selector = document.querySelector("#moderation_selector"),
-    kommunikation_selector = document.querySelector("#kommunikation_selector"),
     zeit_selector = document.querySelector("#zeit_selector"),
     ressourcen_selector = document.querySelector("#ressourcen_selector"),
     teilnehmeranzahl_selector = document.querySelector("#teilnehmeranzahl_selector"),
     teilnehmerart_selector = document.querySelector("#teilnehmerart_selector"),
-    tools_selector = document.querySelector("#tools_selector"),
     entwicklungsphase_selector = document.querySelector("#entwicklungsphase_selector"),
     ergebnisse_selector = document.querySelector("#ergebnisse_selector");
 
@@ -66,12 +64,10 @@ function showWantedProfiles(){
     //Eigenschaften
     let synchronitaet_eigenschaft = allProfiles[i].querySelector(".synchronitaet").textContent.toLowerCase(),
         moderation_eigenschaft = allProfiles[i].querySelector(".moderation").textContent.toLowerCase(),
-        kommunikation_eigenschaft = allProfiles[i].querySelector(".kommunikation").textContent.toLowerCase(),
         zeit_eigenschaft = allProfiles[i].querySelector(".zeitaufwand").textContent.toLowerCase(),
         ressourcen_eigenschaft = allProfiles[i].querySelector(".ressourcen").textContent.toLowerCase(),
         teilnehmeranzahl_eigenschaft = allProfiles[i].querySelector(".anzahlTeilnehmer").textContent.toLowerCase(),
         teilnehmerart_eigenschaft = allProfiles[i].querySelector(".artTeilnehmer").textContent.toLowerCase(),
-        tools_eigenschaft = allProfiles[i].querySelector(".tools").textContent.toLowerCase(),
         entwicklungsphase_eigenschaft = allProfiles[i].querySelector(".entwicklungsphase").textContent.toLowerCase(),
         ergebnisse_eigenschaft = allProfiles[i].querySelector(".ergebnisse").textContent.toLowerCase();
 
@@ -95,16 +91,6 @@ function showWantedProfiles(){
           if(moderation_selector.value != "no_selection"){
             if(moderation_selector.value != moderation_eigenschaft
                || moderation_eigenschaft == ""){
-              falscheEigenschaften++;
-            }
-          }
-          break;
-
-          // Auswahl: TODO
-        case kommunikation_selector:
-          if(kommunikation_selector.value != "no_selection"){
-            if(kommunikation_selector.value != kommunikation_eigenschaft
-               || kommunikation_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
@@ -149,16 +135,6 @@ function showWantedProfiles(){
             if(!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)
                || teilnehmerart_eigenschaft == ""){
 
-              falscheEigenschaften++;
-            }
-          }
-          break;
-
-          // Auswahl: TODO
-        case tools_selector:
-          if(tools_selector.value != "no_selection"){
-            if(tools_selector.value != tools_eigenschaft
-               || tools_eigenschaft == ""){
               falscheEigenschaften++;
             }
           }
