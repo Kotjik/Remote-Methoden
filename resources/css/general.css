@@ -64,7 +64,7 @@ html {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  z-index: 4;
+  z-index: 40;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
 }
