@@ -16,6 +16,18 @@ th, td {
       mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0,2px;
+  width: 40%;
+} 
+
+
 #content{
   padding: 0px 32px;
 }
@@ -44,6 +56,9 @@ details summary::-webkit-details-marker { display:none; }
 details summary { list-style-type: none; }
 summary {
     cursor: pointer;
+}
+input:focus {
+	outline:none;
 }
 
 footer{
