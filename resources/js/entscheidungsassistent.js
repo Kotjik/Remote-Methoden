@@ -201,3 +201,8 @@ function resetAllProfilesHTMLPosition(){
     document.getElementById("all-profiles-section").appendChild(allProfiles[i]);
   }
 }
+
+
+//Falls Nutzer von einer Detailseite zurückgeht, sollen die vorherig gefundenen
+//Methoden wieder angezeigt werden
+window.onhashchange = showWantedProfiles();
