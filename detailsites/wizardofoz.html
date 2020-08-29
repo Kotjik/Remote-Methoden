@@ -16,116 +16,105 @@
 
 <!-- Navbar (sit on top) -->
 <div class="" id="navigation-bar">
-  <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a>
+  <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a> 
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small"> <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a> <a href="../entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a> <a href="../remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a> </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon --> 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a> </div>
 </div>
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right:0;" id="mySidebar"> <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a> <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a> <a href="../remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a> </nav>
-<img src="../resources/img/Vorschaubilder/WizardofOz.jpg" id="header-image" class="picture w3-image" alt="backgroundpic">
+<img src="../resources/img/Vorschaubilder/WizardofOz.jpg" id="header-image" class="picture w3-image" alt="backgroundpic"> 
 
-<!-- About Section -->
+
 <div class="w3-container" id="about" >
   <h3 align="center" class="w3-middle">WIZARD OF OZ</h3>
-
   <div div class="w3-content" style="max-width:900px;">
-      <details open class="w3-card w3-middle" >
-        <summary>
-          <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodenbeschreibung:</h4>
-        </summary>
-        <p style="padding-left:5px">Bei Wizard of Oz handelt es sich um um eine Variante des Prototypings. Der Nutzer interagiert mit einem vermeintlich voll funktionsfähigen Anwendung (z.B. am Computer), bei der eigentlich aber alle Interaktionen  durch einen anderen Menschen, den wizard,  simuliert werden. </p>
-      </details>
+    <details open class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodenbeschreibung:</h4>
+      </summary>
+      <p style="padding-left:5px">Bei Wizard of Oz handelt es sich um um eine Variante des Prototypings. Der Nutzer interagiert mit einem vermeintlich voll funktionsfähigen Anwendung (z.B. am Computer), bei der eigentlich aber alle Interaktionen  durch einen anderen Menschen, den wizard,  simuliert werden. </p>
+    </details>
   </div>
-
-
- <div div class="w3-content" style="max-width:900px;">
-      <details class="w3-card w3-middle" >
-        <summary>
-         <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ablauf/Anleitung:</h4>	
-        </summary>
-
-        <p style="padding-left:5px">Ist die Anwendung und deren Funktionen noch nicht weit genug ausgereift, ist es möglich mit einer Wizard of Oz Studie trotzdem schon das Nutzerverhalten mit dem System zu analysieren. Der Nutzer darf dabei nicht wissen, dass er nicht wirklich mit dem System interagiert sondern, dass ein Mensch auf alle Eingaben reagiert und das System passend manipuliert. Dieser kann dadurch auch Eingaben machen und Funktionen simulieren, die noch nicht implementiert sind. </p>
-        <p style="padding-left:5px">Der Wizard muss dabei während des gesamten tests wie ein Computer verhalten und alle Eingaben des Nutzers versuchen umzusetzen und darf keine Fehler machen. Dieser muss sich mit dem Interface und den möglichen Eingaben/Befehlen gut auskennen und diese schnell umsetzen können. Er muss auch ständig wissen was der Nutzer gerade für Eingaben tätigt und welche Befehle er gibt.</p>
-        <a style="padding-left:5px" href="http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html">http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html</a>
-        <p style="padding-left:5px">Damit dies Methode auch Remote funktioniert müssen beide Seiten Zugriff auf die Anwendung haben. Der Wizard muss so in der Lage sein die Anwendung zu “bedienen”, aber auch die gewünschten Eingaben des Nutzers zu sehen. Auch eine Audio- oder Videoverbindung ist nötig, wenn beispielsweise Sprachbefehle getestet werden. Ein zusätzlicher Observer ist hilfreich, da der Wizard sich auf das Simulieren der Anwendung konzentrieren muss. Evtl ist es auch nützlich wenn der Observer als Moderator vor dem Bildschirm sitzt und der Wizard außerhalb des Blickfeldes des Probanden, damit es  nicht auffällt, dass dieser das System lenkt.</p>
-      </details>
-    </div>
- 
-<div div class="w3-content" style="max-width:900px;">
-      <details class="w3-card w3-middle" >
-        <summary>
-           <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ergebnisse/Was man mit dieser Methode erreichen will:</h4>
-        </summary>
-        <p style="padding-left:5px">Wizard of Oz gibt einen detaillierten Einblick in das Nutzerverhalten, da diese während des Tests nicht an Funktionen der Anwendung gebunden sind. So können Ideen für die weitere Entwicklung gesammelt werden.</p>
-      </details>
-    </div>
-	
-	
+  <div div class="w3-content" style="max-width:900px;">
+    <details class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ablauf/Anleitung:</h4>
+      </summary>
+      <p style="padding-left:5px">Ist die Anwendung und deren Funktionen noch nicht weit genug ausgereift, ist es möglich mit einer Wizard of Oz Studie trotzdem schon das Nutzerverhalten mit dem System zu analysieren. Der Nutzer darf dabei nicht wissen, dass er nicht wirklich mit dem System interagiert sondern, dass ein Mensch auf alle Eingaben reagiert und das System passend manipuliert. Dieser kann dadurch auch Eingaben machen und Funktionen simulieren, die noch nicht implementiert sind. </p>
+      <p style="padding-left:5px">Der Wizard muss dabei während des gesamten tests wie ein Computer verhalten und alle Eingaben des Nutzers versuchen umzusetzen und darf keine Fehler machen. Dieser muss sich mit dem Interface und den möglichen Eingaben/Befehlen gut auskennen und diese schnell umsetzen können. Er muss auch ständig wissen was der Nutzer gerade für Eingaben tätigt und welche Befehle er gibt.</p>
+      <a style="padding-left:5px" href="http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html">http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html</a>
+      <p style="padding-left:5px">Damit dies Methode auch Remote funktioniert müssen beide Seiten Zugriff auf die Anwendung haben. Der Wizard muss so in der Lage sein die Anwendung zu “bedienen”, aber auch die gewünschten Eingaben des Nutzers zu sehen. Auch eine Audio- oder Videoverbindung ist nötig, wenn beispielsweise Sprachbefehle getestet werden. Ein zusätzlicher Observer ist hilfreich, da der Wizard sich auf das Simulieren der Anwendung konzentrieren muss. Evtl ist es auch nützlich wenn der Observer als Moderator vor dem Bildschirm sitzt und der Wizard außerhalb des Blickfeldes des Probanden, damit es  nicht auffällt, dass dieser das System lenkt.</p>
+    </details>
+  </div>
+  <div div class="w3-content" style="max-width:900px;">
+    <details class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ergebnisse/Was man mit dieser Methode erreichen will:</h4>
+      </summary>
+      <p style="padding-left:5px">Wizard of Oz gibt einen detaillierten Einblick in das Nutzerverhalten, da diese während des Tests nicht an Funktionen der Anwendung gebunden sind. So können Ideen für die weitere Entwicklung gesammelt werden.</p>
+    </details>
+  </div>
   <div div class="w3-content" style="max-width:900px;" id="customers">
-      <details class="w3-card w3-middle" >
-        <summary>
-          <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodeneigenschaften für Filtersystem</h4>
-        </summary>
-        <table style="width:100%; padding-left:2px;">
-          <tr>
-            <td>Synchron/Asynchron</td>
-            <td>synchron</td>
-          </tr>
-          <tr>
-            <td>Moderiert/Automatisiert</td>
-            <td>moderiert</td>
-          </tr>
-          <tr>
-            <td>Art der Kommunikation</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Zeitaufwand</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Ressourcen</td>
-            <td>hoch</td>
-          </tr>
-          <tr>
-            <td>Anzahl der Teilnehmer</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Art der Teilnehmer</td>
-            <td>Anfänger, ein Experte, Observer</td>
-          </tr>
-          <tr>
-            <td>Tools</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Phase der Entwickung</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Art der Ergebnisse</td>
-            <td>qualitativ</td>
-          </tr>
-        </table>
-      </details>
-    </div>
-	
-<div div class="w3-content" style="max-width:900px;" id="customers">
-      <details  class="w3-card w3-middle" >
-        <summary>
-      <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Links zu weiteren Infos/Paper:</h4>
-    </summary>
-    <a style="padding-left:5px" href="https://www.usability-in-germany.de/definition/wizard-of-oz-prototyp">https://www.usability-in-germany.de/definition/wizard-of-oz-prototyp</a> <br>
-    <a style="padding-left:5px" href="http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html">http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html</a>
-  </details>
+    <details class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodeneigenschaften für Filtersystem</h4>
+      </summary>
+      <table style="width:100%; padding-left:2px;">
+        <tr>
+          <td>Synchron/Asynchron</td>
+          <td>synchron</td>
+        </tr>
+        <tr>
+          <td>Moderiert/Automatisiert</td>
+          <td>moderiert</td>
+        </tr>
+        <tr>
+          <td>Art der Kommunikation</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Zeitaufwand</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ressourcen</td>
+          <td>hoch</td>
+        </tr>
+        <tr>
+          <td>Anzahl der Teilnehmer</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Art der Teilnehmer</td>
+          <td>Anfänger, ein Experte, Observer</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Phase der Entwickung</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Art der Ergebnisse</td>
+          <td>qualitativ</td>
+        </tr>
+      </table>
+    </details>
+  </div>
+  <div div class="w3-content" style="max-width:900px;" id="customers">
+    <details  class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Links zu weiteren Infos/Paper:</h4>
+      </summary>
+      <a style="padding-left:5px" href="https://www.usability-in-germany.de/definition/wizard-of-oz-prototyp">https://www.usability-in-germany.de/definition/wizard-of-oz-prototyp</a> <br>
+      <a style="padding-left:5px" href="http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html">http://www.medien.ifi.lmu.de/fileadmin/mimuc/mmi_ws0506/essays/uebung2-hennecke.html</a> </details>
+  </div>
 </div>
-
 </div>
- </div>
-
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
@@ -134,8 +123,8 @@
   <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
 </footer>
 <button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTop();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-<script src="../resources/js/backtotop.js"></script>
-<script src="../resources/js/general.js"></script>
+<script src="../resources/js/backtotop.js"></script> 
+<script src="../resources/js/general.js"></script> 
 <script></script>
 </body>
 </html>
