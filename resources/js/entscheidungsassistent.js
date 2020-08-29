@@ -1,7 +1,8 @@
 let profilesContainer = document.querySelector("#profiles-container");
 let allProfiles = document.querySelectorAll(".profile");
 let allSelections = document.getElementsByTagName("select");
-reduceAllKurzbeschreibung();
+let allFilterBubbles = document.querySelectorAll(".filter-bubble");
+window.onload = reduceAllKurzbeschreibung();
 
 // Zu den Methoden scrollen
 function srollToMethods(){
@@ -22,6 +23,7 @@ function srollToMethods(){
 function resetAllSelections(){
   profilesContainer.classList.add("hidden");
   resetAllProfilesHTMLPosition();
+  resetAllFilterBubbles();
   for(i = 0; i< allSelections.length; i++){
     allSelections[i].value = "no_selection";
   }
@@ -52,10 +54,20 @@ let synchronitaet_selector = document.querySelector("#synchronitaet_selector"),
     entwicklungsphase_selector = document.querySelector("#entwicklungsphase_selector"),
     ergebnisse_selector = document.querySelector("#ergebnisse_selector");
 
+//Filter-bubbles
+let synchronitaet_filterbubble = document.querySelector("#synchronitaet_filterbubble"),
+    moderation_filterbubble = document.querySelector("#moderation_filterbubble"),
+    zeit_filterbubble = document.querySelector("#zeit_filterbubble"),
+    ressourcen_filterbubble = document.querySelector("#ressourcen_filterbubble"),
+    teilnehmeranzahl_filterbubble = document.querySelector("#teilnehmeranzahl_filterbubble"),
+    teilnehmerart_filterbubble = document.querySelector("#teilnehmerart_filterbubble"),
+    entwicklungsphase_filterbubble = document.querySelector("#entwicklungsphase_filterbubble"),
+    ergebnisse_filterbubble = document.querySelector("#ergebnisse_filterbubble");
 
 
 function showWantedProfiles(){
   profilesContainer.classList.remove("hidden");
+  resetAllFilterBubbles();
   let numberOfFoundProfiles = 0;
   let foundProfiles = [];
 
@@ -82,6 +94,10 @@ function showWantedProfiles(){
             if(synchronitaet_selector.value != synchronitaet_eigenschaft
                || synchronitaet_eigenschaft == ""){
               falscheEigenschaften++;
+            }else{
+              synchronitaet_filterbubble.classList.remove("hidden");
+              synchronitaet_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Sychronität: " +  synchronitaet_selector.value;
             }
           }
           break;
@@ -92,6 +108,10 @@ function showWantedProfiles(){
             if(moderation_selector.value != moderation_eigenschaft
                || moderation_eigenschaft == ""){
               falscheEigenschaften++;
+            }else{
+              moderation_filterbubble.classList.remove("hidden");
+              moderation_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Moderation: " +  moderation_selector.value;
             }
           }
           break;
@@ -102,6 +122,10 @@ function showWantedProfiles(){
             if(zeit_selector.value != zeit_eigenschaft
                || zeit_eigenschaft == ""){
               falscheEigenschaften++;
+            }else{
+              zeit_filterbubble.classList.remove("hidden");
+              zeit_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Zeitaufwand: " +  zeit_selector.value;
             }
           }
           break;
@@ -112,6 +136,10 @@ function showWantedProfiles(){
             if(ressourcen_selector.value != ressourcen_eigenschaft
                || ressourcen_eigenschaft == ""){
               falscheEigenschaften++;
+            }else{
+              ressourcen_filterbubble.classList.remove("hidden");
+              ressourcen_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Ressourcen: " +  ressourcen_selector.value;
             }
           }
           break;
@@ -124,6 +152,10 @@ function showWantedProfiles(){
                || teilnehmeranzahl_selector == ""){
 
               falscheEigenschaften++;
+            }else{
+              teilnehmeranzahl_filterbubble.classList.remove("hidden");
+              teilnehmeranzahl_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Teilnehmeranzahl: " +  teilnehmeranzahl_selector.value;
             }
           }
           break;
@@ -136,6 +168,10 @@ function showWantedProfiles(){
                || teilnehmerart_eigenschaft == ""){
 
               falscheEigenschaften++;
+            }else{
+              teilnehmerart_filterbubble.classList.remove("hidden");
+              teilnehmerart_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Teilnehmerart: " +  teilnehmerart_selector.value;
             }
           }
           break;
@@ -146,6 +182,10 @@ function showWantedProfiles(){
             if(entwicklungsphase_selector.value != entwicklungsphase_eigenschaft
                || entwicklungsphase_eigenschaft == ""){
               falscheEigenschaften++;
+            }else{
+              entwicklungsphase_filterbubble.classList.remove("hidden");
+              entwicklungsphase_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Entwicklungsphase: " +  entwicklungsphase_selector.value;
             }
           }
           break;
@@ -158,6 +198,10 @@ function showWantedProfiles(){
             if(!ergebnisse_eigenschaft.includes(ergebnisse_selector.value)
                || ergebnisse_eigenschaft == ""){
               falscheEigenschaften++;
+            }else{
+              ergebnisse_filterbubble.classList.remove("hidden");
+              ergebnisse_filterbubble.querySelector(".filterbubble-content")
+                .innerHTML = "Ergebnisse: " +  ergebnisse_selector.value;
             }
           }
           break;
@@ -179,7 +223,24 @@ function showWantedProfiles(){
 
 function updateNumberOfProfilesFoundHTML(number){
   let numberOfProfilesFoundElement = document.getElementById("numberOfProfilesFoundElement");
-  numberOfProfilesFoundElement.innerHTML = "Es gibt " + number + " Methoden, die deinen Filtereinstellungen entsprechen:";
+  let noFilterChosenElement = document.getElementById("noFilterChosenElement");
+  numberOfProfilesFoundElement.innerHTML = "Es gibt " + number + " Methoden, die Ihren Filtereinstellungen entsprechen:";
+
+  let noFilterChosen = false;
+  let filterChosenCounter = 0;
+  for(i=0; i<allSelections.length; i++){
+    if(allSelections[i].value == "no_selection"){
+      filterChosenCounter++;
+    }
+  }
+  if(filterChosenCounter == 8){
+    noFilterChosen = true;
+  }
+  if(noFilterChosen){
+    noFilterChosenElement.classList.remove("hidden");
+  }else{
+    noFilterChosenElement.classList.add("hidden");
+  }
 }
 
 function assignProfilesToRows(profiles){
@@ -203,6 +264,76 @@ function resetAllProfilesHTMLPosition(){
 }
 
 
-//Falls Nutzer von einer Detailseite zurückgeht, sollen die vorherig gefundenen
+
+
+//Falls Nutzer von einer Detailseite zurückgeht oder reloaded, sollen die vorherig gefundenen
 //Methoden wieder angezeigt werden
-window.onhashchange = showWantedProfiles();
+//Call function after everything loaded
+window.onload = function(){
+  const perfEntries = performance.getEntriesByType('navigation');
+  if (perfEntries.length && (perfEntries[0].type === 'back_forward' || perfEntries[0].type === 'reload')) {
+    showWantedProfiles();
+  }
+}
+
+
+
+//Filterbubbles Funktionen
+function resetAllFilterBubbles(){
+  for(i=0; i<allFilterBubbles.length; i++){
+    allFilterBubbles[i].classList.add("hidden");
+    allFilterBubbles[i].querySelector(".filterbubble-content").innerHTML = "";
+  }
+}
+
+function deleteClickedFilter(element){
+  element.classList.add("hidden");
+
+  switch(element.id){
+    case "synchronitaet_filterbubble":
+      synchronitaet_selector.value = "no_selection";
+      break;
+
+    case "moderation_filterbubble":
+      moderation_selector.value = "no_selection";
+      break;
+
+    case "zeit_filterbubble":
+      zeit_selector.value = "no_selection";
+      break;
+
+    case "ressourcen_filterbubble":
+      ressourcen_selector.value = "no_selection";
+      break;
+
+    case "teilnehmeranzahl_filterbubble":
+      teilnehmeranzahl_selector.value = "no_selection";
+      break;
+
+    case "teilnehmerart_filterbubble":
+      teilnehmerart_selector.value = "no_selection";
+      break;
+
+    case "entwicklungsphase_filterbubble":
+      entwicklungsphase_selector.value = "no_selection";
+      break;
+
+    case "ergebnisse_filterbubble":
+      ergebnisse_selector.value = "no_selection";
+      break;
+  }
+  showWantedProfiles();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//for added newlines

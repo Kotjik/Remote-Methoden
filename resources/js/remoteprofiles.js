@@ -1,22 +1,40 @@
 let allProfileContainers = document.getElementsByClassName("profile");
 let searchInput = document.getElementById("search-input");
 let clearButton = document.getElementById("search-bar-icon-clear");
-searchRemoteProfiles();
-adjustAllKurzbeschreibungen(300);
+window.onload = searchRemoteProfiles();
+window.onload = adjustAllKurzbeschreibungen(300);
 // equalizeHeightsOfProfiles();
 
 //functions for Searchbar
 function searchRemoteProfiles() {
   let query = searchInput.value.toLowerCase();
+  let foundProfiles = [];
+
   for (i = 0; i < allProfileContainers.length; i++) {
     if (allProfileContainers[i].querySelector(".profile-title").textContent.toLowerCase().includes(query)) {
       allProfileContainers[i].classList.remove("hidden");
+      foundProfiles.push(allProfileContainers[i]);
     } else {
       allProfileContainers[i].classList.add("hidden");
     }
   }
 
+  assignProfilesToRows(foundProfiles);
   toggleClearButton();
+}
+
+function assignProfilesToRows(profiles){
+  let colCounter = 0;
+  let rowCounter = 0;
+
+  for(i=0; i<profiles.length; i++){
+      document.getElementsByClassName("w3-row-padding")[rowCounter].appendChild(profiles[i]);
+      colCounter++;
+      if(colCounter > 3){
+        colCounter = 0;
+        rowCounter++;
+      }
+  }
 }
 
 function toggleClearButton(){
@@ -48,7 +66,7 @@ function adjustAllKurzbeschreibungen(characterNumber){
   }
 }
 
-//Höhe der Profile anpassen
+//Höhe der Profile anpassen (Nicht mehr nötig)
 function equalizeHeightsOfProfiles(){
   let maxHeight = 0;
 
@@ -62,6 +80,4 @@ function equalizeHeightsOfProfiles(){
     allProfileContainers[i].setAttribute("style", "height: " + maxHeight + "px");
     // allProfileContainers[i].height = maxHeight;
   }
-
-
 }

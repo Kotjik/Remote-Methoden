@@ -43,7 +43,7 @@
     <!-- Card Section -->
     <div class="w3-container" style="padding: 128px 16px;">
       <h3 class="w3-center">Entscheidungsassistent</h3>
-      <p class="w3-center w3-large">Sie wissen nicht welche Methode Sie benutzen müssen? Beantworten Sie ein paar Fragen und wir zeigen Ihnen, welche für Sie in Frage kommen.</p>
+      <p class="w3-center w3-large">Sie wissen nicht welche Methode Sie benutzen müssen? Stellen Sie die entsprechenden Filter ein und wir zeigen Ihnen, welche Methoden für Sie in Frage kommen.</p>
 
 
       <!-- Filtermöglichkeiten -->
@@ -170,10 +170,6 @@
             </div>
           </div>
 
-
-
-
-
           <br/>
           <div class="row">
 
@@ -183,39 +179,58 @@
           </div>
       </div>
       <div id="profiles-container" class="hidden">
-        <p id="numberOfProfilesFoundElement" class="w3-center w3-large">Es gibt X Methoden, die ihren Filtereinstellungen entsprechen:</p>
-        <div>
-          <!-- TODO: Eingestellte Filter hier auflisten (mit Border und rounded corner)
-                      + "x" button um die filter zu entfernen?--> 
+        <p id="numberOfProfilesFoundElement" class="w3-center w3-large">Es gibt X Methoden, die Ihren Filtereinstellungen entsprechen:</p>
+        <p id="noFilterChosenElement" class="w3-center hidden">-Keine Filter ausgewählt-</p>
+
+        <div id="filter-bubble-container" class="w3-center">
+          <div class="filter-bubble hidden"  id="synchronitaet_filterbubble">
+            <span class="filterbubble-content">Synchronität: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
+          <div class="filter-bubble hidden"  id="moderation_filterbubble">
+            <span class="filterbubble-content">Moderation: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
+          <div class="filter-bubble hidden"  id="zeit_filterbubble">
+            <span class="filterbubble-content">Zeitaufwand: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
+          <div class="filter-bubble hidden"  id="ressourcen_filterbubble">
+            <span class="filterbubble-content">Ressourcen: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
+          <div class="filter-bubble hidden"  id="teilnehmeranzahl_filterbubble">
+            <span class="filterbubble-content">Teilnehmeranzahl: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
+          <div class="filter-bubble hidden"  id="teilnehmerart_filterbubble">
+            <span class="filterbubble-content">Teilnehmerart: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
+          <div class="filter-bubble hidden"  id="entwicklungsphase_filterbubble">
+            <span class="filterbubble-content">Entwicklungsphase: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
+          <div class="filter-bubble hidden" id="ergebnisse_filterbubble">
+            <span class="filterbubble-content">Ergebnisart: </span> <span class="far fa-times-circle fa-lg filter-bubble-icon-clear" onclick="deleteClickedFilter(this.parentElement);"></span>
+          </div>
 
         </div>
 
-
-        <div id="row-1" class="w3-row-padding">
-
-
+      <div id="row-1" class="w3-row-padding">
       </div>
+
       <div id="row-2" class="w3-row-padding">
-
       </div>
+
       <div id="row-3" class="w3-row-padding">
-
       </div>
+
       <div id="row-4" class="w3-row-padding">
-
       </div>
+
       <div id="row-5" class="w3-row-padding">
-
       </div>
+
       <div id="row-6" class="w3-row-padding">
-
       </div>
+
       <div id="row-7" class="w3-row-padding">
-
-
-
-
       </div>
+
     </div>
 
     <div id="all-profiles-section" class="hidden">
