@@ -97,7 +97,7 @@ function showWantedProfiles(){
             }else{
               synchronitaet_filterbubble.classList.remove("hidden");
               synchronitaet_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Sychronität: " +  synchronitaet_selector.value;
+                .innerHTML = "Sychronität: " +  synchronitaet_selector.options[synchronitaet_selector.selectedIndex].text;
             }
           }
           break;
@@ -111,7 +111,7 @@ function showWantedProfiles(){
             }else{
               moderation_filterbubble.classList.remove("hidden");
               moderation_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Moderation: " +  moderation_selector.value;
+                .innerHTML = "Moderation: " +  moderation_selector.options[moderation_selector.selectedIndex].text;
             }
           }
           break;
@@ -125,7 +125,7 @@ function showWantedProfiles(){
             }else{
               zeit_filterbubble.classList.remove("hidden");
               zeit_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Zeitaufwand: " +  zeit_selector.value;
+                .innerHTML = "Zeitaufwand: " +  zeit_selector.options[zeit_selector.selectedIndex].text;
             }
           }
           break;
@@ -139,7 +139,7 @@ function showWantedProfiles(){
             }else{
               ressourcen_filterbubble.classList.remove("hidden");
               ressourcen_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Ressourcen: " +  ressourcen_selector.value;
+                .innerHTML = "Ressourcen: " +  ressourcen_selector.options[ressourcen_selector.selectedIndex].text;
             }
           }
           break;
@@ -155,7 +155,7 @@ function showWantedProfiles(){
             }else{
               teilnehmeranzahl_filterbubble.classList.remove("hidden");
               teilnehmeranzahl_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Teilnehmeranzahl: " +  teilnehmeranzahl_selector.value;
+                .innerHTML = "Teilnehmeranzahl: " +  teilnehmeranzahl_selector.options[teilnehmeranzahl_selector.selectedIndex].text;
             }
           }
           break;
@@ -171,7 +171,7 @@ function showWantedProfiles(){
             }else{
               teilnehmerart_filterbubble.classList.remove("hidden");
               teilnehmerart_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Teilnehmerart: " +  teilnehmerart_selector.value;
+                .innerHTML = "Teilnehmerart: " +  teilnehmerart_selector.options[teilnehmerart_selector.selectedIndex].text;
             }
           }
           break;
@@ -185,7 +185,7 @@ function showWantedProfiles(){
             }else{
               entwicklungsphase_filterbubble.classList.remove("hidden");
               entwicklungsphase_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Entwicklungsphase: " +  entwicklungsphase_selector.value;
+                .innerHTML = "Entwicklungsphase: " +  entwicklungsphase_selector.options[entwicklungsphase_selector.selectedIndex].text;
             }
           }
           break;
@@ -201,7 +201,7 @@ function showWantedProfiles(){
             }else{
               ergebnisse_filterbubble.classList.remove("hidden");
               ergebnisse_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Ergebnisse: " +  ergebnisse_selector.value;
+                .innerHTML = "Ergebnisse: " +  ergebnisse_selector.options[ergebnisse_selector.selectedIndex].text;
             }
           }
           break;
