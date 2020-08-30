@@ -15,78 +15,104 @@
 <body>
 <!-- Navbar (sit on top) -->
 <div class="" id="navigation-bar">
-  <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a>
+  <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a> 
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small"> <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a> <a href="../entscheidungsbaum.html" class="w3-bar-item w3-button"><i class="fa fa-code-branch"></i> ENTSCHEIDUNGSBAUM</a> <a href="../remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a> </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon --> 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a> </div>
 </div>
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right:0;" id="mySidebar"> <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a> <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> <a href="../entscheidungsbaum.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSBAUM</a> <a href="../remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a> </nav>
-<img src="../resources/img/Vorschaubilder/thinkingaloudDetail.jpg" id="header-image" class="picture w3-image" alt="backgroundpic">
+<img src="../resources/img/Vorschaubilder/thinkingaloudDetail.jpg" id="header-image" class="picture w3-image" alt="backgroundpic"> 
 
 <!-- About Section -->
-<div class="w3-container" id="content">
-  <h3>PERSONA</h3>
-  <br>
-  <h4>Methodenbeschreibung:</h4>
-  <p>Personas sind da, um einen Überblick über die Nutzergruppe zu erhalten und beschreiben die wichtigsten Nutzer und deren Charaktereigenschaften mit ihren Verhaltensweisen mit dem interaktiven System. </p>
-  <br>
-  <h4>Ablauf/Anleitung:</h4>
-  <p>Basierend auf den zuvor gewonnenen nutzerbezogenen Daten müssen zunächst Zielgruppen des zu entwickelnden interaktiven Systems analysiert und benannt werden. Für jede Zielgruppe soll eine oder mehrere fiktive Personen erstellt werden. Diese werden in Form von Personas dargestellt. Hierbei handelt es sich um eine Art Steckbrief, der neben dem Namen, Alter und einem Foto typische Nutzerziele, Verhaltensweisen, Fähigkeiten und Kenntnisse enthält. Online sind zahlreiche Templates verfügbar, die für die Erstellung genutzt werden können.
-    <bold>? Wie viele Personen arbeiten an einer Persona, warum 5 Testpersonen pro Persona?</bold>
-  </p>
-  <p>https://www.usabilityzentrum.de/dokumente/Methodenhandbuch.pdf</p>
-  <br>
-  <h4>Ergebnisse/Was man mit dieser Methode erreichen will:</h4>
-  <p>Die Nutzergruppe, für die ein interaktives System können durch das Erstellen einer fiktiven Person in Form eines Steckbriefes greifbarer gemacht werden. </p>
-  <br>
-  <h4>Methodeneigenschaften für Filtersystem</h4>
-  <table style="width:100%;">
-    <tr>
-      <td>Synchron/Asynchron</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Moderiert/Automatisiert</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Art der Kommunikation</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Zeitaufwand</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Ressourcen</td>
-      <td>mittel</td>
-    </tr>
-    <tr>
-      <td>Anzahl der Teilnehmer</td>
-      <td>5 Testpersonen pro Persona</td>
-    </tr>
-    <tr>
-      <td>Art der Teilnehmer</td>
-      <td>Experte</td>
-    </tr>
-    <tr>
-      <td>Tools</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Phase der Entwickung</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Art der Ergebnisse</td>
-      <td>qualitativ</td>
-    </tr>
-  </table>
-  <br>
-  <h4>Links zu weiteren Infos/Paper:</h4>
-  <a href="https://www.usabilityzentrum.de/dokumente/Methodenhandbuch.pdf">https://www.usabilityzentrum.de/dokumente/Methodenhandbuch.pdf</a> </div>
+
+<div class="w3-container" id="about" >
+  <h3 align="center" class="w3-middle">PERSONA</h3>
+  <div div class="w3-content" style="max-width:900px;">
+    <details open class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodenbeschreibung:</h4>
+      </summary>
+      <p style="padding-left:5px">Personas sind da, um einen Überblick über die Nutzergruppe zu erhalten und beschreiben die wichtigsten Nutzer und deren Charaktereigenschaften mit ihren Verhaltensweisen mit dem interaktiven System. </p>
+    </details>
+  </div>
+  <div div class="w3-content" style="max-width:900px;">
+    <details class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ablauf/Anleitung:</h4>
+      </summary>
+      <p style="padding-left:5px">Basierend auf den zuvor gewonnenen nutzerbezogenen Daten müssen zunächst Zielgruppen des zu entwickelnden interaktiven Systems analysiert und benannt werden. Für jede Zielgruppe soll eine oder mehrere fiktive Personen erstellt werden. Diese werden in Form von Personas dargestellt. Hierbei handelt es sich um eine Art Steckbrief, der neben dem Namen, Alter und einem Foto typische Nutzerziele, Verhaltensweisen, Fähigkeiten und Kenntnisse enthält. Online sind zahlreiche Templates verfügbar, die für die Erstellung genutzt werden können.
+        <bold>? Wie viele Personen arbeiten an einer Persona, warum 5 Testpersonen pro Persona?</bold>
+      </p>
+      <p style="padding-left:5px">https://www.usabilityzentrum.de/dokumente/Methodenhandbuch.pdf</p>
+    </details>
+  </div>
+  <div div class="w3-content" style="max-width:900px;">
+    <details class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ergebnisse/Was man mit dieser Methode erreichen will</h4>
+      </summary>
+      <p style="padding-left:5px">Die Nutzergruppe, für die ein interaktives System können durch das Erstellen einer fiktiven Person in Form eines Steckbriefes greifbarer gemacht werden. </p>
+    </details>
+  </div>
+  <div div class="w3-content" style="max-width:900px;" id="customers">
+    <details class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodeneigenschaften für Filtersystem:</h4>
+      </summary>
+      <table style="width:100%; padding-left:2px;">
+        <tr>
+          <td>Synchron/Asynchron</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Moderiert/Automatisiert</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Art der Kommunikation</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Zeitaufwand</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ressourcen</td>
+          <td>mittel</td>
+        </tr>
+        <tr>
+          <td>Anzahl der Teilnehmer</td>
+          <td>5 Testpersonen pro Persona</td>
+        </tr>
+        <tr>
+          <td>Art der Teilnehmer</td>
+          <td>Experte</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Phase der Entwickung</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Art der Ergebnisse</td>
+          <td>qualitativ</td>
+        </tr>
+      </table>
+    </details>
+  </div>
+  <div div class="w3-content" style="max-width:900px;" >
+    <details class="w3-card w3-middle" >
+      <summary>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Links zu weiteren Infos/Paper:</h4>
+      </summary>
+      <a style="padding-left: 5px"  href="https://www.usabilityzentrum.de/dokumente/Methodenhandbuch.pdf">https://www.usabilityzentrum.de/dokumente/Methodenhandbuch.pdf</a> </details>
+  </div>
+  
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
     <button id="footer-up-button" class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
@@ -94,8 +120,9 @@
     <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
   </footer>
   <button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTop();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-  <script src="../resources/js/backtotop.js"></script>
-<script src="../resources/js/general.js"></script>
-<script></script>
+  <script src="../resources/js/backtotop.js"></script> 
+  <script src="../resources/js/general.js"></script> 
+  <script></script> 
+</div>
 </body>
 </html>
