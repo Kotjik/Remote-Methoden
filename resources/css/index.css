@@ -2,7 +2,7 @@
 .background-image {
   background-position: center;
   background-size: cover;
-  background-color: #fff;
+  background-color: rgba(102, 102, 102, 0.8);
   background-image: url("../../resources/img/home.jpg");
   height: 94vh;
   background-position: left;
