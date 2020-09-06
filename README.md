@@ -45,6 +45,7 @@ In diesem Abschnitt werden sämtliche Remote Methoden in Form von Kurprofilen al
 
 Der Entscheidungsassistent hilft dem Nutzer in Form von Filtereinstellungen nach Remote Methoden zu suchen. Benötigt der Nutzer beispielsweise eine Remote Methode, welche qualitative Ergebnisse liefert und nur wenig Ressourcen in Anspruch nimmt, kann er das in den Filtereinstellungen angeben und der Assistent zeigt daraufhin alle passenden Remote Methoden. Die eingestellten Filter werden dann als Tags mit aufgelistet. Diese kann man dann mit einem Klick auf das "x" entfernen und die Filtereinstellung wird darauf hin nicht mehr berücksichtigt und die Ergebnisse werden angepasst.
 
+[Screenshot einfügen: Entscheidassistent]
 
 
 ### Kontakt
