@@ -64,7 +64,6 @@ let synchronitaet_filterbubble = document.querySelector("#synchronitaet_filterbu
     entwicklungsphase_filterbubble = document.querySelector("#entwicklungsphase_filterbubble"),
     ergebnisse_filterbubble = document.querySelector("#ergebnisse_filterbubble");
 
-
 function showWantedProfiles(){
   profilesContainer.classList.remove("hidden");
   resetAllFilterBubbles();
@@ -91,13 +90,14 @@ function showWantedProfiles(){
         // Auswahl: syncrhon | asynchron | beides
         case synchronitaet_selector:
           if(synchronitaet_selector.value != "no_selection"){
-            if(synchronitaet_selector.value != synchronitaet_eigenschaft
-               || synchronitaet_eigenschaft == ""){
-              falscheEigenschaften++;
-            }else{
-              synchronitaet_filterbubble.classList.remove("hidden");
-              synchronitaet_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Sychronität: " +  synchronitaet_selector.options[synchronitaet_selector.selectedIndex].text;
+            if(synchronitaet_eigenschaft != ""){
+              if(!new RegExp("\\b" + synchronitaet_selector.value + "\\b").test(synchronitaet_eigenschaft)){
+                falscheEigenschaften++;
+              }else{
+                synchronitaet_filterbubble.classList.remove("hidden");
+                synchronitaet_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Sychronität: " +  synchronitaet_selector.options[synchronitaet_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -105,13 +105,15 @@ function showWantedProfiles(){
           // Auswahl: moderiert | automatisiert | beides
         case moderation_selector:
           if(moderation_selector.value != "no_selection"){
-            if(moderation_selector.value != moderation_eigenschaft
-               || moderation_eigenschaft == ""){
-              falscheEigenschaften++;
-            }else{
-              moderation_filterbubble.classList.remove("hidden");
-              moderation_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Moderation: " +  moderation_selector.options[moderation_selector.selectedIndex].text;
+            if(moderation_eigenschaft != ""){
+              if(!moderation_eigenschaft.includes(moderation_selector.value)){
+
+                falscheEigenschaften++;
+              }else{
+                moderation_filterbubble.classList.remove("hidden");
+                moderation_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Moderation: " +  moderation_selector.options[moderation_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -119,13 +121,14 @@ function showWantedProfiles(){
           // Auswahl: gering | mittel | hoch
         case zeit_selector:
           if(zeit_selector.value != "no_selection"){
-            if(zeit_selector.value != zeit_eigenschaft
-               || zeit_eigenschaft == ""){
-              falscheEigenschaften++;
-            }else{
-              zeit_filterbubble.classList.remove("hidden");
-              zeit_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Zeitaufwand: " +  zeit_selector.options[zeit_selector.selectedIndex].text;
+            if(zeit_eigenschaft != ""){
+              if(!zeit_eigenschaft.includes(zeit_selector.value)){
+                falscheEigenschaften++;
+              }else{
+                zeit_filterbubble.classList.remove("hidden");
+                zeit_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Zeitaufwand: " +  zeit_selector.options[zeit_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -133,13 +136,15 @@ function showWantedProfiles(){
           // Auswahl: gering | mittel | hoch
         case ressourcen_selector:
           if(ressourcen_selector.value != "no_selection"){
-            if(ressourcen_selector.value != ressourcen_eigenschaft
-               || ressourcen_eigenschaft == ""){
-              falscheEigenschaften++;
-            }else{
-              ressourcen_filterbubble.classList.remove("hidden");
-              ressourcen_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Ressourcen: " +  ressourcen_selector.options[ressourcen_selector.selectedIndex].text;
+            if(ressourcen_eigenschaft != ""){
+
+              if(!ressourcen_eigenschaft.includes(ressourcen_selector.value)){
+                falscheEigenschaften++;
+              }else{
+                ressourcen_filterbubble.classList.remove("hidden");
+                ressourcen_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Ressourcen: " +  ressourcen_selector.options[ressourcen_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -147,15 +152,16 @@ function showWantedProfiles(){
           // Auswahl: Weniger als 20 = gering | 20 bis 99 = mittel | über 90 = hoch
         case teilnehmeranzahl_selector:
           if(teilnehmeranzahl_selector.value != "no_selection"){
-            // if(teilnehmeranzahl_selector.value.includes(teilnehmeranzahl_eigenschaft)){
-            if(!teilnehmeranzahl_eigenschaft.includes(teilnehmeranzahl_selector.value)
-               || teilnehmeranzahl_selector == ""){
+            if(teilnehmeranzahl_eigenschaft != ""){
 
-              falscheEigenschaften++;
-            }else{
-              teilnehmeranzahl_filterbubble.classList.remove("hidden");
-              teilnehmeranzahl_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Teilnehmeranzahl: " +  teilnehmeranzahl_selector.options[teilnehmeranzahl_selector.selectedIndex].text;
+              if(!teilnehmeranzahl_eigenschaft.includes(teilnehmeranzahl_selector.value)){
+
+                falscheEigenschaften++;
+              }else{
+                teilnehmeranzahl_filterbubble.classList.remove("hidden");
+                teilnehmeranzahl_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Teilnehmeranzahl: " +  teilnehmeranzahl_selector.options[teilnehmeranzahl_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -163,15 +169,16 @@ function showWantedProfiles(){
           // Auswahl: anfänger | experte | stakeholder
         case teilnehmerart_selector:
           if(teilnehmerart_selector.value != "no_selection"){
-            // if(teilnehmerart_selector.value != teilnehmerart_eigenschaft){
-            if(!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)
-               || teilnehmerart_eigenschaft == ""){
+            if(teilnehmerart_eigenschaft != ""){
 
-              falscheEigenschaften++;
-            }else{
-              teilnehmerart_filterbubble.classList.remove("hidden");
-              teilnehmerart_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Teilnehmerart: " +  teilnehmerart_selector.options[teilnehmerart_selector.selectedIndex].text;
+              if(!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)){
+
+                falscheEigenschaften++;
+              }else{
+                teilnehmerart_filterbubble.classList.remove("hidden");
+                teilnehmerart_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Teilnehmerart: " +  teilnehmerart_selector.options[teilnehmerart_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -179,13 +186,15 @@ function showWantedProfiles(){
           // Auswahl: analyse | konzept | umsetzung | nachumsetzung
         case entwicklungsphase_selector:
           if(entwicklungsphase_selector.value != "no_selection"){
-            if(entwicklungsphase_selector.value != entwicklungsphase_eigenschaft
-               || entwicklungsphase_eigenschaft == ""){
-              falscheEigenschaften++;
-            }else{
-              entwicklungsphase_filterbubble.classList.remove("hidden");
-              entwicklungsphase_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Entwicklungsphase: " +  entwicklungsphase_selector.options[entwicklungsphase_selector.selectedIndex].text;
+            if(entwicklungsphase_eigenschaft != ""){
+
+              if(!new RegExp("\\b" + entwicklungsphase_selector.value + "\\b").test(entwicklungsphase_eigenschaft)){
+                falscheEigenschaften++;
+              }else{
+                entwicklungsphase_filterbubble.classList.remove("hidden");
+                entwicklungsphase_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Entwicklungsphase: " +  entwicklungsphase_selector.options[entwicklungsphase_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -193,15 +202,15 @@ function showWantedProfiles(){
           // Auswahl: quantitativ | qualitativ | beides
         case ergebnisse_selector:
           if(ergebnisse_selector.value != "no_selection"){
-            // if(ergebnisse_selector.value != ergebnisse_eigenschaft
-            // if(!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)
-            if(!ergebnisse_eigenschaft.includes(ergebnisse_selector.value)
-               || ergebnisse_eigenschaft == ""){
-              falscheEigenschaften++;
-            }else{
-              ergebnisse_filterbubble.classList.remove("hidden");
-              ergebnisse_filterbubble.querySelector(".filterbubble-content")
-                .innerHTML = "Ergebnisse: " +  ergebnisse_selector.options[ergebnisse_selector.selectedIndex].text;
+            if(ergebnisse_eigenschaft != ""){
+
+              if(!ergebnisse_eigenschaft.includes(ergebnisse_selector.value)){
+                falscheEigenschaften++;
+              }else{
+                ergebnisse_filterbubble.classList.remove("hidden");
+                ergebnisse_filterbubble.querySelector(".filterbubble-content")
+                  .innerHTML = "Ergebnisse: " +  ergebnisse_selector.options[ergebnisse_selector.selectedIndex].text;
+              }
             }
           }
           break;
@@ -210,7 +219,6 @@ function showWantedProfiles(){
     if(falscheEigenschaften == 0){
       numberOfFoundProfiles++;
       foundProfiles.push(allProfiles[i]);
-    }else{
     }
   }
 
