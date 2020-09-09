@@ -20,7 +20,7 @@ function toggleVisibility(){
 
 
 //Nach oben scrollen
-function scrollToTop(){
+function scrollToTopSmooth(){
   window.scrollTo({
     top: 0,
     behavior: "smooth"
