@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <title>Remote Methoden - Entscheidugsbaum</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <link rel="shortcut icon" href="resources/img/favicon.ico">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
@@ -12,7 +17,12 @@
   <link rel="stylesheet" href="resources/css/general.css" />
   <link rel="stylesheet" href="resources/css/entscheidungsbaum.css" />
 
-  <style></style>
+  <style>  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }</style>
+	
   <body>
     <!-- Navbar (sit on top) -->
     <div class="" id="navigation-bar">
@@ -44,14 +54,55 @@
       <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
     </nav>
 
-    <!-- Entscheidungsbaum -->
-    <div class="w3-container" style="padding: 128px 16px;" id="about">
-      <h3 class="w3-center">Entscheidungsbaum</h3>
-      <p class="w3-center w3-large">Eine visuelle Hilfestellung, welche Methode für Sie passen könnte.</p>
-      <img src="https://picsum.photos/1000/400" id="entscheidungsbaum" class="w3-image w3-card w3-middle">
+   
+	
 
-      </div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="resources/img/1.jpeg" alt="Los Angeles" width="1100" height="500" style="opacity: 0.5">
+		<div id="welcome-message" class="w3-display-left " style="padding: 248px; justify-content: space-around">
+        <span class="w3-jumbo w3-hide-small">Einverständniserklärung</span> <br />
+			 <span class="w3-large">Um auch remote die Einverständniserklärung oder Verschwiegenheitserklärungen unterschreiben zu lassen gibt es verschiedene Möglichkeiten. Die Formulare können schon im Vorhinein mit der Post geschickt werde, um von den Teilnehmern unterschrieben zu werden. Oft ist es auch ausreichend Einverständniserklärungen mit einem Onlineformular bestätigen zu lassen. Verschiedene Onlinetools zum unterschreiben können ebenso verwendet werden. Auch die mündliche Bestätigung, wenn man direkt kommuniziert ist möglich, wenn diese aufgezeichnet wird und die Bedingungen zuvor vorgelesen werden.
+</span><br/>
+		</div>
     </div>
+    <div class="carousel-item">
+      <img src="resources/img/1.jpeg" alt="Chicago" width="1100" height="500" style="opacity: 0.5">
+		<div id="welcome-message" class="w3-display-left " style="padding: 348px; justify-content: space-around">
+		 <span class="w3-jumbo w3-hide-small">Rekrutieren von Probanden</span> <br />
+			 <span class="w3-large">
+<li>höhere Ausfallrate wegen technischen Problemen, nicht persönlich anwesend sein müssen</li>
+<li>Rekrutieren aus erschiedenen Ländern: Sprechbarrieren</li>
+
+</span><br/>
+    </div>
+	  </div>
+    <div class="carousel-item">
+      <img src="resources/img/1.jpeg" alt="New York" width="1100" height="500" style="opacity: 0.5">
+		<p>hi</p>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	  
+	  
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
