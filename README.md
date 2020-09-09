@@ -16,7 +16,7 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 
 ## Beschreibung
 
-BLABLABÜABFAÜFAFA
+[Platzhalter]
 
 
 
