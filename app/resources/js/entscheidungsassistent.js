@@ -335,7 +335,11 @@ function deleteClickedFilter(element){
 
 
 
-
+// Popup Tooltips
+function showPopup(element) {
+  var popup = element.querySelector(".popuptext");
+  popup.classList.toggle("show");
+}
 
 
 

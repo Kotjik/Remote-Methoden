@@ -53,6 +53,10 @@
           <div class="row">
             <div class="col-25">
               <label for="synchronitaet">Synchronität</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext">Kommunikation zwischen Versuchsführer und Proband kann zeitgleich (synchron) oder zeitversetzt (asynchron) ablaufen.</span>
+              </div>
             </div>
             <div class="col-75">
               <select name="synchronitaet" id="synchronitaet_selector" class="minimal">
@@ -67,6 +71,10 @@
           <div class="row">
             <div class="col-25">
               <label for="moderation">Moderation</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext">Der Versuch kann vom Versuchsleiter moderiert werden. Der Proband kann aber auch automatisiert durch den Versuch geführt werden.</span>
+              </div>
             </div>
             <div class="col-75">
               <select name="moderation" id="moderation_selector" class="minimal">
@@ -81,6 +89,10 @@
           <div class="row">
             <div class="col-25">
               <label for="zeit">Zeitaufwand</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext"> Das gesamte Zeitfenster der Studie: Alles zwischen Analyse und Nach der Umsetzung.</span>
+              </div>
             </div>
             <div class="col-75">
               <select name="zeit" id="zeit_selector" class="minimal">
@@ -96,6 +108,10 @@
           <div class="row">
             <div class="col-25">
               <label for="ressourcen">Ressourcen</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext">Alle nötigen finanzielle und materiellen Mittel.</span>
+            </div>
             </div>
             <div class="col-75">
               <select name="ressourcen" id="ressourcen_selector" class="minimal">
@@ -111,6 +127,10 @@
           <div class="row">
             <div class="col-25">
               <label for="teilnehmeranzahl">Anzahl der Teilnehmer</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext">Die Gesamtanzahl an Probanden die für die Studie gebraucht werden.</span>
+              </div>
             </div>
             <div class="col-75">
               <select name="teilnehmeranzahl" id="teilnehmeranzahl_selector" class="minimal">
@@ -126,6 +146,10 @@
           <div class="row">
             <div class="col-25">
               <label for="teilnehmerart">Art der Teilnehmer</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext">Es können unterschiedliche Arten an Probanden für Usability Studien herangezogen werden: Nutzer, Experten oder Stakeholder.</span>
+              </div>
             </div>
             <div class="col-75">
               <select name="teilnehmerart" id="teilnehmerart_selector" class="minimal">
@@ -141,6 +165,10 @@
           <div class="row">
             <div class="col-25">
               <label for="entwicklungsphase">Phase der Entwicklung</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext">Eine Usability Studie wird in der Regel in vier Phasen unterteilt: Analyse, Konzept, Umsetzung und Nach der Umsetzung.</span>
+              </div>
             </div>
             <div class="col-75">
               <select name="entwicklungsphase" id="entwicklungsphase_selector" class="minimal">
@@ -157,6 +185,10 @@
           <div class="row">
             <div class="col-25">
               <label for="ergebnisse">Art der Ergebnisse</label>
+              <div class="popup" onclick="showPopup(this);">
+                <i class="fas fa-info-circle tooltip"></i>
+                <span class="popuptext">Die gesammelten Daten einer Methode können qualitativ und/oder quantitativ ausfallen.</span>
+              </div>
             </div>
             <div class="col-75">
               <select name="ergebnisse"  id="ergebnisse_selector" class="minimal">
