@@ -1,158 +1,130 @@
 <!DOCTYPE html>
 <html>
-  <title>Remote Methoden - Cognitive Walkthrough</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="../resources/img/favicon.ico">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../resources/css/general.css" />
-  <link rel="stylesheet" href="../resources/css/detailsites_css/detailsites.css" />
-  <style></style>
+<title>Remote Methoden - Cognitive Walkthrough</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="../resources/img/favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../resources/css/general.css" />
+<link rel="stylesheet" href="../resources/css/detailsites_css/detailsites.css" />
+<style></style>
 
-  <body>
-    <!-- Navbar (sit on top) -->
-    <div class="" id="navigation-bar">
-      <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a>
-        <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
-          <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-          <a href="../information.html" class="w3-bar-item w3-button"><i class="fas fa-info"></i> INFORMATION</a>
-          <a href="../remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
-          <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
-          <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
-        </div>
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a>
-      </div>
-    </div>
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right:0;" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-      <a href="../information.html" onclick="w3_close()" class="w3-bar-item w3-button">INFORMATION</a>
-      <a href="../remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
-      <a href="../entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
-      <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
-    </nav>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="" id="navigation-bar">
+  <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a> 
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small"> <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a> <a href="../information.html" class="w3-bar-item w3-button"><i class="fas fa-info"></i> INFORMATION</a> <a href="../remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a> </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon --> 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a> </div>
+</div>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right:0;" id="mySidebar"> <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a> <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> <a href="../information.html" onclick="w3_close()" class="w3-bar-item w3-button">INFORMATION</a> <a href="../remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a> </nav>
+<img src="../resources/img/Vorschaubilder/CognitiveWalkthrough.jpg" id="header-image" class="picture w3-image" alt="backgroundpic"> 
 
-
-    <img src="../resources/img/Vorschaubilder/CognitiveWalkthrough.jpg" id="header-image" class="picture w3-image" alt="backgroundpic">
-
-
-    <!-- About Section -->
-       <div class="w3-container " id="about" >
+<!-- About Section -->
+<div class="w3-container " id="about" >
   <h3 align="center" class="w3-middle">COGNITIVE WALKTHROUGH</h3>
   <div class="w3-content" style="max-width:900px;">
     <details open class="w3-card w3-middle">
       <summary>
         <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodenbeschreibung:</h4>
       </summary>
-      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Der Cognitive Walkthrough zeichnet sich dadurch aus, dass ein Usability Experte vordefinierte Interaktionen mit dem interaktiven System durchführt, wobei er so tut als sei er Nutzer und versucht mit dem geringsten kognitiven Aufwand ans Ziel zu gelangen.</p>
-	  </details>
-		   </div>
-
-  	  <div class="w3-content" style="max-width:900px;">
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Der Cognitive Walkthrough zeichnet sich dadurch aus, dass ein Usability Experte vordefinierte Interaktionen mit dem interaktiven System durchführt, wobei er so tut als sei er ein Nutzer. Dabei versucht er mit dem geringst möglichen kognitiven Aufwand ans Ziel zu gelangen und eine vordefinierte Aufgabe zu erfüllen. </p>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;">
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ablauf/Anleitung:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ablauf:</h4>
       </summary>
-      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Vor der Durchführung muss man sich auf ein paar Faktoren festlegen diese sind: einen Softwarebereich der evaluiert werden soll, einen Experten der die Evaluation durchführen soll, die zu evaluierenden Anwendungsfälle und Eigenschaften die der ‘Nutzer’ hat wie zum Beispiel Vorwissen oder Fähigkeiten. Die Anwendungsfälle werden zerlegt in Teilaufgaben und ein idealer Lösungsweg für die einzelnen Anwendungsfälle muss erarbeitet werden. Während der eigentlichen Durchführung arbeitet der Experte die Handlungsschritte zur Lösung mit dem geringsten kognitiven Aufwand aus der Sicht des Nutzers ab. Dabei wird zu jeder Interaktion entweder eine Erfolgsstory oder eine Misserfolgsstory formuliert und es wird festgehalten welches Vorwissen oder Fähigkeiten ein Nutzer haben, muss um eine Interaktion durchzuführen. Am Ende werden alle Informationen zu möglichen Usability Problemen zusammengetragen und anhand ihres Schweregrades bewertet. </p>
-		<p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">
-		[Berliner Kompetenzzentrum für Usability Maßnahmen (2019). http://projekt.kke.tu-berlin.de/methodenkarten-im-download/]
-		</p>
-		  </details>
-		   </div>
-
-  	 <div class="w3-content" style="max-width:900px;">
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Vor der Durchführung müssen verschiedene Faktoren festlegt werden: einen Softwarebereich, der evaluiert wird, mindestens einen Experten, der die Evaluation durchführt, die zu evaluierenden Anwendungsfälle in Form von konkreten Teilaufgaben, und Eigenschaften des imitierten Nutzers wie zum Beispiel Vorwissen oder Fähigkeiten. </p>
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px"> Das Entwicklerteam dokumentiert für jede Aufgabe einen idealen Lösungsweg. Dieser wird von einem Experten Schritt für Schritt abgearbeitet. Dabei verwendete er den Weg des geringsten kognitiven Aufwands und nimmt die Sichtweise eines Erstnutzers ein. Je nachdem, ob der Experte in der Annahme kein Vorwissen zu haben den nächsten Schritt als machbar wahrnimmt, werden entweder eine Erfolgsstory oder eine Misserfolgsstory formuliert. So können Erkenntnisse darüber gesammelt werden, welche Vorkenntnisse und Fähigkeiten Einfluss auf das erfolgreiche Durchführen einer Interaktion haben und wie intuitiv die Handhabung des Systems im allgemeinen ist. Am Ende werden alle Informationen zu möglichen Usability Problemen zusammengetragen und anhand ihres Schweregrades bewertet. Führen mehrere Usability Experten einen Cognitive Walkthrough durch, können diese sich zum Beispiel über eine Audio- oder Videoplattform austauschen. Auch ein gemeinsames Repository, in dem die Dokumentation zu finden ist, ist möglich. </p>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;">
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ergebnisse/Was man mit dieser Methode erreichen will:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ergebnisse:</h4>
       </summary>
-  <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px"> Die Informationen über mögliche Usability Probleme werden hergenommen, um Verbesserungsansätze für das interaktive System zu entwickeln damit die Usability Probleme nicht mehr auftreten können. Dabei wird am stärksten auf die Probleme mit dem größten Schweregrad eingegangen.</p>
-
-		 </details>
-		   </div>
-
-  	  <div class="w3-content" style="max-width:900px;" id="customers">
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px"> Die Informationen über mögliche Usability Probleme können verwendet werden, um Verbesserungsansätze für das interaktive System zu entwickeln. So können die gefundenen Usability Probleme vermieden werden. Dabei werden Probleme mit dem größten Schweregrad priorisiert.</p>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;" id="customers">
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodeneigenschaften für Filtersystem:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodeneigenschaften:</h4>
       </summary>
       <table style="width:100%; padding-left:2px;">
-    <tr>
-      <td>Synchron/Asynchron</td>
-      <td>asynchron</td>
-    </tr>
-    <tr>
-      <td>Moderiert/Automatisiert</td>
-      <td>automatisiert</td>
-    </tr>
-    <tr>
-      <td>Art der Kommunikation</td>
-      <td>Minimum: Direct Communication (Text), Common Repository (file sharing)
-	  Improved: Direct Communication (Audio, Video), Annotation Tools (Shared Whiteboard for Inspection Annotation)
-</td>
-    </tr>
-    <tr>
-      <td>Zeitaufwand</td>
-      <td>mittel</td>
-    </tr>
-     <tr>
-      <td>Ressourcen</td>
-      <td>gering</td>
-    </tr>
-    <tr>
-      <td>Anzahl der Teilnehmer</td>
-      <td>Anzahl der Teilnehmer	min. 1 Usability-Experte</td>
-    </tr>
-    <tr>
-      <td>Art der Teilnehmer</td>
-      <td>Experte</td>
-    </tr>
-    <tr>
-      <td>Tools</td>
-      <td></td>
-    </tr>
-   <tr>
-      <td>Phase der Entwickung</td>
-      <td>Konzept/Entwicklung</td>
-    </tr>
-   <tr>
-      <td>Art der Ergebnisse</td>
-      <td>qualitativ</td>
-    </tr>
-  </table>
-		  </details>
-		   </div>
-
-  	 <div class="w3-content" style="max-width:900px;" >
+        <tr>
+          <td>Synchron/Asynchron</td>
+          <td>Asynchron</td>
+        </tr>
+        <tr>
+          <td>Moderiert/Automatisiert</td>
+          <td>Automatisiert</td>
+        </tr>
+        <tr>
+          <td>Art der Kommunikation</td>
+          <td>Minimum: textuelle Kommunikation, Gemeinsames Repository (Dateien teilen)
+            Besser: Audio-/Videokommunikation, Annotation Tools (Shared Whiteboard for Inspection Annotation) </td>
+        </tr>
+        <tr>
+          <td>Zeitaufwand</td>
+          <td>Mittel</td>
+        </tr>
+        <tr>
+          <td>Ressourcen</td>
+          <td>Gering</td>
+        </tr>
+        <tr>
+          <td>Anzahl der Teilnehmer</td>
+          <td>1 Person</td>
+        </tr>
+        <tr>
+          <td>Art der Teilnehmer</td>
+          <td>Experte</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td>UserZoom, Zoom, GitHub</td>
+        </tr>
+        <tr>
+          <td>Phase der Entwickung</td>
+          <td>Konzept</td>
+        </tr>
+        <tr>
+          <td>Art der Ergebnisse</td>
+          <td>Qualitativ</td>
+        </tr>
+      </table>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;" >
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Links zu weiteren Infos/Paper:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Quellen:</h4>
       </summary>
-
-  <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">Berliner Kompetenzzentrum für Usability Maßnahmen (2019). http://projekt.kke.tu-berlin.de/methodenkarten-im-download/</p>
-		 </details>
-    </div>
-
-
-
-
-
-<!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64">
-      <button id="footer-up-button" class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
-      <p>2020 - UNIVERSITÄT REGENSBURG</p>
-      <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
-    </footer>
-    <button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTopSmooth();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-    <script src="../resources/js/backtotop.js"></script>
-    <script src="../resources/js/general.js"></script>
-    <script></script>
-		</div>
-  </body>
+      <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">Ber Hanington, B., & Martin, B. (2012). Universal methods of design: 100 ways to research complex problems, develop innovative ideas, and design effective solutions. Rockport Publishers. pp. 32.</p>
+      <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">Berliner Kompetenzzentrum für Usability Maßnahmen (2019). pp. 41. http://projekt.kke.tu-berlin.de/methodenkarten-im-download/</p>
+      <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">Fidas, C., Katsanos, C., Papachristos, E., Nikolaos, T., & Avouris, N. (2007). Remote usability evaluation methods and tools: A survey. In Panhellenic Conference on HumanComputer Interaction PCHCI (No. 2002, pp. 151-163).</p>
+      <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">GERMAN UPA, Usability Professionals’ Association. Usability Quartett.</p>
+    </details>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <button id="footer-up-button" class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
+    <p>2020 - UNIVERSITÄT REGENSBURG</p>
+    <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
+  </footer>
+  <button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTopSmooth();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+  <script src="../resources/js/backtotop.js"></script> 
+  <script src="../resources/js/general.js"></script> 
+  <script></script> 
+</div>
+</body>
 </html>

@@ -1,160 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <title>Remote Methoden - Eye Tracking</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="../resources/img/favicon.ico">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../resources/css/general.css" />
-  <link rel="stylesheet" href="../resources/css/detailsites_css/detailsites.css" />
-  <style></style>
+<title>Remote Methoden - Eye Tracking</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" href="../resources/img/favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../resources/css/general.css" />
+<link rel="stylesheet" href="../resources/css/detailsites_css/detailsites.css" />
+<style></style>
 
-  <body>
-    <!-- Navbar (sit on top) -->
-    <div class="" id="navigation-bar">
-      <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a>
-        <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
-          <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
-          <a href="../information.html" class="w3-bar-item w3-button"><i class="fas fa-info"></i> INFORMATION</a>
-          <a href="../remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a>
-          <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
-          <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
-        </div>
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a>
-      </div>
-    </div>
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right:0;" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-      <a href="../information.html" onclick="w3_close()" class="w3-bar-item w3-button">INFORMATION</a>
-      <a href="../remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
-      <a href="../entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a>
-      <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
-    </nav>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="" id="navigation-bar">
+  <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="../index.html" class="w3-bar-item w3-button w3-wide"> <img class="logo" src="../resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a> 
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small"> <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a> <a href="../information.html" class="w3-bar-item w3-button"><i class="fas fa-info"></i> INFORMATION</a> <a href="../remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a> </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon --> 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a> </div>
+</div>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right:0;" id="mySidebar"> <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a> <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> <a href="../information.html" onclick="w3_close()" class="w3-bar-item w3-button">INFORMATION</a> <a href="../remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a> <a href="../entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a> <a href="../kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a> </nav>
+<img src="../resources/img/Vorschaubilder/EyeTracking.jpg" id="header-image" class="picture w3-image" alt="backgroundpic"> 
 
-
-    <img src="../resources/img/Vorschaubilder/EyeTracking.jpg" id="header-image" class="picture w3-image" alt="backgroundpic">
-
-
-    <!-- About Section -->
-    <div class="w3-container " id="about" >
+<!-- About Section -->
+<div class="w3-container " id="about" >
   <h3 align="center" class="w3-middle">EYE TRACKING</h3>
   <div class="w3-content" style="max-width:900px;">
     <details open class="w3-card w3-middle" >
       <summary>
         <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodenbeschreibung:</h4>
       </summary>
-      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Beim Eye Tracking werden die Blickverläufe und die Zeit, die der Teilnehmer auf bestimmten Elementen des interaktiven Systems verweilt gemessen.</p>
-	  </details>
-		</div>
-
-  	 <div class="w3-content" style="max-width:900px;">
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Beim Eye Tracking werden die Blickverläufe und die Zeit, die der Teilnehmer auf bestimmten Elementen des interaktiven Systems verweilt gemessen. So erhält man Einblick welche Aspekte des interaktiven Systems die Aufmerksamkeit des Nutzers länger oder kürzer in Anspruch nehmen, oder auch welche er komplett ignoriert. Im Regelfall werden mit den erhaltenen Daten Heat Maps erstellt.</p>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;">
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ablauf/Anleitung:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ablauf:</h4>
       </summary>
-      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Eye Tracking ist eine Methode, die primär immer noch im Labor durchgeführt wird. Allerdings gibt es immer mehr Ansätze Eye Tracking auch Remote durchzuführen.  Mittlerweile gibt es aber schon Methoden die mit relativ wenig Aufwand auch remote durchführbar sind, teilweise reicht dafür schon die eigene Webcam der Probanden. Head-mounted Eye Trackern, sind am Kopf des Probanden angebracht wie eine Brille. Sowohl die Augenbewegung, als auch das, was der Proband sieht werden gefilmt und die daraus resultierenden Daten ausgewertet. Diese müssten dem Proband allerdings geschickt werden und je nach Schwierigkeit der Nutzung ist es nur weniger zu empfehlen. Remote Sensoren die am PC angebracht werden, auf dem die passende Software aufgesoielt ist sind für remote Methoden eher weniger geeignet. Die günstigste, aber aktuell noch ungenaueste, Variante kann mit  Hilfe der Webcam der Probanden durchgeführt werden. Verschiedene Online Tools stehen hierfür bereits zur Verfügung.  </p>
-		<p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">So können neben Webseiten, mobilen Anwendungen und Software auch Produkte selbst mit Eye Tracking untersucht werden.</p>
-		<p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">https://www.skopos-nova.de/nova-blog/webcam-eyetracking-diese-tools-sollten-sie-probieren.html</p>
-		<p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">https://www.eresult.de/ux-wissen/forschungsbeitraege/einzelansicht/news/eye-tracking-ein-ueberblick/</p>
-		<p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">https://imotions.com/biosensor/eye-tracking-glasses/?creative=163574933206&keyword=mobile%20eye%20tracking&matchtype=e&network=g&device=c&gclid=EAIaIQobChMIvc-o6tyd6wIVzu5RCh10IwkoEAAYAiAAEgIXCfD_BwE</p>
-		 </details>
-		</div>
-
-
-  	 <div class="w3-content" style="max-width:900px;">
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Eye Tracking ist eine Methode, die primär immer noch im Labor durchgeführt wird. Allerdings gibt es immer mehr Ansätze Eye Tracking ohne großen Aufwand auch Remote durchzuführen, teilweise reicht dafür schon die eigene Webcam der Probanden um die Augenbewegungen aufzuzeichnen. Jedoch, ist diese Methode noch sehr unausgereift, da die Webcam ohne Sensoren operieren muss und dadurch ungenaue Ergebnisse liefert. Es handelt sich hierbei jedoch um den aktuell günstigsten und praktikabelsten Lösungsansatz wenn man auf die Augenbewegungen der Teilnehmer angewiesen ist. Auch existieren bereits verschiedene online Tools für diese Herangehensweise. </p>
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Eine Alternative sind Head-Mounted Eye Tracker. Diese sind am Kopf des Probanden angebracht ähnlich einer Brille. Gefilmt werden dabei sowohl die Augenbewegung der Probanden, als auch sein Blickfeld. Diese Eye Tracker müssten dem Proband allerdings geschickt werden damit dieser an der Studie teilnehmen kann und je nach Expertise des Probanden können Schwierigkeiten auftreten wenn dieser die Tracker kalibrieren muss oder wenn die Nutzung der Brille nicht intuitiv ist. Zu berücksichtigen ist ebenfalls, die Anzahl an verfügbaren Brillen welche je nach Forschungsinstitut stark schwanken können.</p>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;">
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ergebnisse/Was man mit dieser Methode erreichen will:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Ergebnisse:</h4>
       </summary>
-  <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Daten die durch Eyetracking Studien entstehen, sind oft Heatmaps, Opacity Maps oder auch Gazeplots. Diese stellen auf unterschiedliche Weise den Blickverlauf und -dauer des Nutzers dar, so können wichtige Erkenntnisse darüber gewonnen werden, was vom Nutzer wahrgenommen wird und was nicht, wie lange bestimmte Elemente betrachtet werden, welche wichtigen Elemente evtl. vom Nutzer nicht bemerkt werden, welche unwichtigen Elemente ablenken,...</p>
-		<p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">https://www.usability.de/leistungen/ux-testing-nutzerforschung/eyetracking.html</p>
-		 </details>
-		</div>
-
-  	  <div class="w3-content" style="max-width:900px;" id="customers">
+      <p style="padding-left:10px; padding-right: 10px; padding-bottom: 10px">Daten, die durch Eyetracking Studien entstehen, werden im Normalfall verwendet um Heatmaps, Opacity Maps oder auch Gazeplots zu erstellen. Diese repräsentieren auf verschiedene Weise den Blickverlauf und die Blickdauer des Nutzers auf unterschiedliche Elemente des interaktiven Systems. So können wichtige Erkenntnisse darüber gewonnen werden, was vom Nutzer wahrgenommen wird und was nicht, wie lange bestimmte Elemente betrachtet werden, welche wichtigen Elemente eventuell vom Nutzer nicht bemerkt werden oder auch welche unwichtigen Elemente ablenken.</p>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;" id="customers">
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodeneigenschaften für Filtersystem:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Methodeneigenschaften:</h4>
       </summary>
       <table style="width:100%; padding-left:2px;">
-    <tr>
-      <td>Synchron/Asynchron</td>
-      <td>synchron</td>
-    </tr>
-    <tr>
-      <td>Moderiert/Automatisiert</td>
-      <td>moderiert</td>
-    </tr>
-    <tr>
-      <td>Art der Kommunikation</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Zeitaufwand</td>
-      <td></td>
-    </tr>
-     <tr>
-      <td>Ressourcen</td>
-      <td>sehr hoch</td>
-    </tr>
-    <tr>
-      <td>Anzahl der Teilnehmer</td>
-      <td>ca. 10 - 15 Testpersonen</td>
-    </tr>
-    <tr>
-      <td>Art der Teilnehmer</td>
-      <td>Experte</td>
-    </tr>
-    <tr>
-      <td>Tools</td>
-      <td>Remote Eyetracking Sensoren, Online Tools für Eyetracking, Eyetracking Brillen</td>
-    </tr>
-   <tr>
-      <td>Phase der Entwickung</td>
-      <td></td>
-    </tr>
-   <tr>
-      <td>Art der Ergebnisse</td>
-      <td>qualitativ</td>
-    </tr>
-  </table>
-
-		  </details>
-		</div>
-
-  	 <div class="w3-content" style="max-width:900px;" >
+        <tr>
+          <td>Synchron/Asynchron</td>
+          <td>Synchron</td>
+        </tr>
+        <tr>
+          <td>Moderiert/Automatisiert</td>
+          <td>Moderiert</td>
+        </tr>
+        <tr>
+          <td>Art der Kommunikation</td>
+          <td>Variiert je nach Art der Umsetzung</td>
+        </tr>
+        <tr>
+          <td>Zeitaufwand</td>
+          <td>Hoch</td>
+        </tr>
+        <tr>
+          <td>Ressourcen</td>
+          <td>Sehr hoch</td>
+        </tr>
+        <tr>
+          <td>Anzahl der Teilnehmer</td>
+          <td>10 - 15 Personen</td>
+        </tr>
+        <tr>
+          <td>Art der Teilnehmer</td>
+          <td>Experte, Nutzer</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td>Webcam Tools (z. B. Eyedecider.com, RealEye.io)</td>
+        </tr>
+        <tr>
+          <td>Phase der Entwickung</td>
+          <td>Analyse, nach der Umsetzung</td>
+        </tr>
+        <tr>
+          <td>Art der Ergebnisse</td>
+          <td>Qualitativ</td>
+        </tr>
+      </table>
+    </details>
+  </div>
+  <div class="w3-content" style="max-width:900px;" >
     <details class="w3-card w3-middle" >
       <summary>
-        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Links zu weiteren Infos/Paper:</h4>
+        <h4 class="w3-card w3-dark-grey w3-middle" style="padding: 2px;" align="center">Quellen:</h4>
       </summary>
-
-  <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">https://www.skopos-nova.de/nova-blog/webcam-eyetracking-diese-tools-sollten-sie-probieren.html</p>
-		<p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">https://www.eresult.de/ux-wissen/forschungsbeitraege/einzelansicht/news/eye-tracking-ein-ueberblick/</p>
-		 </details>
-    </div>
-
-    </div>
-
-
+      <a style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px" href="https://www.skopos-nova.de/nova-blog/webcam-eyetracking-diese-tools-sollten-sie-probieren.html">https://www.skopos-nova.de/nova-blog/webcam-eyetracking-diese-tools-sollten-sie-probieren.html</a> <br>
+      <br>
+      <a style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px" href="https://www.eresult.de/ux-wissen/forschungsbeitraege/einzelansicht/news/eye-tracking-ein-ueberblick/">https://www.eresult.de/ux-wissen/forschungsbeitraege/einzelansicht/news/eye-tracking-ein-ueberblick/</a> <br>
+      <br>
+      <a style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px" href="https://www.usability.de/leistungen/ux-testing-nutzerforschung/eyetracking.html">https://www.usability.de/leistungen/ux-testing-nutzerforschung/eyetracking.html</a> <br>
+      <br>
+      <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">Ber Hanington, B., & Martin, B. (2012). Universal methods of design: 100 ways to research complex problems, develop innovative ideas, and design effective solutions. Rockport Publishers. pp. 86.</p>
+      <p style = "padding-left:10px; padding-right: 10px; padding-bottom: 10px">GERMAN UPA, Usability Professionals’ Association. Usability Quartett.</p>
+    </details>
+  </div>
+</div>
 
 <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64">
-      <button id="footer-up-button" class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
-      <p>2020 - UNIVERSITÄT REGENSBURG</p>
-      <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
-    </footer>
-    <button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTopSmooth();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-    <script src="../resources/js/backtotop.js"></script>
-    <script src="../resources/js/general.js"></script>
-    <script></script>
-	  </div>
-  </body>
+<footer class="w3-center w3-black w3-padding-64">
+  <button id="footer-up-button" class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
+  <p>2020 - UNIVERSITÄT REGENSBURG</p>
+  <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
+</footer>
+<button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTopSmooth();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+<script src="../resources/js/backtotop.js"></script> 
+<script src="../resources/js/general.js"></script> 
+<script></script>
+</div>
+</body>
 </html>
