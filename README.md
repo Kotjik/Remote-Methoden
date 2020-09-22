@@ -25,7 +25,7 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 Dieser Punkt stellt den Willkommens-Bildschirm dar. Hier steht eine kurze Beschreibung der Website inklusive deren Zweck und verweist auf weitere Links und Funktionen.
 
 [Screenshot einfügen: Home]
-<p align="center"><img alt="Startbildschirm" src="Images/Screenshots/home_desktop.png" height="400" /></p>
+<p align="center"><img alt="Startbildschirm" src="Images/Screenshots/home_desktop.png" height="400" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"/></p>
 
 
 ### Infos
