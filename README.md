@@ -25,7 +25,7 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 Dieser Punkt stellt den Willkommens-Bildschirm dar. Hier steht eine kurze Beschreibung der Website inklusive deren Zweck und verweist auf weitere Links und Funktionen.
 
 [Screenshot einfügen: Home]
-<p align="center"><img alt="Startbildschirm" src="Images/Screenshots/home_desktop.png" height="400" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"/></p>
+<p align="center"><img alt="Startbildschirm" src="Images/Screenshots/home_desktop.png" height="400" style=""/></p>
 
 
 ### Infos
@@ -79,10 +79,12 @@ Für jede Remote Methode gibt es eine eigene Detailseite auf der jegliche Inform
 
 Die komplette Anwendung wurde auch für die mobile Ansicht optimiert. Jeder Unterpunkt und Funktion wird auch für Smartphones oder Tablets ideal angezeigt und funktioniert fehlerfrei.
 
-[Screenshots einfügen - Mobile Ansicht]
-| <img src="Images/Screenshots/home_mobile.png" width="200" /> | <img src="Images/Screenshots/home_mobile_menu.png" width="200" /> | <img src="Images/Screenshots/detailsites_mobile.png" width="200" /> |
+[Screenshots einfügen - Mobile Ansicht]<br/>
+
+| <img src="Images/Screenshots/home_mobile.png" width="200" /> | <img src="Images/Screenshots/home_mobile_menu.png" width="200" /> | <img src="Images/Screenshots/detailsite_mobile.png" width="200" /> |
 |:-----------------:|:-----------------:|:-----------------:|
 | Startbildschirm | Menü | Detailseite |
+<br/>
 
 | <img src="Images/Screenshots/search_mobile.png" width="200" /> | <img src="Images/Screenshots/entscheidungsassistent_mobile_1.png" width="200" /> | <img src="Images/Screenshots/contact_mobile.png" width="200" /> |
 |:-----------------:|:-----------------:|:-----------------:|
