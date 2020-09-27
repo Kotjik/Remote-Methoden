@@ -2,10 +2,9 @@
 
 In Zeiten der Corona Pandemie ist das Durchführen von Studien nicht mehr wie gewohnt möglich. Um ein effektives Arbeiten weiterhin zu gewährleisten, bietet diese Web Applikation den Studenten und dem Lehrstuhl Medieninformatik der Universität Regensburg Wissen bezüglich Remote-Methoden. Dabei beschreiben einzelne Remote-Profile die Methoden, erklären den Ablauf, liefern Aufschluss über die Ergebnisse, nennen spezielle Eigenschaften und verweisen auf informative Verlinkungen. Ein Entscheidassistent dient als Filtersystem. Dabei werden dem Nutzer durch individuelle Angaben passende Remote-Methoden vorgeschlagen.
 
-Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwendung (auf Groß- & Kleinschreibung achten): <a href="https://kotjik.github.io/Remote-Methoden/app/index.html">https://kotjik.github.io/Remote-Methoden/app/index.html</a>
+Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwendung (auf Groß- & Kleinschreibung achten): <a href="https://kotjik.github.io/Remote-Methoden/app/index.html" target="_blank">https://kotjik.github.io/Remote-Methoden/app/index.html</a>
 
-[Screenshot einfügen: Homepage]
-
+<p align="center"><img alt="" src="Images/Screenshots/home_desktop.png" height="400" style=""/></p>
 
 ## Team
 
@@ -15,9 +14,6 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 
 
 ## Beschreibung
-
-[Platzhalter]
-
 
 
 ### Home
@@ -38,7 +34,6 @@ XXX
 
 In diesem Abschnitt werden sämtliche Remote Methoden in Form von Kurprofilen als Karten dargestellt. Pro Kurzprofil wird eine kleine Grafik, der Name der Methode, eine Kurzbeschreibung der Methode und ein Link auf die Detailseite der Methode angezeigt. Der Nutzer kann hier auch über eine Suchleiste nach bestimmten Methoden suchen.
 
-[Screenshot einfügen: Remote-Profile]
 <p align="center"><img alt="" src="Images/Screenshots/search_desktop_1.png" height="400" /></p>
 <br/>
 <p align="center"><img alt="" src="Images/Screenshots/search_desktop_2.png" height="400" /></p>
@@ -50,7 +45,6 @@ In diesem Abschnitt werden sämtliche Remote Methoden in Form von Kurprofilen al
 
 Der Entscheidungsassistent hilft dem Nutzer in Form von Filtereinstellungen nach Remote Methoden zu suchen. Benötigt der Nutzer beispielsweise eine Remote Methode, welche qualitative Ergebnisse liefert und nur wenig Ressourcen in Anspruch nimmt, kann er das in den Filtereinstellungen angeben und der Assistent zeigt daraufhin alle passenden Remote Methoden. Die eingestellten Filter werden dann als Tags mit aufgelistet. Diese kann man dann mit einem Klick auf das "x" entfernen und die Filtereinstellung wird darauf hin nicht mehr berücksichtigt und die Ergebnisse werden angepasst.
 
-[Screenshot einfügen: Entscheidassistent]
 <p align="center"><img alt="" src="Images/Screenshots/entscheidungsassistent_desktop_1.png" height="400" /></p>
 <br/>
 <p align="center"><img alt="" src="Images/Screenshots/entscheidungsassistent_desktop_2.png" height="400" /></p>
