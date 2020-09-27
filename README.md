@@ -4,7 +4,7 @@ In Zeiten der Corona Pandemie ist das Durchführen von Studien nicht mehr wie ge
 
 Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwendung (auf Groß- & Kleinschreibung achten): <a href="https://kotjik.github.io/Remote-Methoden/app/index.html">https://kotjik.github.io/Remote-Methoden/app/index.html</a>
 
-<p align="center"><img alt="" src="Images/Screenshots/home_desktop.png" height="400" style=""/></p>
+<p align="center"><img alt="" src="Images/Screenshots/home_desktop.png"  style=""/></p>
 
 ## Team
 
@@ -20,23 +20,23 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 
 Dieser Punkt stellt den Willkommens-Bildschirm dar. Hier steht eine kurze Beschreibung der Website inklusive deren Zweck und verweist auf weitere Links und Funktionen.
 
-<p align="center"><img alt="" src="Images/Screenshots/home_desktop.png" height="400" style=""/></p>
+<p align="center"><img alt="" src="Images/Screenshots/home_desktop.png"  style=""/></p>
 
 
 ### Information
 
 XXX
 
-<p align="center"><img alt="" src="Images/Screenshots/information_desktop.png" height="400" style=""/></p>
+<p align="center"><img alt="" src="Images/Screenshots/information_desktop.png"  style=""/></p>
 
 
 ### Remote-Profile
 
 In diesem Abschnitt werden sämtliche Remote Methoden in Form von Kurprofilen als Karten dargestellt. Pro Kurzprofil wird eine kleine Grafik, der Name der Methode, eine Kurzbeschreibung der Methode und ein Link auf die Detailseite der Methode angezeigt. Der Nutzer kann hier auch über eine Suchleiste nach bestimmten Methoden suchen.
 
-<p align="center"><img alt="" src="Images/Screenshots/search_desktop_1.png" height="400" /></p>
+<p align="center"><img alt="" src="Images/Screenshots/search_desktop_1.png"  /></p>
 <br/>
-<p align="center"><img alt="" src="Images/Screenshots/search_desktop_2.png" height="400" /></p>
+<p align="center"><img alt="" src="Images/Screenshots/search_desktop_2.png"  /></p>
 
 
 
@@ -45,9 +45,9 @@ In diesem Abschnitt werden sämtliche Remote Methoden in Form von Kurprofilen al
 
 Der Entscheidungsassistent hilft dem Nutzer in Form von Filtereinstellungen nach Remote Methoden zu suchen. Benötigt der Nutzer beispielsweise eine Remote Methode, welche qualitative Ergebnisse liefert und nur wenig Ressourcen in Anspruch nimmt, kann er das in den Filtereinstellungen angeben und der Assistent zeigt daraufhin alle passenden Remote Methoden. Die eingestellten Filter werden dann als Tags mit aufgelistet. Diese kann man dann mit einem Klick auf das "x" entfernen und die Filtereinstellung wird darauf hin nicht mehr berücksichtigt und die Ergebnisse werden angepasst.
 
-<p align="center"><img alt="" src="Images/Screenshots/entscheidungsassistent_desktop_1.png" height="400" /></p>
+<p align="center"><img alt="" src="Images/Screenshots/entscheidungsassistent_desktop_1.png"  /></p>
 <br/>
-<p align="center"><img alt="" src="Images/Screenshots/entscheidungsassistent_desktop_2.png" height="400" /></p>
+<p align="center"><img alt="" src="Images/Screenshots/entscheidungsassistent_desktop_2.png"  /></p>
 
 
 
@@ -55,14 +55,14 @@ Der Entscheidungsassistent hilft dem Nutzer in Form von Filtereinstellungen nach
 
 Unter diesem Punkt werden die Personen aufgelistet, die in diesem Projekt mitgearbeitet haben. Es wird die Möglichkeit gegeben jeden dieser Personen per Mail zu kontaktieren.
 
-<p align="center"><img alt="" src="Images/Screenshots/contact_desktop.png" height="400" /></p>
+<p align="center"><img alt="" src="Images/Screenshots/contact_desktop.png"  /></p>
 
 
 ### Detailseiten
 
 Für jede Remote Methode gibt es eine eigene Detailseite auf der jegliche Informationen dazu aufgelistet werden. Für jede Remote Methode gibt es eine Methodenbeschreibung, einen Ablauf / eine Anleitung, Ergebnisse / Was man mit dieser Methode erreichen will, methodeneigenschaften für das Filtersystem und Lunks zu weiteren Infos / Papern.
 
-<p align="center"><img alt="" src="Images/Screenshots/detailsite_desktop.png" height="400" /></p>
+<p align="center"><img alt="" src="Images/Screenshots/detailsite_desktop.png" /></p>
 
 
 
@@ -73,6 +73,7 @@ Die komplette Anwendung wurde auch für die mobile Ansicht optimiert. Jeder Unte
 | <img src="Images/Screenshots/home_mobile.png" width="200" /> | <img src="Images/Screenshots/home_mobile_menu.png" width="200" /> | <img src="Images/Screenshots/detailsite_mobile.png" width="200" /> | <img src="Images/Screenshots/information_mobile.png" width="200" /> |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | Home | Menü | Detailseite | Information |
+
 <br/>
 
 | <img src="Images/Screenshots/search_mobile.png" width="200" /> | <img src="Images/Screenshots/entscheidungsassistent_mobile_1.png" width="200" /> | <img src="Images/Screenshots/contact_mobile.png" width="200" /> |
