@@ -335,10 +335,16 @@ function deleteClickedFilter(element){
 
 
 
-// Popup Tooltips
-function showPopup(element) {
-  var popup = element.querySelector(".popuptext");
-  popup.classList.toggle("show");
+// Tooltips
+function showTooltip(e) {
+  // var tooltip = element.querySelector(".popuptext");
+  var tooltiptext = e.parentNode.parentNode.querySelector(".tooltiptext");
+
+  tooltiptext.classList.toggle("hidden");
+}
+
+function toggleHidden(e){
+  e.classList.toggle("hidden");
 }
 
 

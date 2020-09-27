@@ -24,16 +24,15 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 
 Dieser Punkt stellt den Willkommens-Bildschirm dar. Hier steht eine kurze Beschreibung der Website inklusive deren Zweck und verweist auf weitere Links und Funktionen.
 
-[Screenshot einfügen: Home]
 <p align="center"><img alt="" src="Images/Screenshots/home_desktop.png" height="400" style=""/></p>
 
 
-### Infos
+### Information
 
-blablba
+XXX
 
-[Screenshot einfügen: Infos]
-TBD
+<p align="center"><img alt="" src="Images/Screenshots/information_desktop.png" height="400" style=""/></p>
+
 
 ### Remote-Profile
 
@@ -62,7 +61,6 @@ Der Entscheidungsassistent hilft dem Nutzer in Form von Filtereinstellungen nach
 
 Unter diesem Punkt werden die Personen aufgelistet, die in diesem Projekt mitgearbeitet haben. Es wird die Möglichkeit gegeben jeden dieser Personen per Mail zu kontaktieren.
 
-[Screenshot einfügen: Kontakt]
 <p align="center"><img alt="" src="Images/Screenshots/contact_desktop.png" height="400" /></p>
 
 
@@ -70,7 +68,6 @@ Unter diesem Punkt werden die Personen aufgelistet, die in diesem Projekt mitgea
 
 Für jede Remote Methode gibt es eine eigene Detailseite auf der jegliche Informationen dazu aufgelistet werden. Für jede Remote Methode gibt es eine Methodenbeschreibung, einen Ablauf / eine Anleitung, Ergebnisse / Was man mit dieser Methode erreichen will, methodeneigenschaften für das Filtersystem und Lunks zu weiteren Infos / Papern.
 
-[Screenshot einfügen: Detailseite]
 <p align="center"><img alt="" src="Images/Screenshots/detailsite_desktop.png" height="400" /></p>
 
 
@@ -79,11 +76,9 @@ Für jede Remote Methode gibt es eine eigene Detailseite auf der jegliche Inform
 
 Die komplette Anwendung wurde auch für die mobile Ansicht optimiert. Jeder Unterpunkt und Funktion wird auch für Smartphones oder Tablets ideal angezeigt und funktioniert fehlerfrei.
 
-[Screenshots einfügen - Mobile Ansicht]<br/>
-
-| <img src="Images/Screenshots/home_mobile.png" width="200" /> | <img src="Images/Screenshots/home_mobile_menu.png" width="200" /> | <img src="Images/Screenshots/detailsite_mobile.png" width="200" /> |
-|:-----------------:|:-----------------:|:-----------------:|
-|  | Menü | Detailseite |
+| <img src="Images/Screenshots/home_mobile.png" width="200" /> | <img src="Images/Screenshots/home_mobile_menu.png" width="200" /> | <img src="Images/Screenshots/detailsite_mobile.png" width="200" /> | <img src="Images/Screenshots/information_mobile.png" width="200" /> |
+|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
+| Home | Menü | Detailseite | Information |
 <br/>
 
 | <img src="Images/Screenshots/search_mobile.png" width="200" /> | <img src="Images/Screenshots/entscheidungsassistent_mobile_1.png" width="200" /> | <img src="Images/Screenshots/contact_mobile.png" width="200" /> |
