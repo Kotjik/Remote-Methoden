@@ -23,60 +23,59 @@ function searchRemoteProfiles() {
   toggleClearButton();
 }
 
-function assignProfilesToRows(profiles){
+function assignProfilesToRows(profiles) {
   let colCounter = 0;
   let rowCounter = 0;
 
-  for(i=0; i<profiles.length; i++){
-      document.getElementsByClassName("w3-row-padding")[rowCounter].appendChild(profiles[i]);
-      colCounter++;
-      if(colCounter > 3){
-        colCounter = 0;
-        rowCounter++;
-      }
+  for (i = 0; i < profiles.length; i++) {
+    document.getElementsByClassName("w3-row-padding")[rowCounter].appendChild(profiles[i]);
+    colCounter++;
+    if (colCounter > 3) {
+      colCounter = 0;
+      rowCounter++;
+    }
   }
 }
 
-function toggleClearButton(){
-  if(searchInput.value.length == 0){
+function toggleClearButton() {
+  if (searchInput.value.length == 0) {
     clearButton.classList.add("hidden");
-  }else{
+  } else {
     clearButton.classList.remove("hidden");
   }
 }
 
-function clearInput(){
+function clearInput() {
   searchInput.value = "";
   clearButton.classList.add("hidden");
   searchRemoteProfiles();
 }
 
 //Kurzbeschreibungen per JS anpassen
-function adjustAllKurzbeschreibungen(characterNumber){
+function adjustAllKurzbeschreibungen(characterNumber) {
   for (i = 0; i < allProfileContainers.length; i++) {
     let currentKurzbeschreibungElement = allProfileContainers[i].querySelector(".kurzbeschreibung");
     let currentKurzbeschreibungString = currentKurzbeschreibungElement.textContent;
-    if (currentKurzbeschreibungString.length > characterNumber){
+    if (currentKurzbeschreibungString.length > characterNumber) {
       let shortedString = currentKurzbeschreibungString.substring(0, characterNumber);
       let link = allProfileContainers[i].querySelector("a").getAttribute("href");
 
-      currentKurzbeschreibungElement.innerHTML = shortedString + "... <a href='"
-                                + link + "'>(weiter lesen)</a>";
+      currentKurzbeschreibungElement.innerHTML = shortedString + "... <a href='" + link + "'>(weiter lesen)</a>";
     }
   }
 }
 
 //Höhe der Profile anpassen (Nicht mehr nötig)
-function equalizeHeightsOfProfiles(){
+function equalizeHeightsOfProfiles() {
   let maxHeight = 0;
 
-  for(i = 0; i < allProfileContainers.length; i++){
-    if(allProfileContainers[i].clientHeight > maxHeight){
+  for (i = 0; i < allProfileContainers.length; i++) {
+    if (allProfileContainers[i].clientHeight > maxHeight) {
       maxHeight = allProfileContainers[i].clientHeight;
     }
   }
   console.log(maxHeight);
-  for(i = 0; i < allProfileContainers.length; i++){
+  for (i = 0; i < allProfileContainers.length; i++) {
     allProfileContainers[i].setAttribute("style", "height: " + maxHeight + "px");
     // allProfileContainers[i].height = maxHeight;
   }

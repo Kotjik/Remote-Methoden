@@ -2,6 +2,7 @@
   width: 100%;
 }
 
+/* Make images round */
 img {
   border-radius: 50%;
   width: 50%;

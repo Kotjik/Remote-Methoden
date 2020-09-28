@@ -3,10 +3,10 @@ let mySidebar = document.getElementById("mySidebar");
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 function w3_open() {
   let mySidebar = document.getElementById("mySidebar");
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
+  if (mySidebar.style.display === "block") {
+    mySidebar.style.display = "none";
   } else {
-    mySidebar.style.display = 'block';
+    mySidebar.style.display = "block";
   }
 }
 
@@ -16,6 +16,6 @@ function w3_close() {
 }
 
 // Scroll to top of page smoothly
-function scrollToTopSmooth(){
-  window.scrollTo({top: 0, behavior: "smooth"});
+function scrollToTopSmooth() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }

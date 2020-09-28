@@ -16,7 +16,7 @@ form {
   padding: 0px 16px;
 }
 
-#search-bar{
+#search-bar {
   position: -webkit-sticky; /*safari*/
   position: sticky;
   top: 65px;
@@ -37,10 +37,10 @@ form {
   object-position: center;
 }
 
-.profile{
+.profile {
   /* height: 453px; */
 }
 
-#remoteprofiles-container{
+#remoteprofiles-container {
   margin-top: 24px;
 }

@@ -5,7 +5,7 @@ let allFilterBubbles = document.querySelectorAll(".filter-bubble");
 window.onload = reduceAllKurzbeschreibung();
 
 // Zu den Methoden scrollen
-function srollToMethods(){
+function srollToMethods() {
   //scroll to methods with offset because of Header
   let headerOffset = 65;
   let bodyRect = document.body.getBoundingClientRect().top;
@@ -14,209 +14,189 @@ function srollToMethods(){
   let offsetPostion = profilesContainerPosition - headerOffset;
   window.scrollTo({
     top: offsetPostion,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 }
 
-
 //Filterauswahl zurücksetzen
-function resetAllSelections(){
+function resetAllSelections() {
   profilesContainer.classList.add("hidden");
   resetAllProfilesHTMLPosition();
   resetAllFilterBubbles();
-  for(i = 0; i< allSelections.length; i++){
+  for (i = 0; i < allSelections.length; i++) {
     allSelections[i].value = "no_selection";
   }
 }
 
 //lange Kurzbeschreibungen verkürzen
-function reduceAllKurzbeschreibung(){
+function reduceAllKurzbeschreibung() {
   for (i = 0; i < allProfiles.length; i++) {
     let currentKurzbeschreibungElement = allProfiles[i].querySelector(".kurzbeschreibung");
     let currentKurzbeschreibungString = currentKurzbeschreibungElement.textContent;
-    if (currentKurzbeschreibungString.length > 300){
+    if (currentKurzbeschreibungString.length > 300) {
       let shortedString = currentKurzbeschreibungString.substring(0, 300);
       let link = allProfiles[i].querySelector("a").getAttribute("href");
 
-      currentKurzbeschreibungElement.innerHTML = shortedString + "... <a href='"
-                                + link + "'>(weiter lesen)</a>";
+      currentKurzbeschreibungElement.innerHTML = shortedString + "... <a href='" + link + "'>(weiter lesen)</a>";
     }
   }
 }
 
 //Selectoren
 let synchronitaet_selector = document.querySelector("#synchronitaet_selector"),
-    moderation_selector = document.querySelector("#moderation_selector"),
-    zeit_selector = document.querySelector("#zeit_selector"),
-    ressourcen_selector = document.querySelector("#ressourcen_selector"),
-    teilnehmeranzahl_selector = document.querySelector("#teilnehmeranzahl_selector"),
-    teilnehmerart_selector = document.querySelector("#teilnehmerart_selector"),
-    entwicklungsphase_selector = document.querySelector("#entwicklungsphase_selector"),
-    ergebnisse_selector = document.querySelector("#ergebnisse_selector");
+  moderation_selector = document.querySelector("#moderation_selector"),
+  zeit_selector = document.querySelector("#zeit_selector"),
+  ressourcen_selector = document.querySelector("#ressourcen_selector"),
+  teilnehmeranzahl_selector = document.querySelector("#teilnehmeranzahl_selector"),
+  teilnehmerart_selector = document.querySelector("#teilnehmerart_selector"),
+  entwicklungsphase_selector = document.querySelector("#entwicklungsphase_selector"),
+  ergebnisse_selector = document.querySelector("#ergebnisse_selector");
 
 //Filter-bubbles
 let synchronitaet_filterbubble = document.querySelector("#synchronitaet_filterbubble"),
-    moderation_filterbubble = document.querySelector("#moderation_filterbubble"),
-    zeit_filterbubble = document.querySelector("#zeit_filterbubble"),
-    ressourcen_filterbubble = document.querySelector("#ressourcen_filterbubble"),
-    teilnehmeranzahl_filterbubble = document.querySelector("#teilnehmeranzahl_filterbubble"),
-    teilnehmerart_filterbubble = document.querySelector("#teilnehmerart_filterbubble"),
-    entwicklungsphase_filterbubble = document.querySelector("#entwicklungsphase_filterbubble"),
-    ergebnisse_filterbubble = document.querySelector("#ergebnisse_filterbubble");
+  moderation_filterbubble = document.querySelector("#moderation_filterbubble"),
+  zeit_filterbubble = document.querySelector("#zeit_filterbubble"),
+  ressourcen_filterbubble = document.querySelector("#ressourcen_filterbubble"),
+  teilnehmeranzahl_filterbubble = document.querySelector("#teilnehmeranzahl_filterbubble"),
+  teilnehmerart_filterbubble = document.querySelector("#teilnehmerart_filterbubble"),
+  entwicklungsphase_filterbubble = document.querySelector("#entwicklungsphase_filterbubble"),
+  ergebnisse_filterbubble = document.querySelector("#ergebnisse_filterbubble");
 
-function showWantedProfiles(){
+function showWantedProfiles() {
   profilesContainer.classList.remove("hidden");
   resetAllFilterBubbles();
   let numberOfFoundProfiles = 0;
   let foundProfiles = [];
 
   for (i = 0; i < allProfiles.length; i++) {
-
     //Eigenschaften
     let synchronitaet_eigenschaft = allProfiles[i].querySelector(".synchronitaet").textContent.toLowerCase(),
-        moderation_eigenschaft = allProfiles[i].querySelector(".moderation").textContent.toLowerCase(),
-        zeit_eigenschaft = allProfiles[i].querySelector(".zeitaufwand").textContent.toLowerCase(),
-        ressourcen_eigenschaft = allProfiles[i].querySelector(".ressourcen").textContent.toLowerCase(),
-        teilnehmeranzahl_eigenschaft = allProfiles[i].querySelector(".anzahlTeilnehmer").textContent.toLowerCase(),
-        teilnehmerart_eigenschaft = allProfiles[i].querySelector(".artTeilnehmer").textContent.toLowerCase(),
-        entwicklungsphase_eigenschaft = allProfiles[i].querySelector(".entwicklungsphase").textContent.toLowerCase(),
-        ergebnisse_eigenschaft = allProfiles[i].querySelector(".ergebnisse").textContent.toLowerCase();
+      moderation_eigenschaft = allProfiles[i].querySelector(".moderation").textContent.toLowerCase(),
+      zeit_eigenschaft = allProfiles[i].querySelector(".zeitaufwand").textContent.toLowerCase(),
+      ressourcen_eigenschaft = allProfiles[i].querySelector(".ressourcen").textContent.toLowerCase(),
+      teilnehmeranzahl_eigenschaft = allProfiles[i].querySelector(".anzahlTeilnehmer").textContent.toLowerCase(),
+      teilnehmerart_eigenschaft = allProfiles[i].querySelector(".artTeilnehmer").textContent.toLowerCase(),
+      entwicklungsphase_eigenschaft = allProfiles[i].querySelector(".entwicklungsphase").textContent.toLowerCase(),
+      ergebnisse_eigenschaft = allProfiles[i].querySelector(".ergebnisse").textContent.toLowerCase();
 
     let falscheEigenschaften = 0;
 
-
-    for(j = 0; j < allSelections.length; j++){
-      switch(allSelections[j]){
+    for (j = 0; j < allSelections.length; j++) {
+      switch (allSelections[j]) {
         // Auswahl: syncrhon | asynchron | beides
         case synchronitaet_selector:
-          if(synchronitaet_selector.value != "no_selection"){
-            if(synchronitaet_eigenschaft != ""){
-              if(!new RegExp("\\b" + synchronitaet_selector.value + "\\b").test(synchronitaet_eigenschaft)){
+          if (synchronitaet_selector.value != "no_selection") {
+            if (synchronitaet_eigenschaft != "") {
+              if (!new RegExp("\\b" + synchronitaet_selector.value + "\\b").test(synchronitaet_eigenschaft)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 synchronitaet_filterbubble.classList.remove("hidden");
-                synchronitaet_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Sychronität: " +  synchronitaet_selector.options[synchronitaet_selector.selectedIndex].text;
+                synchronitaet_filterbubble.querySelector(".filterbubble-content").innerHTML = "Sychronität: " + synchronitaet_selector.options[synchronitaet_selector.selectedIndex].text;
               }
             }
           }
           break;
 
-          // Auswahl: moderiert | automatisiert | beides
+        // Auswahl: moderiert | automatisiert | beides
         case moderation_selector:
-          if(moderation_selector.value != "no_selection"){
-            if(moderation_eigenschaft != ""){
-              if(!moderation_eigenschaft.includes(moderation_selector.value)){
-
+          if (moderation_selector.value != "no_selection") {
+            if (moderation_eigenschaft != "") {
+              if (!moderation_eigenschaft.includes(moderation_selector.value)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 moderation_filterbubble.classList.remove("hidden");
-                moderation_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Moderation: " +  moderation_selector.options[moderation_selector.selectedIndex].text;
+                moderation_filterbubble.querySelector(".filterbubble-content").innerHTML = "Moderation: " + moderation_selector.options[moderation_selector.selectedIndex].text;
               }
             }
           }
           break;
 
-          // Auswahl: gering | mittel | hoch
+        // Auswahl: gering | mittel | hoch
         case zeit_selector:
-          if(zeit_selector.value != "no_selection"){
-            if(zeit_eigenschaft != ""){
-              if(!zeit_eigenschaft.includes(zeit_selector.value)){
+          if (zeit_selector.value != "no_selection") {
+            if (zeit_eigenschaft != "") {
+              if (!zeit_eigenschaft.includes(zeit_selector.value)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 zeit_filterbubble.classList.remove("hidden");
-                zeit_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Zeitaufwand: " +  zeit_selector.options[zeit_selector.selectedIndex].text;
+                zeit_filterbubble.querySelector(".filterbubble-content").innerHTML = "Zeitaufwand: " + zeit_selector.options[zeit_selector.selectedIndex].text;
               }
             }
           }
           break;
 
-          // Auswahl: gering | mittel | hoch
+        // Auswahl: gering | mittel | hoch
         case ressourcen_selector:
-          if(ressourcen_selector.value != "no_selection"){
-            if(ressourcen_eigenschaft != ""){
-
-              if(!ressourcen_eigenschaft.includes(ressourcen_selector.value)){
+          if (ressourcen_selector.value != "no_selection") {
+            if (ressourcen_eigenschaft != "") {
+              if (!ressourcen_eigenschaft.includes(ressourcen_selector.value)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 ressourcen_filterbubble.classList.remove("hidden");
-                ressourcen_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Ressourcen: " +  ressourcen_selector.options[ressourcen_selector.selectedIndex].text;
+                ressourcen_filterbubble.querySelector(".filterbubble-content").innerHTML = "Ressourcen: " + ressourcen_selector.options[ressourcen_selector.selectedIndex].text;
               }
             }
           }
           break;
 
-          // Auswahl: Weniger als 20 = gering | 20 bis 99 = mittel | über 90 = hoch
+        // Auswahl: Weniger als 20 = gering | 20 bis 99 = mittel | über 90 = hoch
         case teilnehmeranzahl_selector:
-          if(teilnehmeranzahl_selector.value != "no_selection"){
-            if(teilnehmeranzahl_eigenschaft != ""){
-
-              if(!teilnehmeranzahl_eigenschaft.includes(teilnehmeranzahl_selector.value)){
-
+          if (teilnehmeranzahl_selector.value != "no_selection") {
+            if (teilnehmeranzahl_eigenschaft != "") {
+              if (!teilnehmeranzahl_eigenschaft.includes(teilnehmeranzahl_selector.value)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 teilnehmeranzahl_filterbubble.classList.remove("hidden");
-                teilnehmeranzahl_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Teilnehmeranzahl: " +  teilnehmeranzahl_selector.options[teilnehmeranzahl_selector.selectedIndex].text;
+                teilnehmeranzahl_filterbubble.querySelector(".filterbubble-content").innerHTML = "Teilnehmeranzahl: " + teilnehmeranzahl_selector.options[teilnehmeranzahl_selector.selectedIndex].text;
               }
             }
           }
           break;
 
-          // Auswahl: anfänger | experte | stakeholder
+        // Auswahl: anfänger | experte | stakeholder
         case teilnehmerart_selector:
-          if(teilnehmerart_selector.value != "no_selection"){
-            if(teilnehmerart_eigenschaft != ""){
-
-              if(!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)){
-
+          if (teilnehmerart_selector.value != "no_selection") {
+            if (teilnehmerart_eigenschaft != "") {
+              if (!teilnehmerart_eigenschaft.includes(teilnehmerart_selector.value)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 teilnehmerart_filterbubble.classList.remove("hidden");
-                teilnehmerart_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Teilnehmerart: " +  teilnehmerart_selector.options[teilnehmerart_selector.selectedIndex].text;
+                teilnehmerart_filterbubble.querySelector(".filterbubble-content").innerHTML = "Teilnehmerart: " + teilnehmerart_selector.options[teilnehmerart_selector.selectedIndex].text;
               }
             }
           }
           break;
 
-          // Auswahl: analyse | konzept | umsetzung | nachumsetzung
+        // Auswahl: analyse | konzept | umsetzung | nachumsetzung
         case entwicklungsphase_selector:
-          if(entwicklungsphase_selector.value != "no_selection"){
-            if(entwicklungsphase_eigenschaft != ""){
-
-              if(!new RegExp("\\b" + entwicklungsphase_selector.value + "\\b").test(entwicklungsphase_eigenschaft)){
+          if (entwicklungsphase_selector.value != "no_selection") {
+            if (entwicklungsphase_eigenschaft != "") {
+              if (!new RegExp("\\b" + entwicklungsphase_selector.value + "\\b").test(entwicklungsphase_eigenschaft)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 entwicklungsphase_filterbubble.classList.remove("hidden");
-                entwicklungsphase_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Entwicklungsphase: " +  entwicklungsphase_selector.options[entwicklungsphase_selector.selectedIndex].text;
+                entwicklungsphase_filterbubble.querySelector(".filterbubble-content").innerHTML = "Entwicklungsphase: " + entwicklungsphase_selector.options[entwicklungsphase_selector.selectedIndex].text;
               }
             }
           }
           break;
 
-          // Auswahl: quantitativ | qualitativ | beides
+        // Auswahl: quantitativ | qualitativ | beides
         case ergebnisse_selector:
-          if(ergebnisse_selector.value != "no_selection"){
-            if(ergebnisse_eigenschaft != ""){
-
-              if(!ergebnisse_eigenschaft.includes(ergebnisse_selector.value)){
+          if (ergebnisse_selector.value != "no_selection") {
+            if (ergebnisse_eigenschaft != "") {
+              if (!ergebnisse_eigenschaft.includes(ergebnisse_selector.value)) {
                 falscheEigenschaften++;
-              }else{
+              } else {
                 ergebnisse_filterbubble.classList.remove("hidden");
-                ergebnisse_filterbubble.querySelector(".filterbubble-content")
-                  .innerHTML = "Ergebnisse: " +  ergebnisse_selector.options[ergebnisse_selector.selectedIndex].text;
+                ergebnisse_filterbubble.querySelector(".filterbubble-content").innerHTML = "Ergebnisse: " + ergebnisse_selector.options[ergebnisse_selector.selectedIndex].text;
               }
             }
           }
           break;
       }
     }
-    if(falscheEigenschaften == 0){
+    if (falscheEigenschaften == 0) {
       numberOfFoundProfiles++;
       foundProfiles.push(allProfiles[i]);
     }
@@ -226,78 +206,72 @@ function showWantedProfiles(){
   resetAllProfilesHTMLPosition();
   assignProfilesToRows(foundProfiles);
   srollToMethods();
-
 }
 
-function updateNumberOfProfilesFoundHTML(number){
+function updateNumberOfProfilesFoundHTML(number) {
   let numberOfProfilesFoundElement = document.getElementById("numberOfProfilesFoundElement");
   let noFilterChosenElement = document.getElementById("noFilterChosenElement");
   numberOfProfilesFoundElement.innerHTML = "Es gibt " + number + " Methoden, die Ihren Filtereinstellungen entsprechen:";
 
   let noFilterChosen = false;
   let filterChosenCounter = 0;
-  for(i=0; i<allSelections.length; i++){
-    if(allSelections[i].value == "no_selection"){
+  for (i = 0; i < allSelections.length; i++) {
+    if (allSelections[i].value == "no_selection") {
       filterChosenCounter++;
     }
   }
-  if(filterChosenCounter == 8){
+  if (filterChosenCounter == 8) {
     noFilterChosen = true;
   }
-  if(noFilterChosen){
+  if (noFilterChosen) {
     noFilterChosenElement.classList.remove("hidden");
-  }else{
+  } else {
     noFilterChosenElement.classList.add("hidden");
   }
 }
 
-function assignProfilesToRows(profiles){
+function assignProfilesToRows(profiles) {
   let colCounter = 0;
   let rowCounter = 0;
 
-  for(i=0; i<profiles.length; i++){
-      document.getElementsByClassName("w3-row-padding")[rowCounter].appendChild(profiles[i]);
-      colCounter++;
-      if(colCounter > 3){
-        colCounter = 0;
-        rowCounter++;
-      }
+  for (i = 0; i < profiles.length; i++) {
+    document.getElementsByClassName("w3-row-padding")[rowCounter].appendChild(profiles[i]);
+    colCounter++;
+    if (colCounter > 3) {
+      colCounter = 0;
+      rowCounter++;
+    }
   }
 }
 
-function resetAllProfilesHTMLPosition(){
-  for(i=0; i<allProfiles.length; i++){
+function resetAllProfilesHTMLPosition() {
+  for (i = 0; i < allProfiles.length; i++) {
     document.getElementById("all-profiles-section").appendChild(allProfiles[i]);
   }
 }
 
-
-
-
 //Falls Nutzer von einer Detailseite zurückgeht oder reloaded, sollen die vorherig gefundenen
 //Methoden wieder angezeigt werden
 //Call function after everything loaded
-window.onload = function(){
-  const perfEntries = performance.getEntriesByType('navigation');
-  if (perfEntries.length && (perfEntries[0].type === 'back_forward' || perfEntries[0].type === 'reload')) {
+window.onload = function () {
+  const perfEntries = performance.getEntriesByType("navigation");
+  if (perfEntries.length && (perfEntries[0].type === "back_forward" || perfEntries[0].type === "reload")) {
     showWantedProfiles();
   }
-}
-
-
+};
 
 //Filterbubbles Funktionen
-function resetAllFilterBubbles(){
-  for(i=0; i<allFilterBubbles.length; i++){
+function resetAllFilterBubbles() {
+  for (i = 0; i < allFilterBubbles.length; i++) {
     allFilterBubbles[i].classList.add("hidden");
     allFilterBubbles[i].querySelector(".filterbubble-content").innerHTML = "";
   }
 }
 
-function deleteClickedFilter(element){
+function deleteClickedFilter(element) {
   element.classList.add("hidden");
 
-  switch(element.id){
+  switch (element.id) {
     case "synchronitaet_filterbubble":
       synchronitaet_selector.value = "no_selection";
       break;
@@ -333,8 +307,6 @@ function deleteClickedFilter(element){
   showWantedProfiles();
 }
 
-
-
 // Tooltips
 function showTooltip(e) {
   // var tooltip = element.querySelector(".popuptext");
@@ -343,15 +315,6 @@ function showTooltip(e) {
   tooltiptext.classList.toggle("hidden");
 }
 
-function toggleHidden(e){
+function toggleHidden(e) {
   e.classList.toggle("hidden");
 }
-
-
-
-
-
-
-
-
-//for added newlines

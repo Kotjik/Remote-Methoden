@@ -24,7 +24,7 @@ html {
   width: 30px;
 }
 
-#navigation-bar{
+#navigation-bar {
   /* width: 100%; */
   position: -webkit-sticky; /*safari*/
   position: sticky;
@@ -34,7 +34,7 @@ html {
 
 #mySidebar {
   width: auto;
-  z-index:999;
+  z-index: 999;
 }
 
 .hidden {
@@ -55,21 +55,21 @@ html {
   height: auto;
 }
 
-.gray{
+.gray {
   color: #696969;
 }
 
-#up-button{
+#up-button {
   visibility: hidden;
   position: fixed;
   bottom: 25px;
   right: 25px;
   z-index: 40;
-  transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
 }
 
-#up-button.show{
+#up-button.show {
   opacity: 1;
   visibility: visible;
 }

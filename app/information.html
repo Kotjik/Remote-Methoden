@@ -1,222 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Remote Methoden - Information</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="shortcut icon" href="resources/img/favicon.ico">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="resources/css/general.css" />
-<link rel="stylesheet" href="resources/css/information.css" />
-<style>
-/* Make the image fully responsive */
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
-</style>
+  <title>Remote Methoden - Information</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="resources/img/favicon.ico" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/7443abc02b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="resources/css/general.css" />
+  <link rel="stylesheet" href="resources/css/information.css" />
+  <style></style>
 
-<body>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="" id="navigation-bar">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a> <a href="information.html" class="w3-bar-item w3-button"><i class="fas fa-info"></i> INFORMATION</a>
+          <a href="remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a> <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a>
+          <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-<!-- Navbar (sit on top) -->
-<div class="" id="navigation-bar">
-  <div class="w3-bar w3-white w3-card" id="myNavbar"> <a href="index.html" class="w3-bar-item w3-button w3-wide"><img class="logo" src="resources/img/ur-logo-bildmarke-grau.png" /> REMOTE METHODEN</a> 
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small"> <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a> <a href="information.html" class="w3-bar-item w3-button"><i class="fas fa-info"></i> INFORMATION</a> <a href="remoteprofiles.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REMOTE-PROFILE</a> <a href="entscheidungsassistent.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ENTSCHEIDUNGSASSISTENT</a> <a href="kontakt.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a> </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon --> 
-    
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a> </div>
-</div>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()"> <i class="fa fa-bars"></i> </a>
+      </div>
+    </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right:0;" id="mySidebar"> <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a> <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a> <a href="information.html" onclick="w3_close()" class="w3-bar-item w3-button">INFORMATION</a> <a href="remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a> <a href="entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a> <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a> </nav>
-<div id="demo" class="carousel slide" data-ride="carousel" data-interval="30000"> 
-  
-  <!-- Indicators -->
-  
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-    <li data-target="#demo" data-slide-to="4"></li>
-    <li data-target="#demo" data-slide-to="5"></li>
-    <li data-target="#demo" data-slide-to="6"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  
-  <div class="carousel-inner"  >
-    <div class="carousel-item active">
-      <div  >
-        <div class="background-image1 w3-display-container w3-grayscale-min w3-opacity-min" > </div>
-        <div  class="w3-display-middle" style="justify-content: space-around"> <span class="w3-xxlarge w3-hide-small">Einverständniserklärung</span> <br />
-          <span class="w3-xlarge w3-hide-large w3-hide-medium">Einverständniserklärung</span> <br />
-          <span class="w3-medium w3-hide-small">
-          <li >Formulare im Vorhinein per Post verschicken</li>
-          <li>Formulare als Onlineversion bestätigen lassen</li>
-          <li>Formulare über online Tool unterschreiben lassen</li>
-          <li>Mündliche Bestätigung der Einverständnis aufzeichnen</li>
-          <br>
-          [Think Aloud Quelle] </span> <br>
-          <span class="w3-small w3-hide-large w3-hide-medium">
-          <li >Formulare im Vorhinein per Post verschicken</li>
-          <li>Formulare als Onlineversion bestätigen lassen</li>
-          <li>Formulare über online Tool unterschreiben lassen</li>
-          <li>Mündliche Bestätigung der Einverständnis aufzeichnen</li>
-          <br>
-          [Think Aloud Quelle] </span> <br/>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div  >
-        <div class="background-image2 w3-display-container w3-grayscale-min w3-opacity-min"> </div>
-        <div class="w3-display-middle" style="padding: 48px; justify-content: space-around"> <span class="w3-xxlarge w3-hide-small">Software</span> <br />
-          <span class="w3-xlarge w3-hide-large w3-hide-medium">Software</span> <br />
-          <span class="w3-medium w3-hide-small">
-          <li>Software rechtzeitig teilen und installieren</li>
-          <li>Detaillierte Installationsanleitung bereitstellen</li>
-          <li>Installation mit Proband durchführen (gegebenenfalls mit Hilfe einer Screen Sharing Anwendung)</li>
-          <li>Bei komplexer Software Installation durch Testleiter (benötigt wird Zugriff auf den PC des Probanden)</li>
-          <br>
-          [noch keine Quelle] </span> <br>
-          <span class="w3-small w3-hide-large w3-hide-medium">
-          <li>Software rechtzeitig teilen und installieren</li>
-          <li>Detaillierte Installationsanleitung bereitstellen</li>
-          <li>Installation mit Proband durchführen (gegebenenfalls mit Hilfe einer Screen Sharing Anwendung)</li>
-          <li>Bei komplexer Software Installation durch Testleiter (benötigt wird Zugriff auf den PC des Probanden)</li>
-          <br>
-          [noch keine Quelle] </span><br/>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item" >
-      <div  >
-        <div class="background-image3 w3-display-container w3-grayscale-min w3-opacity-min" > </div>
-        <div class="w3-display-middle" style=" justify-content: space-around"  > <span class="w3-xxlarge w3-hide-small"  >Hardware</span> <br />
-          <span class="w3-xlarge w3-hide-large w3-hide-medium" >Hardware</span> <br>
-          <span class="w3-medium w3-hide-small" >
-          <li>Benötigte Hardware kann grundsätzlich an Probanden verschickt werden </li>
-          <li>Abwägen: Je nachdem wie teuer die Hardware, wie kompliziert der Aufbau oder wie hoch der Aufwand zum verschicken ist, lohnt es sich die Studie remote durchzuführen oder nicht
-            <ul>
-              » Billige Hardware (PopSockets oder Stifte für Touchscreens) oft rentabel für Remotestuden: direkt zu Probanden bestellen oder selbst an diese verschicken<br>
-              » Teure Hardware (VR Brillen oder Eye Tracking Brillen) oft nicht rentabel: oft zu teuer und riskant zu verschicken, nur in geringer Stückzahl verfügbar oder zu kompliziert zum Aufbauen
-            </ul>
-          </li>
-          </li>
-          </span> <br>
-          <span  class="w3-small w3-hide-large w3-hide-medium">
-          <div style="height: 300px; overflow-y: scroll; scrollbar-width: thin;"> <font size="4,5"> • </font> Benötigte Hardware kann grundsätzlich an Probanden verschickt werden<br>
-            <font size="4,5"> • </font> Abwägen: Je nachdem wie teuer die Hardware, wie kompliziert der Aufbau oder wie hoch der Aufwand zum verschicken ist, lohnt es sich die Studie remote durchzuführen oder nicht<br>
-            » Billige Hardware (PopSockets oder Stifte für Touchscreens) oft rentabel für Remotestuden: direkt zu Probanden bestellen oder selbst an diese verschicken<br>
-            » Teure Hardware (VR Brillen oder Eye Tracking Brillen) oft nicht rentabel: oft zu teuer und riskant zu verschicken, nur in geringer Stückzahl verfügbar oder zu kompliziert zum Aufbauen </div>
-          </span> <br/>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item" >
-      <div  >
-        <div class="background-image4 w3-display-container w3-grayscale-min w3-opacity-min" > </div>
-        <div class="w3-display-middle" style=" justify-content: space-around"  > <span class="w3-xxlarge w3-hide-small"  > Technik</span> <br />
-          <span class="w3-xlarge w3-hide-large w3-hide-medium" > Technik</span> <br />
-          <span  class="w3-medium w3-hide-small">
-          <li>Technik zuvor immer ausgiebig testen</li>
-          <li>Zugangslink bereits im Voraus mit Proband teilen, damit diese testen können, ob sie Zugriff haben</li>
-          <li>Probanden brauchen einen festen Ansprechpartner vor und während dem Test</li>
-          <li>Der Testleiter sollte auch wenn der Kommunikationskanal abbricht erreichbar sein (z.B. per Handy) </li>
-          <li>Testleiter sollte ca. 15 Minuten vor eigentlichem Studienbeginn bereits online sein um mögliche Probleme mit der Kommunikation frühzeitig zu bemerken</li>
-          <li>Der Testleiter sollte sich mit den verwendeten Tools und deren Möglichkeiten (z.B. Screen Sharing) gut auskennen und auch in der Lage sein den Teilnehmern bei technischen Problemen während der Sitzung zu helfen</li>
-          <br>
-          [Think Aloud Quelle] <br>
-          </span> <br>
-          <span class="w3-small w3-hide-large w3-hide-medium" >
-          <div style="height: 300px; overflow-y: scroll; scrollbar-width: thin;  "> <font size="4,5"> • </font> Technik zuvor immer ausgiebig testen <br>
-            <font size="4,5"> • </font> Zugangslink bereits im Voraus mit Proband teilen, damit diese testen können, ob sie Zugriff haben<br>
-            <font size="4,5"> • </font> Probanden brauchen einen festen Ansprechpartner vor und während dem Test<br>
-            <font size="4,5"> • </font> Der Testleiter sollte auch wenn der Kommunikationskanal abbricht erreichbar sein (z.B. per Handy) <br>
-            <font size="4,5"> • </font>Testleiter sollte ca. 15 Minuten vor eigentlichem Studienbeginn bereits online sein um mögliche Probleme mit der Kommunikation frühzeitig zu bemerken<br>
-            <font size="4,5"> • </font>Der Testleiter sollte sich mit den verwendeten Tools und deren Möglichkeiten (z.B. Screen Sharing) gut auskennen und auch in der Lage sein den Teilnehmern bei technischen Problemen während der Sitzung zu helfen <br>
-            [Think Aloud Quelle] </div>
-          </span> <br/>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item" >
-      <div  >
-        <div class="background-image5 w3-display-container w3-grayscale-min w3-opacity-min" > </div>
-        <div class="w3-display-middle" style=" justify-content: space-around"  > <span class="w3-xxlarge w3-hide-small"  > Unterschiedliche Arten von Studien:</span> <br />
-          <span class="w3-xlarge w3-hide-large w3-hide-medium" > Unterschiedliche Arten von Studien:</span> <br />
-          <span class="w3-medium w3-hide-small" >
-          <li>Viele der Methoden werden in verschiedenen Kombinationen für Nutzerstudien in anderen Bereichen als Usability verwendet</li>
-          <li>Videos oder Bilder von tatsächlicher Situation</li>
-          <li>Screenshots von Anwendung</li>
-          </span> <br>
-          <span class="w3-small w3-hide-large w3-hide-medium" >
-          <li>Viele der Methoden werden in verschiedenen Kombinationen für Nutzerstudien in anderen Bereichen als Usability verwendet</li>
-          <li>Videos oder Bilder von tatsächlicher Situation</li>
-          <li>Screenshots von Anwendung</li>
-          </span> <br/>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item" >
-      <div  >
-        <div class="background-image6 w3-display-container w3-grayscale-min w3-opacity-min" > </div>
-        <div class="w3-display-middle" style=" justify-content: space-around"  > <span class="w3-xxlarge w3-hide-small"  > Anreiz:</span> <br />
-          <span class="w3-xlarge w3-hide-large w3-hide-medium" > Anreiz:</span> <br />
-          <span class="w3-medium w3-hide-small" >
-          <li>Onlinegutscheine (Amazon, ITunes)</li>
-          <li>Zugeschickte Hardware darf behalten werden</li>
-          <li>Kleine Geldbeträge über PayPal</li>
-          [Think Aloud Quelle] </span> <br>
-          <span class="w3-small w3-hide-large w3-hide-medium" >
-          <li>Onlinegutscheine (Amazon, ITunes)</li>
-          <li>Zugeschickte Hardware darf behalten werden</li>
-          <li>Kleine Geldbeträge über PayPal</li>
-          [Think Aloud Quelle] </span> <br/>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item" >
-      <div  >
-        <div class="background-image7 w3-display-container w3-grayscale-min w3-opacity-min" > </div>
-        <div class="w3-display-middle" style=" justify-content: space-around"  > <span class="w3-xxlarge w3-hide-small"  > Zu beachten:</span> <br />
-          <span class="w3-xlarge w3-hide-large w3-hide-medium" > Zu beachten:</span> <br />
-          <span class="w3-medium w3-hide-small" >
-          <li>Kürzere Testzeiten, da Konzentration der Teilnehmer online schneller abnimmt</li>
-          <li>Mit höherer Abbruchquote rechnen (technische Probleme, keine Lust)</li>
-          <li>Rekrutieren nicht mehr regional beschränkt (Sprachbarrieren könnten auftreten)</li>
-          [Think Aloud Quelle][für Rekrutieren fehlt noch Quelle] </span> <br>
-          <span class="w3-small w3-hide-large w3-hide-medium" >
-          <li>Kürzere Testzeiten, da Konzentration der Teilnehmer online schneller abnimmt</li>
-          <li>Mit höherer Abbruchquote rechnen (technische Probleme, keine Lust)</li>
-          <li>Rekrutieren nicht mehr regional beschränkt (Sprachbarrieren könnten auftreten)</li>
-          [Think Aloud Quelle][für Rekrutieren fehlt noch Quelle] </span> <br/>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Left and right controls --> 
-    <a class="carousel-control-prev" href="#demo" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> </div>
-</div>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-top" style="display: none; right: 0;" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a> <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+      <a href="information.html" onclick="w3_close()" class="w3-bar-item w3-button">INFORMATION</a> <a href="remoteprofiles.html" onclick="w3_close()" class="w3-bar-item w3-button">REMOTE-PROFILE</a>
+      <a href="entscheidungsassistent.html" onclick="w3_close()" class="w3-bar-item w3-button">ENTSCHEIDUNGSASSISTENT</a> <a href="kontakt.html" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="30000">
+      <!-- Indicators -->
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <button id="footer-up-button" class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
-	<p style="line-height:72px;"></p>
-  <p>2020 - UNIVERSITÄT REGENSBURG</p>
-  <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
-</footer>
-<button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTopSmooth();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
-<script src="resources/js/backtotop.js"></script> 
-<script src="resources/js/general.js"></script> 
-<script></script>
-</body>
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+        <li data-target="#demo" data-slide-to="5"></li>
+        <li data-target="#demo" data-slide-to="6"></li>
+      </ul>
+
+      <!-- The slideshow -->
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div>
+            <div class="background-image1 w3-display-container w3-grayscale-min w3-opacity-min"></div>
+            <div class="w3-display-middle" style="justify-content: space-around;">
+              <span class="w3-xxlarge w3-hide-small">Einverständniserklärung</span> <br />
+              <span class="w3-xlarge w3-hide-large w3-hide-medium">Einverständniserklärung</span> <br />
+              <span class="w3-medium w3-hide-small">
+                <li>Formulare im Vorhinein per Post verschicken</li>
+                <li>Formulare als Onlineversion bestätigen lassen</li>
+                <li>Formulare über online Tool unterschreiben lassen</li>
+                <li>Mündliche Bestätigung der Einverständnis aufzeichnen</li>
+                <br />
+                [Think Aloud Quelle]
+              </span>
+              <br />
+              <span class="w3-small w3-hide-large w3-hide-medium">
+                <li>Formulare im Vorhinein per Post verschicken</li>
+                <li>Formulare als Onlineversion bestätigen lassen</li>
+                <li>Formulare über online Tool unterschreiben lassen</li>
+                <li>Mündliche Bestätigung der Einverständnis aufzeichnen</li>
+                <br />
+                [Think Aloud Quelle]
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="background-image2 w3-display-container w3-grayscale-min w3-opacity-min"></div>
+            <div class="w3-display-middle" style="padding: 48px; justify-content: space-around;">
+              <span class="w3-xxlarge w3-hide-small">Software</span> <br />
+              <span class="w3-xlarge w3-hide-large w3-hide-medium">Software</span> <br />
+              <span class="w3-medium w3-hide-small">
+                <li>Software rechtzeitig teilen und installieren</li>
+                <li>Detaillierte Installationsanleitung bereitstellen</li>
+                <li>Installation mit Proband durchführen (gegebenenfalls mit Hilfe einer Screen Sharing Anwendung)</li>
+                <li>Bei komplexer Software Installation durch Testleiter (benötigt wird Zugriff auf den PC des Probanden)</li>
+                <br />
+                [noch keine Quelle]
+              </span>
+              <br />
+              <span class="w3-small w3-hide-large w3-hide-medium">
+                <li>Software rechtzeitig teilen und installieren</li>
+                <li>Detaillierte Installationsanleitung bereitstellen</li>
+                <li>Installation mit Proband durchführen (gegebenenfalls mit Hilfe einer Screen Sharing Anwendung)</li>
+                <li>Bei komplexer Software Installation durch Testleiter (benötigt wird Zugriff auf den PC des Probanden)</li>
+                <br />
+                [noch keine Quelle]
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="background-image3 w3-display-container w3-grayscale-min w3-opacity-min"></div>
+            <div class="w3-display-middle" style="justify-content: space-around;">
+              <span class="w3-xxlarge w3-hide-small">Hardware</span> <br />
+              <span class="w3-xlarge w3-hide-large w3-hide-medium">Hardware</span> <br />
+              <span class="w3-medium w3-hide-small">
+                <li>Benötigte Hardware kann grundsätzlich an Probanden verschickt werden</li>
+                <li>
+                  Abwägen: Je nachdem wie teuer die Hardware, wie kompliziert der Aufbau oder wie hoch der Aufwand zum verschicken ist, lohnt es sich die Studie remote durchzuführen oder nicht
+                  <ul>
+                    » Billige Hardware (PopSockets oder Stifte für Touchscreens) oft rentabel für Remotestuden: direkt zu Probanden bestellen oder selbst an diese verschicken
+                    <br />
+                    » Teure Hardware (VR Brillen oder Eye Tracking Brillen) oft nicht rentabel: oft zu teuer und riskant zu verschicken, nur in geringer Stückzahl verfügbar oder zu kompliziert zum Aufbauen
+                  </ul>
+                </li>
+              </span>
+              <br />
+              <span class="w3-small w3-hide-large w3-hide-medium">
+                <div style="height: 300px; overflow-y: scroll; scrollbar-width: thin;">
+                  <font size="4,5"> • </font> Benötigte Hardware kann grundsätzlich an Probanden verschickt werden<br />
+                  <font size="4,5"> • </font> Abwägen: Je nachdem wie teuer die Hardware, wie kompliziert der Aufbau oder wie hoch der Aufwand zum verschicken ist, lohnt es sich die Studie remote durchzuführen oder nicht<br />
+                  » Billige Hardware (PopSockets oder Stifte für Touchscreens) oft rentabel für Remotestuden: direkt zu Probanden bestellen oder selbst an diese verschicken<br />
+                  » Teure Hardware (VR Brillen oder Eye Tracking Brillen) oft nicht rentabel: oft zu teuer und riskant zu verschicken, nur in geringer Stückzahl verfügbar oder zu kompliziert zum Aufbauen
+                </div>
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="background-image4 w3-display-container w3-grayscale-min w3-opacity-min"></div>
+            <div class="w3-display-middle" style="justify-content: space-around;">
+              <span class="w3-xxlarge w3-hide-small"> Technik</span> <br />
+              <span class="w3-xlarge w3-hide-large w3-hide-medium"> Technik</span> <br />
+              <span class="w3-medium w3-hide-small">
+                <li>Technik zuvor immer ausgiebig testen</li>
+                <li>Zugangslink bereits im Voraus mit Proband teilen, damit diese testen können, ob sie Zugriff haben</li>
+                <li>Probanden brauchen einen festen Ansprechpartner vor und während dem Test</li>
+                <li>Der Testleiter sollte auch wenn der Kommunikationskanal abbricht erreichbar sein (z.B. per Handy)</li>
+                <li>Testleiter sollte ca. 15 Minuten vor eigentlichem Studienbeginn bereits online sein um mögliche Probleme mit der Kommunikation frühzeitig zu bemerken</li>
+                <li>Der Testleiter sollte sich mit den verwendeten Tools und deren Möglichkeiten (z.B. Screen Sharing) gut auskennen und auch in der Lage sein den Teilnehmern bei technischen Problemen während der Sitzung zu helfen</li>
+                <br />
+                [Think Aloud Quelle] <br />
+              </span>
+              <br />
+              <span class="w3-small w3-hide-large w3-hide-medium">
+                <div style="height: 300px; overflow-y: scroll; scrollbar-width: thin;">
+                  <font size="4,5"> • </font> Technik zuvor immer ausgiebig testen <br />
+                  <font size="4,5"> • </font> Zugangslink bereits im Voraus mit Proband teilen, damit diese testen können, ob sie Zugriff haben<br />
+                  <font size="4,5"> • </font> Probanden brauchen einen festen Ansprechpartner vor und während dem Test<br />
+                  <font size="4,5"> • </font> Der Testleiter sollte auch wenn der Kommunikationskanal abbricht erreichbar sein (z.B. per Handy) <br />
+                  <font size="4,5"> • </font>Testleiter sollte ca. 15 Minuten vor eigentlichem Studienbeginn bereits online sein um mögliche Probleme mit der Kommunikation frühzeitig zu bemerken<br />
+                  <font size="4,5"> • </font>Der Testleiter sollte sich mit den verwendeten Tools und deren Möglichkeiten (z.B. Screen Sharing) gut auskennen und auch in der Lage sein den Teilnehmern bei technischen Problemen während der
+                  Sitzung zu helfen <br />
+                  [Think Aloud Quelle]
+                </div>
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="background-image5 w3-display-container w3-grayscale-min w3-opacity-min"></div>
+            <div class="w3-display-middle" style="justify-content: space-around;">
+              <span class="w3-xxlarge w3-hide-small"> Unterschiedliche Arten von Studien:</span> <br />
+              <span class="w3-xlarge w3-hide-large w3-hide-medium"> Unterschiedliche Arten von Studien:</span> <br />
+              <span class="w3-medium w3-hide-small">
+                <li>Viele der Methoden werden in verschiedenen Kombinationen für Nutzerstudien in anderen Bereichen als Usability verwendet</li>
+                <li>Videos oder Bilder von tatsächlicher Situation</li>
+                <li>Screenshots von Anwendung</li>
+              </span>
+              <br />
+              <span class="w3-small w3-hide-large w3-hide-medium">
+                <li>Viele der Methoden werden in verschiedenen Kombinationen für Nutzerstudien in anderen Bereichen als Usability verwendet</li>
+                <li>Videos oder Bilder von tatsächlicher Situation</li>
+                <li>Screenshots von Anwendung</li>
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="background-image6 w3-display-container w3-grayscale-min w3-opacity-min"></div>
+            <div class="w3-display-middle" style="justify-content: space-around;">
+              <span class="w3-xxlarge w3-hide-small"> Anreiz:</span> <br />
+              <span class="w3-xlarge w3-hide-large w3-hide-medium"> Anreiz:</span> <br />
+              <span class="w3-medium w3-hide-small">
+                <li>Onlinegutscheine (Amazon, ITunes)</li>
+                <li>Zugeschickte Hardware darf behalten werden</li>
+                <li>Kleine Geldbeträge über PayPal</li>
+                [Think Aloud Quelle]
+              </span>
+              <br />
+              <span class="w3-small w3-hide-large w3-hide-medium">
+                <li>Onlinegutscheine (Amazon, ITunes)</li>
+                <li>Zugeschickte Hardware darf behalten werden</li>
+                <li>Kleine Geldbeträge über PayPal</li>
+                [Think Aloud Quelle]
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="background-image7 w3-display-container w3-grayscale-min w3-opacity-min"></div>
+            <div class="w3-display-middle" style="justify-content: space-around;">
+              <span class="w3-xxlarge w3-hide-small"> Zu beachten:</span> <br />
+              <span class="w3-xlarge w3-hide-large w3-hide-medium"> Zu beachten:</span> <br />
+              <span class="w3-medium w3-hide-small">
+                <li>Kürzere Testzeiten, da Konzentration der Teilnehmer online schneller abnimmt</li>
+                <li>Mit höherer Abbruchquote rechnen (technische Probleme, keine Lust)</li>
+                <li>Rekrutieren nicht mehr regional beschränkt (Sprachbarrieren könnten auftreten)</li>
+                [Think Aloud Quelle][für Rekrutieren fehlt noch Quelle]
+              </span>
+              <br />
+              <span class="w3-small w3-hide-large w3-hide-medium">
+                <li>Kürzere Testzeiten, da Konzentration der Teilnehmer online schneller abnimmt</li>
+                <li>Mit höherer Abbruchquote rechnen (technische Probleme, keine Lust)</li>
+                <li>Rekrutieren nicht mehr regional beschränkt (Sprachbarrieren könnten auftreten)</li>
+                [Think Aloud Quelle][für Rekrutieren fehlt noch Quelle]
+              </span>
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <button id="footer-up-button" class="w3-button w3-light-grey" onClick="scrollToTopSmooth();"><i class="fa fa-arrow-up w3-margin-right"></i>Nach oben</button>
+      <p style="line-height: 72px;"></p>
+      <p>2020 - UNIVERSITÄT REGENSBURG</p>
+      <p><a href="https://www.uni-regensburg.de/" title="Startseite der Universität Regensburg" target="_blank" class="w3-hover-text-blue">Homepage</a></p>
+    </footer>
+    <button class="w3-button w3-light-grey w3-card w3-border" onclick="scrollToTopSmooth();" id="up-button" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <script src="resources/js/backtotop.js"></script>
+    <script src="resources/js/general.js"></script>
+    <script></script>
+  </body>
 </html>

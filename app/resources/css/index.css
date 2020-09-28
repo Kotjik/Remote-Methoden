@@ -9,13 +9,13 @@
   background-blend-mode: screen;
 }
 
-.button{
+.button {
   width: 100%;
 }
 
-#welcome-message{
+#welcome-message {
 }
 
-#welcome-message span{
+#welcome-message span {
   /* text-shadow: 2px 2px 20px #ffffff; */
 }

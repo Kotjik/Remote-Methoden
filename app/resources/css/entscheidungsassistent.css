@@ -37,7 +37,7 @@ input[type="submit"] {
   float: right;
 }
 
-#button_reset:hover{
+#button_reset:hover {
   background-color: #ffb64b !important;
 }
 
@@ -45,7 +45,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-button{
+button {
   max-width: 100%;
   word-wrap: break-word;
 }
@@ -85,10 +85,9 @@ button{
   }
 }
 
-#numberOfProfilesFoundElement{
+#numberOfProfilesFoundElement {
   margin-top: 32px;
   margin-bottom: 8px;
-
 }
 
 .profile-container > img {
@@ -98,12 +97,12 @@ button{
   object-position: center;
 }
 
-#filter-bubble-container{
+#filter-bubble-container {
   margin-top: 8px;
   margin-bottom: 16px;
 }
 
-.filter-bubble{
+.filter-bubble {
   padding: 2px 8px;
   margin: 4px 4px;
   display: inline-block;
@@ -111,23 +110,23 @@ button{
   border-radius: 5px;
 }
 
-.filter-bubble.hidden{
+.filter-bubble.hidden {
   display: none;
 }
 
 .filter-bubble-icon-clear {
   cursor: pointer;
-  position:relative;
+  position: relative;
   top: 1px;
 }
 
 /* Tooltip */
 
-.tooltip:hover{
+.tooltip:hover {
   cursor: pointer;
 }
 
-.tooltiptext{
+.tooltiptext {
   margin-top: 8px;
   background-color: #555;
   color: #fff;
@@ -135,18 +134,25 @@ button{
   margin-top: 6px;
   padding: 3px 3px;
 }
-.tooltiptext:hover{
+.tooltiptext:hover {
   cursor: pointer;
 }
 
-
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
