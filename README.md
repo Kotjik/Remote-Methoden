@@ -25,7 +25,7 @@ Dieser Punkt stellt den Willkommens-Bildschirm dar. Hier steht eine kurze Beschr
 
 ### Information
 
-Diese Seite liefert allgemeine Informationen in Form eines Bootstrap Carousels. Dadurch werden Hinweise bezüglich der Einverständniserklärung, Software, der Hardware, der Technik, unterschiedlicher Arten von Studien, Anreiz und was es zubeachten gibt angezeigt.
+Diese Seite liefert allgemeine Informationen in Form eines Bootstrap Carousels. Dadurch werden Hinweise bezüglich der Einverständniserklärung, der Software, der Hardware, der Technik, unterschiedlicher Arten von Studien, Anreiz und was es zubeachten gibt angezeigt.
 
 <p align="center"><img alt="" src="Images/Screenshots/information_desktop.png"  style=""/></p>
 
