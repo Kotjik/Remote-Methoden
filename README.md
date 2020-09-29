@@ -8,7 +8,7 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 
 ## Team
 
-| <img alt="Portrait von Sarah Feix" src="Images/Teamfotos/sarah.jpg" width="150" /> | <img alt="Portrait von Sarah Graf" src="Images/Teamfotos/sahara.jpg" width="150" /> | <img alt="Portrait von Konstantin Kulik" src="Images/Teamfotos/konsti.jpg" width="150" /> | <img alt="Portrait von Nadine Schweiger" src="Images/Teamfotos/nadine.jpg" width="150" /> |
+| <img alt="Portrait von Sarah Feix" src="Images/Teamfotos/sarah.jpeg" width="150" /> | <img alt="Portrait von Sarah Graf" src="Images/Teamfotos/sahara.jpg" width="150" /> | <img alt="Portrait von Konstantin Kulik" src="Images/Teamfotos/konsti.jpg" width="150" /> | <img alt="Portrait von Nadine Schweiger" src="Images/Teamfotos/nadine.jpg" width="150" /> |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | **Sarah Feix**<br/> E-Mail: sarah.feix@stud.uni-regensburg.de <br/>Github-Nutzer: SaRaHfE | **Sarah Graf**<br/> E-Mail: sarah.graf@stud.uni-regensburg.de <br/>Github-Nutzer: sarah-graf | **Konstantin Kulik** <br/> E-Mail: konstantin.kulik@stud.uni-regensburg.de <br/>Github-Nutzer: Kotjik | **Nadine Schweiger**  <br/> E-Mail: nadine.schweiger@stud.uni-regensburg.de <br/>Github-Nutzer: NadineSchweiger |
 
