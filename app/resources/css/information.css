@@ -13,11 +13,21 @@
   height: 100%;
 }
 
+.background-image0 {
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(102, 102, 102, 0.8);
+  background-image: url("../../resources/img/Information/0.jpg");
+  height: 94vh;
+  background-position: left;
+  background-blend-mode: screen;
+}
+
 .background-image1 {
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/1.jpeg");
+  background-image: url("../../resources/img/Information/1.jpeg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
@@ -27,7 +37,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/2.jpg");
+  background-image: url("../../resources/img/Information/2.jpg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
@@ -36,7 +46,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/3.jpg");
+  background-image: url("../../resources/img/Information/3.jpg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
@@ -45,7 +55,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/4.jpg");
+  background-image: url("../../resources/img/Information/4.jpg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
@@ -54,7 +64,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/5.jpg");
+  background-image: url("../../resources/img/Information/5.jpg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
@@ -63,7 +73,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/6.jpg");
+  background-image: url("../../resources/img/Information/6.jpg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
@@ -72,7 +82,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/7.jpg");
+  background-image: url("../../resources/img/Information/7.jpg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
@@ -81,7 +91,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgba(102, 102, 102, 0.8);
-  background-image: url("../../resources/img/8.jpg");
+  background-image: url("../../resources/img/Information/8.jpg");
   height: 94vh;
   background-position: left;
   background-blend-mode: screen;
