@@ -70,7 +70,7 @@ Für jede Remote-Methode gibt es eine eigene Detailseite auf der jegliche Inform
 
 Die komplette Anwendung wurde auch für die mobile Ansicht optimiert. Jeder Unterpunkt und Funktion wird auch für Smartphones oder Tablets ideal angezeigt und funktioniert fehlerfrei.
 
-| <img src="Images/Screenshots/home_mobile.png" width="200" /> | <img src="Images/Screenshots/home_mobile_menu.png" width="200" /> | <img src="Images/Screenshots/detailsite_mobile.png" width="200" /> | <img src="Images/Screenshots/information_mobile.png" width="200" /> |
+<!-- | <img src="Images/Screenshots/home_mobile.png" width="200" /> | <img src="Images/Screenshots/home_mobile_menu.png" width="200" /> | <img src="Images/Screenshots/detailsite_mobile.png" width="200" /> | <img src="Images/Screenshots/information_mobile.png" width="200" /> |
 |:-----------------:|:-----------------:|:-----------------:|:-----------------:|
 | Home | Menü | Detailseite | Information |
 
@@ -78,4 +78,6 @@ Die komplette Anwendung wurde auch für die mobile Ansicht optimiert. Jeder Unte
 
 | <img src="Images/Screenshots/search_mobile.png" width="200" /> | <img src="Images/Screenshots/entscheidungsassistent_mobile_1.png" width="200" /> | <img src="Images/Screenshots/contact_mobile.png" width="200" /> |
 |:-----------------:|:-----------------:|:-----------------:|
-| Remote-Profile | Entscheidungsassistent | Kontakt |
+| Remote-Profile | Entscheidungsassistent | Kontakt | -->
+
+<p align="center"><img alt="" src="Images/Screenshots/mobile.png" /></p>
