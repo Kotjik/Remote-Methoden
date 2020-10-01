@@ -1,4 +1,4 @@
-# Remote Methoden
+# Remote-Methoden
 
 In Zeiten der Corona Pandemie ist das Durchführen von Studien nicht mehr wie gewohnt möglich. Um ein effektives Arbeiten weiterhin zu gewährleisten, bietet diese Web Applikation den Studenten und dem Lehrstuhl Medieninformatik der Universität Regensburg Wissen bezüglich Remote-Methoden. Dabei beschreiben einzelne Remote-Profile die Methoden, erklären den Ablauf, liefern Aufschluss über die Ergebnisse, nennen spezielle Eigenschaften und verweisen auf informative Verlinkungen. Ein Entscheidassistent dient als Filtersystem. Dabei werden dem Nutzer durch individuelle Angaben passende Remote-Methoden vorgeschlagen.
 
@@ -32,7 +32,7 @@ Diese Seite liefert allgemeine Informationen in Form eines Bootstrap Carousels. 
 
 ### Remote-Profile
 
-In diesem Abschnitt werden sämtliche Remote Methoden in Form von Kurprofilen als Karten dargestellt. Pro Kurzprofil wird eine kleine Grafik, der Name der Methode, eine Kurzbeschreibung der Methode und ein Link auf die Detailseite der Methode angezeigt. Der Nutzer kann hier auch über eine Suchleiste nach bestimmten Methoden suchen.
+In diesem Abschnitt werden sämtliche Remote-Methoden in Form von Kurprofilen als Karten dargestellt. Pro Kurzprofil wird eine kleine Grafik, der Name der Methode, eine Kurzbeschreibung der Methode und ein Link auf die Detailseite der Methode angezeigt. Der Nutzer kann hier auch über eine Suchleiste nach bestimmten Methoden suchen.
 
 <p align="center"><img alt="" src="Images/Screenshots/search_desktop_1.png"  /></p>
 <br/>
@@ -43,7 +43,7 @@ In diesem Abschnitt werden sämtliche Remote Methoden in Form von Kurprofilen al
 
 ### Entscheidungsassistent
 
-Der Entscheidungsassistent hilft dem Nutzer in Form von Filtereinstellungen nach Remote Methoden zu suchen. Benötigt der Nutzer beispielsweise eine Remote Methode, welche qualitative Ergebnisse liefert und nur wenig Ressourcen in Anspruch nimmt, kann er das in den Filtereinstellungen angeben und der Assistent zeigt daraufhin alle passenden Remote Methoden. Die eingestellten Filter werden dann als Tags mit aufgelistet. Diese kann man dann mit einem Klick auf das "x" entfernen und die Filtereinstellung wird darauf hin nicht mehr berücksichtigt und die Ergebnisse werden angepasst.
+Der Entscheidungsassistent hilft dem Nutzer in Form von Filtereinstellungen nach Remote-Methoden zu suchen. Benötigt der Nutzer beispielsweise eine Remote-Methode, welche qualitative Ergebnisse liefert und nur wenig Ressourcen in Anspruch nimmt, kann er das in den Filtereinstellungen angeben und der Assistent zeigt daraufhin alle passenden Remote-Methoden. Die eingestellten Filter werden dann als Tags mit aufgelistet. Diese kann man dann mit einem Klick auf das "x" entfernen und die Filtereinstellung wird darauf hin nicht mehr berücksichtigt und die Ergebnisse werden angepasst.
 
 <p align="center"><img alt="" src="Images/Screenshots/entscheidungsassistent_desktop_1.png"  /></p>
 <br/>
@@ -60,7 +60,7 @@ Unter diesem Punkt werden die Personen aufgelistet, die in diesem Projekt mitgea
 
 ### Detailseiten
 
-Für jede Remote Methode gibt es eine eigene Detailseite auf der jegliche Informationen dazu aufgelistet werden. Für jede Remote Methode gibt es eine Methodenbeschreibung, einen Ablauf / eine Anleitung, Ergebnisse / Was man mit dieser Methode erreichen will, methodeneigenschaften für das Filtersystem und Links zu weiteren Infos / Papern.
+Für jede Remote-Methode gibt es eine eigene Detailseite auf der jegliche Informationen dazu aufgelistet werden. Für jede Remote-Methode gibt es eine Methodenbeschreibung, einen Ablauf / eine Anleitung, Ergebnisse / Was man mit dieser Methode erreichen will, methodeneigenschaften für das Filtersystem und Links zu weiteren Infos / Papern.
 
 <p align="center"><img alt="" src="Images/Screenshots/detailsite_desktop.png" /></p>
 
