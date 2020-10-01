@@ -80,4 +80,4 @@ Die komplette Anwendung wurde auch für die mobile Ansicht optimiert. Jeder Unte
 |:-----------------:|:-----------------:|:-----------------:|
 | Remote-Profile | Entscheidungsassistent | Kontakt | -->
 
-<p align="center"><img alt="" src="Images/Screenshots/mobile.png" /></p>
+<p align="center"><img alt="" src="Images/Screenshots/mobile.jpg" /></p>
