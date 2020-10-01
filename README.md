@@ -60,7 +60,7 @@ Unter diesem Punkt werden die Personen aufgelistet, die in diesem Projekt mitgea
 
 ### Detailseiten
 
-Für jede Remote-Methode gibt es eine eigene Detailseite auf der jegliche Informationen dazu aufgelistet werden. Für jede Remote-Methode gibt es eine Methodenbeschreibung, einen Ablauf / eine Anleitung, Ergebnisse / Was man mit dieser Methode erreichen will, methodeneigenschaften für das Filtersystem und Links zu weiteren Infos / Papern.
+Für jede Remote-Methode gibt es eine eigene Detailseite, auf der jegliche Informationen dazu aufgelistet werden. Für jede Remote-Methode gibt es eine Methodenbeschreibung, einen Ablauf / eine Anleitung, Ergebnisse / Was man mit dieser Methode erreichen will, Methodeneigenschaften für das Filtersystem und Links zu weiteren Infos / Papern.
 
 <p align="center"><img alt="" src="Images/Screenshots/detailsite_desktop.png" /></p>
 
