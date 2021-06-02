@@ -15,7 +15,6 @@ Das ist der Link zu einer funktionierenden, im WWW-gehosteten Version der Anwend
 
 ## Beschreibung
 
-
 ### Home
 
 Dieser Punkt stellt den Willkommens-Bildschirm dar. Hier steht eine kurze Beschreibung der Website inklusive deren Zweck und verweist auf weitere Links und Funktionen.
